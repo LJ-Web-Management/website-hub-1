@@ -25,7 +25,7 @@ hostname and serves the matching folder.
 ## Google Analytics
 
 The Worker adds the Google Analytics tag (`G-CSJ7GHDZXW`) before `</head>` on every HTML page it
-serves, for every site, so pages never include it themselves. To change the ID, edit `GA_ID` in
+serves, for every site except the internal hub, so pages never include it themselves. To change the ID, edit `GA_ID` in
 `src/index.js`.
 
 ## Hub

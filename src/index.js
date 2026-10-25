@@ -4,6 +4,7 @@
 // "_shared" can't be a subdomain, so it is never served as a site of its own.
 // hub.<domain> lists every site (tools/hub.mjs) and is kept out of search engines.
 // Every HTML page gets the Google Analytics tag added before </head>, so sites never include it.
+// The hub is internal, so it isn't tracked.
 
 const NAME = /^[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
 const SHARED = "/_shared/";
@@ -28,8 +29,8 @@ export function siteFor(hostname) {
 export default {
   async fetch(request, env) {
     const site = siteFor(new URL(request.url).hostname);
-    const res = await withAnalytics(await serve(request, env, site));
-    if (!NOINDEX.has(site)) return res;
+    const res = await serve(request, env, site);
+    if (!NOINDEX.has(site)) return withAnalytics(res);
     const headers = new Headers(res.headers);
     headers.set("X-Robots-Tag", "noindex, nofollow");
     return new Response(res.body, { status: res.status, headers });

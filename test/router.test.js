@@ -72,3 +72,10 @@ test("adds the Google Analytics tag to HTML pages only", async () => {
   assert.match(await missing.text(), /G-CSJ7GHDZXW/);
   assert.equal(await (await get("https://tim.hazwoperosha.us/app.js", env)).text(), "const x = '</head>';");
 });
+
+test("leaves the hub untracked", async () => {
+  const env = { ASSETS: { async fetch() { return new Response("<html><head></head><body>hub</body></html>", { headers: { "Content-Type": "text/html" } }); } } };
+  const res = await get("https://hub.hazwoperosha.us/", env);
+  assert.doesNotMatch(await res.text(), /G-CSJ7GHDZXW/);
+  assert.equal(res.headers.get("X-Robots-Tag"), "noindex, nofollow");
+});
