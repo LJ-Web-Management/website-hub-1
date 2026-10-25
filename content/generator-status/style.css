@@ -1,0 +1,31 @@
+/* generator-status: three-step scale. Violet, step blocks that light up, Bricolage Grotesque. */
+:root {
+  --bg: #f8f6ff; --fg: #1e1442; --muted: #5b5480; --line: #e2dcfa; --card: #fff;
+  --accent: #6741d9; --accent-fg: #fff; --radius: 14px; --maxw: 1140px;
+  --font: "Bricolage Grotesque", sans-serif; --head-font: "Bricolage Grotesque", sans-serif;
+}
+h1, h2, h3 { font-weight: 800; letter-spacing: -.02em; }
+.gs-kg { display: inline-grid; place-items: center; width: 34px; height: 26px; margin-right: 10px; background: var(--accent); color: #fff; font-size: 13px; clip-path: polygon(20% 0, 80% 0, 100% 100%, 0 100%); }
+.btn-alt { color: var(--accent); box-shadow: inset 0 0 0 2px var(--accent); background: #fff; }
+.tpl .hero h1 span { color: var(--accent); }
+.tpl .hc { border: 0; box-shadow: 0 8px 22px rgba(103, 65, 217, .1); }
+.tpl .hc em, .tpl .cc-foot b, .tpl .cc .meta { color: var(--accent); }
+.gs-sec { background: var(--fg); color: #fff; }
+.gs-in { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-items: start; }
+.gs-form { background: #fff; color: var(--fg); padding: 28px; border-radius: 18px; display: grid; gap: 14px; }
+.gs-form h2 { margin: 0; font-size: 26px; }
+.gs-form label { display: grid; gap: 6px; font-weight: 500; font-size: 14px; min-width: 0; }
+.gs-form input { font: 20px var(--font); padding: 10px 14px; border: 2px solid var(--line); border-radius: 10px; min-width: 0; }
+.gs-tip { color: var(--muted); font-size: 13px; margin: 0; }
+.gs-scale { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; align-items: end; }
+.gs-scale span { display: grid; place-items: center; font-weight: 800; font-size: 22px; background: #2e2361; color: #8f86b8; border-radius: 10px; transition: background .2s; }
+.gs-scale span:nth-child(1) { height: 70px; } .gs-scale span:nth-child(2) { height: 110px; } .gs-scale span:nth-child(3) { height: 150px; }
+.gs-scale span.on { background: #b197fc; color: var(--fg); }
+.gs-out h3 { font-size: 30px; margin: 22px 0 10px; }
+.gs-out li { margin: 6px 0; color: #d6cffa; }
+.gs-note { font-size: 13px; color: #9a92c4; }
+.eyebrow, .eyebrow a, .buy-price, .course-row-price, .guide-card .guide-card-cta { color: var(--accent); }
+.tpl .foot { background: var(--fg); color: #a9a1d2; border: 0; }
+.tpl .foot .logo, .tpl .foot h4 { color: #fff; }
+.prose a { color: var(--accent); font-weight: 600; }
+@media (max-width: 800px) { .gs-in { grid-template-columns: 1fr; } }

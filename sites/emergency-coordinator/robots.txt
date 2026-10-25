@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://emergency-coordinator.hazwoperosha.us/sitemap.xml

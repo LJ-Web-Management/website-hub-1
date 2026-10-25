@@ -1,0 +1,35 @@
+/* saa-labels: label stock. Hazard yellow, black header strip, Archivo Narrow; the label itself prints alone. */
+:root {
+  --bg: #fffbea; --fg: #111; --muted: #4f4a36; --line: #efe3b0; --card: #fff;
+  --accent: #111; --accent-fg: #fcc419; --radius: 4px; --maxw: 1140px;
+  --font: "Archivo", sans-serif; --head-font: "Archivo Narrow", sans-serif;
+}
+h1, h2, h3 { font-weight: 700; text-transform: uppercase; }
+.sl-tag { display: inline-grid; place-items: center; height: 26px; padding: 0 8px; margin-right: 10px; background: #111; color: #fcc419; font-size: 13px; }
+.tpl .hero h1 span { background: #fcc419; padding: 0 .1em; }
+.btn-alt { background: transparent; color: #111; box-shadow: inset 0 0 0 2px #111; }
+.tpl .hc { border: 2px solid #111; }
+.tpl .hc em, .tpl .cc-foot b { color: #111; }
+.tpl .cc .meta { color: #7a5c00; }
+.sl-sec { background: #fcc419; }
+.sl-in { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-items: start; }
+.sl-form { background: #fff; border: 2px solid #111; padding: 26px; display: grid; gap: 12px; }
+.sl-form h2 { margin: 0; }
+.sl-form label { display: grid; gap: 4px; font-weight: 600; font-size: 14px; min-width: 0; }
+.sl-form input:not([type=checkbox]) { font: 17px var(--font); padding: 10px; border: 2px solid #ccc; min-width: 0; }
+.sl-form fieldset { border: 2px solid #ccc; padding: 10px 12px; display: flex; flex-wrap: wrap; gap: 6px 18px; }
+.sl-form legend { font-weight: 700; font-size: 14px; }
+.sl-form .ck { display: flex; align-items: center; gap: 6px; }
+.sl-label { background: #fcc419; border: 4px solid #111; outline: 6px solid #fff; padding: 0 0 18px; font-family: var(--head-font); }
+.sl-hw { margin: 0; background: #111; color: #fcc419; text-align: center; font-size: clamp(30px, 4vw, 44px); font-weight: 700; letter-spacing: .04em; padding: 12px; }
+.sl-fed { text-align: center; font-weight: 700; margin: 10px 0; }
+.sl-label dl { margin: 0 18px; display: grid; grid-template-columns: auto 1fr; gap: 0 12px; }
+.sl-label dt { font-weight: 700; text-transform: uppercase; font-size: 14px; padding: 8px 0; border-bottom: 2px solid #111; }
+.sl-label dd { margin: 0; font-size: 20px; padding: 6px 0; border-bottom: 2px solid #111; overflow-wrap: anywhere; }
+.sl-note { font-size: 14px; color: #3d3200; margin-top: 18px; }
+.eyebrow, .eyebrow a, .buy-price, .course-row-price, .guide-card .guide-card-cta { color: #7a5c00; }
+.tpl .foot { background: #111; color: #bbb; border: 0; }
+.tpl .foot .logo, .tpl .foot h4 { color: #fcc419; }
+.prose a { color: #111; font-weight: 700; text-decoration-color: #fcc419; text-decoration-thickness: 3px; }
+@media (max-width: 800px) { .sl-in { grid-template-columns: 1fr; } }
+@media print { body * { visibility: hidden; } .sl-label, .sl-label * { visibility: visible; } .sl-label { position: absolute; left: 0; top: 0; width: 100%; -webkit-print-color-adjust: exact; print-color-adjust: exact; } }

@@ -1,0 +1,22 @@
+/* cal-tsdf: Golden State. Poppy orange and Pacific blue, sun gradient, Libre Franklin. */
+:root {
+  --bg: #fffaf3; --fg: #0b2545; --muted: #4a5b74; --line: #f3e3cc; --card: #fff;
+  --accent: #1864ab; --accent-fg: #fff; --radius: 10px; --maxw: 1140px;
+  --font: "Libre Franklin", sans-serif; --head-font: "Libre Franklin", sans-serif;
+  --poppy: #f76707;
+}
+h1, h2, h3 { font-weight: 900; letter-spacing: -.02em; }
+.ct-poppy { display: inline-block; width: 22px; height: 22px; margin-right: 10px; vertical-align: middle; border-radius: 50% 50% 50% 0; background: radial-gradient(circle at 60% 40%, #fcc419 0 18%, var(--poppy) 20%); transform: rotate(-45deg); }
+.tpl .hero { background: radial-gradient(circle at 85% 110%, #ffd8a8 0 22%, #ffe8cc 22% 34%, transparent 34%), linear-gradient(180deg, #fff4e6, #fffaf3); }
+.tpl .hero h1 span { color: var(--poppy); display: block; }
+.btn-alt { color: var(--accent); box-shadow: inset 0 0 0 2px var(--accent); background: #fff; }
+.tpl .hc { border-left: 5px solid var(--poppy); }
+.tpl .hc em, .tpl .cc-foot b { color: var(--accent); }
+.tpl .cc .meta { color: #c2410c; }
+.tpl .sec-guides { background: var(--fg); color: #fff; }
+.tpl .sec-guides .title { color: #fff; }
+.eyebrow, .eyebrow a, .buy-price, .course-row-price, .guide-card .guide-card-cta { color: #c2410c; }
+.tpl .foot { background: #061a33; color: #a9b8cf; border: 0; }
+.tpl .foot .logo, .tpl .foot h4 { color: #fff; }
+.prose a { color: var(--accent); font-weight: 600; }
+.tpl .sec-guides .guide-card { color: var(--fg); }

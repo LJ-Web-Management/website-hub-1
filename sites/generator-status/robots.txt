@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://generator-status.hazwoperosha.us/sitemap.xml

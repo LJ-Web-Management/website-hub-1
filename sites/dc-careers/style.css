@@ -10,7 +10,7 @@ h1, h2, h3 { font-weight: 900; }
 .tpl .hero h1 span { color: #e63946; }
 .btn-alt { color: var(--accent); box-shadow: inset 0 0 0 3px var(--accent); background: #fff; }
 .tpl .hc { border: 0; border-left: 6px solid; border-radius: 4px; background: #f6f9fa; }
-.tpl .hc:nth-child(1) { border-color: #e63946; } .tpl .hc:nth-child(2) { border-color: #2a9d8f; } .tpl .hc:nth-child(3) { border-color: #2a9d8f; } .tpl .hc:nth-child(4) { border-color: #f4a261; }
+.tpl .hc:nth-child(1) { border-color: #e63946; } .tpl .hc:nth-child(2) { border-color: #2a9d8f; } .tpl .hc:nth-child(3) { border-color: #2a9d8f; } .tpl .hc:nth-child(4) { border-color: #d9731f; }
 .tpl .hc em, .tpl .cc-foot b { color: var(--accent); }
 .tpl .cc .meta { color: #e63946; }
 .cl-sec { background: #f6f9fa; }

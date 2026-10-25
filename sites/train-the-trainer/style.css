@@ -1,0 +1,28 @@
+/* train-the-trainer: chalkboard. Slate green board with wood frame, chalk-white Caveat headings. */
+:root {
+  --bg: #f6f3ec; --fg: #1f2a22; --muted: #57615a; --line: #e2dccd; --card: #fff;
+  --accent: #2b5d3a; --accent-fg: #fff; --radius: 6px; --maxw: 1140px;
+  --font: "Source Sans 3", sans-serif; --head-font: "Caveat", cursive;
+}
+h1, h2, h3 { font-weight: 700; }
+.lc-chalk { display: inline-grid; place-items: center; width: 28px; height: 28px; margin-right: 8px; border-radius: 4px; background: var(--accent); color: #fff; font-size: 16px; }
+.tpl .logo { font-size: 30px; }
+.tpl .hero { background: #2b5d3a radial-gradient(rgba(255, 255, 255, .05) 1px, transparent 1px) 0 0 / 4px 4px; color: #f1f3ee; border: 14px solid #8d6e52; border-width: 0 0 14px; }
+.tpl .hero h1 { font-size: clamp(54px, 8vw, 100px); line-height: .95; text-shadow: 0 0 2px rgba(255, 255, 255, .4); }
+.tpl .hero h1 span { color: #ffec99; display: block; }
+.tpl .kicker { color: #ffec99; }
+.tpl .hero-lede { color: #d6ddd6; }
+.tpl .hero .btn { background: #ffec99; color: var(--fg); }
+.tpl .hero .btn-alt { background: transparent; color: #fff; box-shadow: inset 0 0 0 2px rgba(255, 255, 255, .7); }
+.tpl .hc { background: rgba(255, 255, 255, .06); border: 2px dashed rgba(255, 255, 255, .35); color: #fff; }
+.tpl .hc b { font-family: var(--font); font-size: 17px; }
+.tpl .hc small { color: #c3ccc4; }
+.tpl .hc em { color: #ffec99; font-family: var(--font); }
+.tpl .title { font-size: clamp(44px, 6vw, 68px); }
+.tpl .cc h3 { font-family: var(--font); font-size: 20px; }
+.tpl .cc-foot b { font-family: var(--font); color: var(--accent); }
+.tpl .cc .meta { color: var(--accent); }
+.eyebrow, .eyebrow a, .buy-price, .course-row-price, .guide-card .guide-card-cta { color: var(--accent); }
+.tpl .foot { background: var(--fg); color: #b5beb7; border: 0; }
+.tpl .foot .logo, .tpl .foot h4 { color: #ffec99; }
+.prose a { color: var(--accent); font-weight: 600; }

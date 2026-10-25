@@ -4,7 +4,7 @@ const TRACKS = [
   ["Cooling & Facilities Efficiency", "#1d9bf0", [1096, 851, 836, 838, 832, 841]],
   ["Operations & Reliability", "#2a9d8f", [858, 856, 1097, 839, 837, 843]],
   ["Monitoring & Smart Facility", "#9b5de5", [834, 1104, 830, 846]],
-  ["Security & Compliance", "#f4a261", [855, 828, 833, 854, 848]],
+  ["Security & Compliance", "#d9731f", [855, 828, 833, 854, 848]],
   ["Design, Planning & Commissioning", "#264653", [829, 845, 849, 842]],
 ];
 

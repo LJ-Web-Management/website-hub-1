@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Heat Index Calculator for HAZWOPER Crews in PPE | Suit Heat</title>
+<meta name="description" content="Calculate the heat index and risk level for your crew, see why chemical protective clothing makes heat stress worse, and train on PPE and site safety.">
+<link rel="canonical" href="https://heat-stress.hazwoperosha.us/">
+<meta name="theme-color" content="#e8590c">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Heat Index Calculator for HAZWOPER Crews in PPE | Suit Heat">
+<meta property="og:description" content="Calculate the heat index and risk level for your crew, see why chemical protective clothing makes heat stress worse, and train on PPE and site safety.">
+<meta property="og:url" content="https://heat-stress.hazwoperosha.us/">
+<meta property="og:site_name" content="Suit Heat">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2032%2032%22%3E%3Crect%20x%3D%2213%22%20y%3D%223%22%20width%3D%226%22%20height%3D%2220%22%20rx%3D%223%22%20fill%3D%22%23fff%22%20stroke%3D%22%23e8590c%22%20stroke-width%3D%222%22%2F%3E%3Ccircle%20cx%3D%2216%22%20cy%3D%2225%22%20r%3D%225%22%20fill%3D%22%23e8590c%22%2F%3E%3Crect%20x%3D%2215%22%20y%3D%2210%22%20width%3D%222%22%20height%3D%2214%22%20fill%3D%22%23e8590c%22%2F%3E%3C%2Fsvg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="/_shared/base.css">
+<link rel="stylesheet" href="/_shared/checkout.css">
+<link rel="stylesheet" href="/style.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Suit Heat","url":"https://heat-stress.hazwoperosha.us/","publisher":{"@type":"Organization","name":"HAZWOPER OSHA Training LLC","url":"https://hazwoper-osha.com/","telephone":"+1-866-429-6742"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"ItemList","itemListElement":[{"@type":"ListItem","position":1,"url":"https://heat-stress.hazwoperosha.us/courses/hazwoper-micro-module-ppe-levels-a-b-c-and-d-explained","name":"HAZWOPER Micro-Module: PPE Levels A, B, C & D Explained"},{"@type":"ListItem","position":2,"url":"https://heat-stress.hazwoperosha.us/courses/osha-40-hour-hazwoper-training","name":"OSHA 40 Hour HAZWOPER Training"},{"@type":"ListItem","position":3,"url":"https://heat-stress.hazwoperosha.us/courses/osha-8-hour-hazwoper-supervisor-training","name":"OSHA 8 Hour HAZWOPER Supervisor Training"},{"@type":"ListItem","position":4,"url":"https://heat-stress.hazwoperosha.us/courses/osha-8-hour-hazwoper-refresher-training","name":"OSHA 8 Hour HAZWOPER Refresher Training"}]}</script>
+<script src="/_shared/catalog.js" defer></script>
+<script src="/_shared/checkout.js" data-site="heat-stress" data-lang="en" defer></script>
+</head>
+<body class="tpl">
+<header class="top"><div class="wrap top-in">
+<a class="logo" href="/"><span class="sh-therm"></span>Suit Heat</a>
+<nav><a href="/courses/">Courses</a><a href="/guides/">Guides</a><a class="btn btn-sm" href="?buy=585" data-buy="585">Enroll</a></nav>
+</div></header>
+<main><section class="hero"><div class="wrap hero-in">
+<div class="hero-copy">
+<p class="kicker">Heat index · work/rest · hydration</p>
+<h1>It's hotter <span>inside the suit.</span></h1>
+<p class="hero-lede">Chemical protective clothing traps heat and sweat, so crews in PPE can overheat at temperatures that feel comfortable in a T-shirt. Check today&#39;s heat index and plan for it.</p>
+<div class="hero-cta"><a class="btn" href="?buy=585" data-buy="585">PPE Levels · $12.99</a><a class="btn btn-alt" href="#calc">Check the heat index</a></div>
+</div>
+<div class="hero-side"><a class="hc" href="/courses/hazwoper-micro-module-ppe-levels-a-b-c-and-d-explained"><span><b>PPE Levels A–D</b><small>Course #585 · 15 Min</small></span><em>$12.99</em></a><a class="hc" href="/courses/osha-40-hour-hazwoper-training"><span><b>40-Hour HAZWOPER</b><small>Course #587 · 40 Hours</small></span><em>$249.99</em></a><a class="hc" href="/courses/osha-8-hour-hazwoper-supervisor-training"><span><b>HAZWOPER Supervisor</b><small>Course #597 · 8 Hours</small></span><em>$179.99</em></a><a class="hc" href="/courses/osha-8-hour-hazwoper-refresher-training"><span><b>8-Hour Refresher</b><small>Course #595 · 8 Hours</small></span><em>$89.99</em></a></div>
+</div></section>
+<section class="sec sh-sec" id="calc"><div class="wrap sh-in">
+<form class="sh-form" onsubmit="return false">
+<label>Air temperature (°F)<input id="shT" type="number" value="88"></label>
+<label>Relative humidity (%)<input id="shR" type="number" min="0" max="100" value="55"></label>
+<label class="ck"><input id="shP" type="checkbox" checked> Crew is wearing chemical protective clothing</label>
+</form>
+<div class="sh-out" aria-live="polite">
+<div class="sh-bar"><i id="shM"></i></div>
+<p class="sh-k">Heat index</p><p class="sh-v"><span id="shV">–</span>°F</p>
+<p class="sh-lvl" id="shL"></p><p id="shA"></p>
+<p class="sh-note">Heat index uses the National Weather Service formula and shade conditions. Full sun can add up to 15 °F. Risk levels follow OSHA's heat index bands. Impermeable PPE can make real heat stress far worse than the index shows, so use physiological monitoring and your site's heat plan.</p>
+</div></div></section>
+<script>
+(function () {
+  function hi(T, R) {
+    var s = 0.5 * (T + 61 + (T - 68) * 1.2 + R * 0.094);
+    if ((s + T) / 2 < 80) return s;
+    return -42.379 + 2.04901523 * T + 10.14333127 * R - 0.22475541 * T * R - 0.00683783 * T * T - 0.05481717 * R * R + 0.00122874 * T * T * R + 0.00085282 * T * R * R - 0.00000199 * T * T * R * R;
+  }
+  function calc() {
+    var T = parseFloat(document.getElementById("shT").value) || 0, R = parseFloat(document.getElementById("shR").value) || 0, v = Math.round(hi(T, R)), p = document.getElementById("shP").checked;
+    var lv = v < 91 ? ["Lower (caution)", "Provide water, rest and shade. Train workers on heat illness signs."] : v < 103 ? ["Moderate", "Remind workers to drink water often, schedule rest breaks, and watch for symptoms."] : v <= 115 ? ["High", "Increase rest breaks, use cooling measures, reschedule heavy work to cooler hours, and use a buddy system."] : ["Very high to extreme", "Reschedule non-essential work. Strict work/rest limits and close medical monitoring for anything that must be done."];
+    document.getElementById("shV").textContent = v;
+    document.getElementById("shL").textContent = "Risk: " + lv[0] + (p ? " (treat as higher in chemical protective clothing)" : "");
+    document.getElementById("shA").textContent = lv[1];
+    document.getElementById("shM").style.left = Math.max(0, Math.min(100, (v - 70) / 60 * 100)) + "%";
+  }
+  document.querySelectorAll(".sh-form input").forEach(function (i) { i.addEventListener("input", calc); i.addEventListener("change", calc); });
+  calc();
+})();
+</script>
+<section class="sec sec-courses"><div class="wrap">
+<h2 class="title">Courses</h2>
+<div class="cgrid"><article class="cc"><p class="meta">15 Min · #585</p><h3><a href="/courses/hazwoper-micro-module-ppe-levels-a-b-c-and-d-explained">PPE Levels A–D</a></h3><p>The four levels of protection and their trade-offs.</p><div class="cc-foot"><b>$12.99</b><a class="btn btn-sm" href="?buy=585" data-buy="585">Enroll</a></div></article><article class="cc"><p class="meta">40 Hours · #587</p><h3><a href="/courses/osha-40-hour-hazwoper-training">40-Hour HAZWOPER</a></h3><p>Heat stress, PPE and site safety in depth.</p><div class="cc-foot"><b>$249.99</b><a class="btn btn-sm" href="?buy=587" data-buy="587">Enroll</a></div></article><article class="cc"><p class="meta">8 Hours · #597</p><h3><a href="/courses/osha-8-hour-hazwoper-supervisor-training">HAZWOPER Supervisor</a></h3><p>Planning work/rest and monitoring crews.</p><div class="cc-foot"><b>$179.99</b><a class="btn btn-sm" href="?buy=597" data-buy="597">Enroll</a></div></article><article class="cc"><p class="meta">8 Hours · #595</p><h3><a href="/courses/osha-8-hour-hazwoper-refresher-training">8-Hour Refresher</a></h3><p>The annual refresher.</p><div class="cc-foot"><b>$89.99</b><a class="btn btn-sm" href="?buy=595" data-buy="595">Enroll</a></div></article></div>
+<p class="all-link"><a href="/courses/#all">All trainings (83) →</a></p>
+</div></section>
+<section class="sec sec-guides"><div class="wrap">
+<h2 class="title">Guides</h2>
+<div class="guide-list"><a class="guide-card" href="/guides/heat-stress-in-chemical-protective-clothing"><span class="guide-card-meta">2 min read</span><strong>Heat stress in chemical protective clothing</strong><span>Why PPE changes the heat math, and how to protect crews.</span><span class="guide-card-cta">Read guide →</span></a><a class="guide-card" href="/guides/site-heat-plan"><span class="guide-card-meta">2 min read</span><strong>Writing a heat plan for your site</strong><span>What to put in the heat section of your site safety and health plan.</span><span class="guide-card-cta">Read guide →</span></a></div>
+</div></section></main>
+<footer class="foot"><div class="wrap foot-in">
+<div><a class="logo" href="/"><span class="sh-therm"></span>Suit Heat</a><p>Suit Heat: training from HAZWOPER OSHA Training LLC, delivered on hazwoper-osha.com.</p></div>
+<div><h4>Courses</h4><a href="/courses/hazwoper-micro-module-ppe-levels-a-b-c-and-d-explained">PPE Levels A–D</a><a href="/courses/osha-40-hour-hazwoper-training">40-Hour HAZWOPER</a><a href="/courses/osha-8-hour-hazwoper-supervisor-training">HAZWOPER Supervisor</a><a href="/courses/osha-8-hour-hazwoper-refresher-training">8-Hour Refresher</a></div>
+<div><h4>Contact</h4><a href="tel:+18664296742">+1-866-429-6742</a><a href="mailto:info@hazwoper-osha.com">info@hazwoper-osha.com</a><a href="/guides/">Guides</a><a href="/courses/#all">All trainings</a></div>
+</div></footer>
+</body>
+</html>

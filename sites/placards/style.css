@@ -1,0 +1,33 @@
+/* placards: diamond grid on asphalt. Dark road gray, white lane dashes, Barlow Semi Condensed. */
+:root {
+  --bg: #f3f3f1; --fg: #1a1a1a; --muted: #555; --line: #ddd; --card: #fff;
+  --accent: #e03131; --accent-fg: #fff; --radius: 4px; --maxw: 1160px;
+  --font: "Barlow", sans-serif; --head-font: "Barlow Semi Condensed", sans-serif;
+}
+h1, h2, h3 { font-weight: 800; text-transform: uppercase; }
+.pc-dia { display: inline-block; width: 18px; height: 18px; margin: 0 14px 0 4px; background: var(--accent); border: 2px solid #000; transform: rotate(45deg); vertical-align: middle; }
+.tpl .hero { background: #2b2b2b linear-gradient(90deg, transparent 0 48%, #fcc419 48% 49%, transparent 49% 51%, #fcc419 51% 52%, transparent 52%) 0 0 / 100% 100%; color: #fff; }
+.tpl .hero::before { content: ""; position: absolute; left: 0; right: 0; bottom: 30px; height: 6px; background: repeating-linear-gradient(90deg, #fff 0 60px, transparent 60px 110px); opacity: .7; }
+.tpl .hero h1 { font-size: clamp(60px, 10vw, 124px); line-height: .9; }
+.tpl .hero h1 span { color: var(--accent); }
+.tpl .kicker { color: #fcc419; }
+.tpl .hero-lede { color: #ccc; }
+.tpl .hero .btn-alt { background: transparent; color: #fff; box-shadow: inset 0 0 0 2px #fff; }
+.tpl .hc { border: 2px solid #000; color: var(--fg); }
+.tpl .hc em, .tpl .cc-foot b { color: var(--accent); }
+.tpl .cc .meta { color: var(--accent); }
+.pc-sec { background: #fff; }
+.pc-in { display: grid; grid-template-columns: 1.3fr 1fr; gap: 40px; align-items: center; }
+.pc-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 26px 10px; padding: 20px; }
+.pc-grid button { background: none; border: 0; cursor: pointer; display: grid; place-items: center; aspect-ratio: 1; padding: 0; }
+.pc-d { display: grid; place-items: center; width: 70%; aspect-ratio: 1; transform: rotate(45deg); border: 3px solid #000; box-shadow: inset 0 0 0 4px rgba(255, 255, 255, .6); transition: transform .15s; }
+.pc-d b { transform: rotate(-45deg); font: 800 clamp(16px, 2.4vw, 24px) var(--head-font); margin-top: 40%; }
+.pc-grid button:hover .pc-d, .pc-grid button.on .pc-d { transform: rotate(45deg) scale(1.12); box-shadow: 0 0 0 4px #fff, 0 0 0 7px var(--accent); }
+.pc-k { margin: 0; font: 800 15px var(--head-font); color: var(--accent); text-transform: uppercase; }
+.pc-info h2 { font-size: clamp(30px, 4vw, 46px); margin: 6px 0 10px; }
+.pc-info p { font-size: 18px; color: var(--muted); }
+.eyebrow, .eyebrow a, .buy-price, .course-row-price, .guide-card .guide-card-cta { color: var(--accent); }
+.tpl .foot { background: #2b2b2b; color: #bbb; border: 0; }
+.tpl .foot .logo, .tpl .foot h4 { color: #fff; }
+.prose a { color: var(--accent); font-weight: 500; }
+@media (max-width: 860px) { .pc-in { grid-template-columns: 1fr; } .pc-grid { grid-template-columns: repeat(3, 1fr); } }

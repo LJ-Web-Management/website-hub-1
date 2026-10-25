@@ -1,0 +1,28 @@
+/* veterans: service stencil. Olive drab, khaki, stencil headings, ribbon bar accents. */
+:root {
+  --bg: #f4f1e6; --fg: #262b18; --muted: #5d6247; --line: #ddd6bd; --card: #fffdf6;
+  --accent: #5c6b3a; --accent-fg: #fff; --radius: 2px; --maxw: 1140px;
+  --font: "Source Sans 3", sans-serif; --head-font: "Stardos Stencil", serif;
+  --khaki: #e6dcc0;
+}
+h1, h2, h3 { font-weight: 700; text-transform: uppercase; }
+.nm-star { display: inline-grid; place-items: center; width: 28px; height: 28px; margin-right: 10px; background: var(--accent); color: var(--khaki); }
+.tpl .hero { background: #3d4626; color: var(--khaki); }
+.tpl .hero::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 10px; background: linear-gradient(90deg, #b22234 0 33%, #fff 33% 66%, #3c3b6e 66%); }
+.tpl .hero h1 { font-size: clamp(40px, 6vw, 72px); line-height: 1.02; }
+.tpl .hero h1 span { color: #fff; display: block; margin-top: 10px; }
+.tpl .kicker { color: #c9d39b; }
+.tpl .hero-lede { color: #d7d2bb; }
+.tpl .hero .btn { background: var(--khaki); color: var(--fg); }
+.tpl .hero .btn-alt { background: transparent; color: var(--khaki); box-shadow: inset 0 0 0 2px var(--khaki); }
+.tpl .hc { background: #4b5530; border: 1px solid #6a7745; color: #fff; }
+.tpl .hc b { font-family: var(--font); text-transform: none; }
+.tpl .hc small { color: #c9c3a8; }
+.tpl .hc em { color: var(--khaki); font-family: var(--font); }
+.tpl .cc { background: var(--card); border: 2px solid var(--accent); }
+.tpl .cc h3 { font-family: var(--font); text-transform: none; }
+.tpl .cc .meta, .tpl .cc-foot b { color: var(--accent); font-family: var(--font); }
+.eyebrow, .eyebrow a, .buy-price, .course-row-price, .guide-card .guide-card-cta { color: var(--accent); }
+.tpl .foot { background: var(--fg); color: #c9c3a8; border: 0; }
+.tpl .foot .logo, .tpl .foot h4 { color: var(--khaki); }
+.prose a { color: var(--accent); font-weight: 700; }

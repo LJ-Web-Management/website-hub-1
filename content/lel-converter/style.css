@@ -1,0 +1,36 @@
+/* lel-converter: four-gas meter. Charcoal case, green LCD with VT323 digits, alarm yellow and red. */
+:root {
+  --bg: #f4f6f2; --fg: #1d211b; --muted: #555d52; --line: #dde3d8; --card: #fff;
+  --accent: #2b8a3e; --accent-fg: #fff; --radius: 14px; --maxw: 1120px;
+  --font: "Inter", sans-serif; --head-font: "Inter", sans-serif;
+  --lcd: #94d82d;
+}
+h1, h2, h3 { font-weight: 800; letter-spacing: -.02em; }
+.lc-lcd { display: inline-grid; place-items: center; width: 30px; height: 24px; margin-right: 10px; border-radius: 4px; background: var(--fg); color: var(--lcd); font: 22px "VT323", monospace; }
+.tpl .hero h1 span { font: 400 1.1em "VT323", monospace; background: var(--fg); color: var(--lcd); padding: 0 .15em; border-radius: 8px; }
+.btn-alt { color: var(--accent); box-shadow: inset 0 0 0 2px var(--accent); background: #fff; }
+.tpl .hc em, .tpl .cc-foot b, .tpl .cc .meta { color: var(--accent); }
+.lc-sec { background: #e9ede5; }
+.lc-in { display: grid; grid-template-columns: 1fr 1.2fr; gap: 32px; align-items: center; }
+.lc-form { display: grid; gap: 14px; }
+.lc-form label { display: grid; gap: 6px; font-weight: 600; font-size: 14px; min-width: 0; }
+.lc-form input, .lc-form select { font: 20px var(--font); padding: 10px 12px; border: 2px solid var(--line); border-radius: 10px; background: #fff; min-width: 0; width: 100%; }
+.lc-meter { background: #2b2f29; border-radius: 28px; padding: 26px; box-shadow: inset 0 0 0 6px #fcc419, 0 20px 40px rgba(0, 0, 0, .2); }
+.lc-screen { background: #c0eb75; border-radius: 10px; padding: 14px 20px; box-shadow: inset 0 0 18px rgba(0, 0, 0, .25); font-family: "VT323", monospace; color: #1d2a12; }
+.lc-screen p { display: grid; grid-template-columns: 60px 1fr auto; align-items: baseline; margin: 0; border-bottom: 1px dashed rgba(29, 42, 18, .3); }
+.lc-screen p:last-child { border: 0; }
+.lc-screen span { font-size: 22px; }
+.lc-screen b { font-size: clamp(40px, 6vw, 60px); font-weight: 400; text-align: right; overflow-wrap: anywhere; }
+.lc-screen i { font-style: normal; font-size: 26px; margin-left: 4px; }
+.lc-bar { position: relative; height: 14px; border-radius: 7px; background: #444; margin: 18px 0 8px; overflow: hidden; }
+.lc-bar i { position: absolute; inset: 0 auto 0 0; background: var(--lcd); transition: width .3s; }
+.lc-bar i.warn { background: #fcc419; } .lc-bar i.alarm { background: #fa5252; }
+.lc-bar s { position: absolute; left: 10%; top: -2px; bottom: -2px; width: 2px; background: #fff; }
+.lc-s { margin: 0; font-weight: 700; }
+.lc-s.ok { color: var(--lcd); } .lc-s.no { color: #ff8787; }
+.lc-note { color: var(--muted); font-size: 14px; margin-top: 18px; }
+.eyebrow, .eyebrow a, .buy-price, .course-row-price, .guide-card .guide-card-cta { color: var(--accent); }
+.tpl .foot { background: var(--fg); color: #aab3a6; border: 0; }
+.tpl .foot .logo, .tpl .foot h4 { color: #fff; }
+.prose a { color: var(--accent); font-weight: 600; }
+@media (max-width: 800px) { .lc-in { grid-template-columns: 1fr; } }

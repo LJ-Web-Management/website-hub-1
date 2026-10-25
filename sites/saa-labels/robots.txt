@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://saa-labels.hazwoperosha.us/sitemap.xml

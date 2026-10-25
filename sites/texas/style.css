@@ -41,3 +41,4 @@ h1, h2, h3 { font-weight: 400; }
 .prose a { color: var(--accent); font-weight: 600; }
 .prose th { background: var(--fg); color: var(--card); font-family: var(--font); }
 @media (max-width: 700px) { .band-in { grid-template-columns: 1fr; } .band-in div { border-left: 0; border-top: 2px dashed rgba(248, 238, 218, .35); } }
+.tpl .foot .logo span { color: #e9a07a; }

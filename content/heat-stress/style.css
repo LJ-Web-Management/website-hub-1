@@ -1,0 +1,31 @@
+/* heat-stress: thermometer. Sunset yellow to deep red, thermometer bar marker, Familjen Grotesk. */
+:root {
+  --bg: #fff8f1; --fg: #3b1104; --muted: #7a4a35; --line: #f6dcc6; --card: #fff;
+  --accent: #e8590c; --accent-fg: #fff; --radius: 16px; --maxw: 1120px;
+  --font: "Familjen Grotesk", sans-serif; --head-font: "Familjen Grotesk", sans-serif;
+  --heat: linear-gradient(90deg, #ffe066, #ffa94d 30%, #f76707 55%, #e03131 80%, #862e9c);
+}
+h1, h2, h3 { font-weight: 700; letter-spacing: -.02em; }
+.sh-therm { display: inline-block; width: 10px; height: 24px; border-radius: 5px; background: linear-gradient(0deg, #e03131 50%, #ffe066 50%); border: 2px solid var(--fg); margin-right: 10px; vertical-align: middle; }
+.tpl .hero { background: linear-gradient(180deg, #fff3bf, #fff8f1 70%); }
+.tpl .hero h1 span { background: var(--heat); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.btn-alt { color: var(--accent); box-shadow: inset 0 0 0 2px var(--accent); background: #fff; }
+.tpl .hc { border: 0; box-shadow: 0 8px 22px rgba(232, 89, 12, .12); }
+.tpl .hc em, .tpl .cc-foot b, .tpl .cc .meta { color: var(--accent); }
+.sh-sec { background: var(--fg); color: #fff; }
+.sh-in { display: grid; grid-template-columns: 1fr 1.3fr; gap: 32px; align-items: start; }
+.sh-form { background: #fff; color: var(--fg); border-radius: 18px; padding: 24px; display: grid; gap: 14px; }
+.sh-form label { display: grid; gap: 6px; font-weight: 600; font-size: 14px; min-width: 0; }
+.sh-form label.ck { display: flex; align-items: center; gap: 8px; }
+.sh-form input[type=number] { font: 22px var(--font); padding: 10px 12px; border: 2px solid var(--line); border-radius: 10px; min-width: 0; }
+.sh-bar { position: relative; height: 16px; border-radius: 999px; background: var(--heat); margin-bottom: 18px; }
+.sh-bar i { position: absolute; top: -6px; width: 6px; height: 28px; margin-left: -3px; border-radius: 3px; background: #fff; box-shadow: 0 0 0 2px var(--fg); transition: left .3s; }
+.sh-k { margin: 0; color: #ffc078; text-transform: uppercase; letter-spacing: .1em; font-size: 13px; font-weight: 700; }
+.sh-v { font-size: clamp(72px, 12vw, 120px); font-weight: 700; margin: 0; line-height: 1; }
+.sh-lvl { font-size: 22px; font-weight: 700; color: #ffc078; margin: 12px 0 6px; }
+.sh-note { color: #d9b3a0; font-size: 13px; }
+.eyebrow, .eyebrow a, .buy-price, .course-row-price, .guide-card .guide-card-cta { color: var(--accent); }
+.tpl .foot { background: var(--fg); color: #d9b3a0; border: 0; }
+.tpl .foot .logo, .tpl .foot h4 { color: #fff; }
+.prose a { color: var(--accent); font-weight: 600; }
+@media (max-width: 800px) { .sh-in { grid-template-columns: 1fr; } }

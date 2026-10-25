@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://lel-converter.hazwoperosha.us/sitemap.xml

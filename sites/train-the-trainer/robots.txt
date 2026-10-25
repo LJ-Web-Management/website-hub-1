@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://train-the-trainer.hazwoperosha.us/sitemap.xml

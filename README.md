@@ -37,7 +37,7 @@ and the base styles the course sites use. `_shared` can't be a subdomain, so it 
 
 ## Course landing sites
 
-Ninety sites sell hazwoper-osha.com courses, each with its own niche, design, guides and course pages. Every site's
+A hundred and ten sites sell hazwoper-osha.com courses, each with its own niche, design, guides and course pages. Every site's
 `/courses/` page lists its own featured courses first, then all trainings in the catalog, grouped by category, each with an Enroll button:
 
 | Site | Niche | LMS course ids |
@@ -132,6 +132,26 @@ Ninety sites sell hazwoper-osha.com courses, each with its own niche, design, gu
 | [raised-floor](https://raised-floor.hazwoperosha.us) | DC: raised floor and ergonomics | 856, 858, 852, 855 |
 | [dc-access-control](https://dc-access-control.hazwoperosha.us) | DC: physical security and access | 828, 855, 848 |
 | [dc-careers](https://dc-careers.hazwoperosha.us) | DC: career tracks (clickable track map) | 852, 856, 858, 855, 843 |
+| [generator-status](https://generator-status.hazwoperosha.us) | Tool: VSQG/SQG/LQG calculator | 601, 600, 415, 412, 580 |
+| [saa-labels](https://saa-labels.hazwoperosha.us) | Tool: hazardous waste label maker (SAA) | 415, 601, 602, 580 |
+| [manifest](https://manifest.hazwoperosha.us) | Tool: manifest box-by-box explainer | 580, 403, 601, 600 |
+| [universal-waste](https://universal-waste.hazwoperosha.us) | Tool: universal waste sorting game | 602, 601, 415 |
+| [placards](https://placards.hazwoperosha.us) | Tool: DOT hazard class placard explorer | 403, 580, 1099, 589 |
+| [boom-calculator](https://boom-calculator.hazwoperosha.us) | Tool: spill boom length calculator | 478, 479, 416, 591 |
+| [heat-stress](https://heat-stress.hazwoperosha.us) | Tool: heat index for crews in PPE | 585, 587, 597, 595 |
+| [respirator-muc](https://respirator-muc.hazwoperosha.us) | Tool: respirator APF / MUC calculator | 585, 583, 1056, 587 |
+| [lel-converter](https://lel-converter.hazwoperosha.us) | Tool: %LEL to ppm converter | 1056, 583, 587, 586 |
+| [toolbox-talks](https://toolbox-talks.hazwoperosha.us) | Tool: printable toolbox talks | 595, 597, 596, 587 |
+| [emergency-coordinator](https://emergency-coordinator.hazwoperosha.us) | Tool: contingency plan quick reference guide builder | 412, 601, 600, 1099 |
+| [cal-tsdf](https://cal-tsdf.hazwoperosha.us) | California TSDF workers (Cal/OSHA) | 575, 579, 1051, 577, 578 |
+| [train-the-trainer](https://train-the-trainer.hazwoperosha.us) | HAZWOPER instructors | 1016, 587, 597, 595 |
+| [pipeline](https://pipeline.hazwoperosha.us) | Pipeline and utility emergency response | 592, 593, 574, 591, 1056 |
+| [hw-technician](https://hw-technician.hazwoperosha.us) | Hazardous waste technicians and lab packers | 599, 403, 580, 601, 584 |
+| [veterans](https://veterans.hazwoperosha.us) | Veterans entering HAZWOPER careers | 587, 593, 1016, 589, 597 |
+| [staffing-agencies](https://staffing-agencies.hazwoperosha.us) | Staffing agencies placing temps | 587, 581, 595, 1099, 582 |
+| [wildfire-cleanup](https://wildfire-cleanup.hazwoperosha.us) | Wildfire debris and HHW cleanup | 587, 581, 1099, 585, 584 |
+| [meth-lab-cleanup](https://meth-lab-cleanup.hazwoperosha.us) | Clandestine drug lab remediation | 587, 585, 583, 584, 595 |
+| [pfas](https://pfas.hazwoperosha.us) | PFAS and AFFF remediation | 590, 587, 586, 584, 595 |
 
 They're generated. Edit the sources, then rebuild and commit the output:
 

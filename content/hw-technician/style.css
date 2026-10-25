@@ -1,0 +1,24 @@
+/* hw-technician: drum lids from above. Cobalt blue, concentric ring motif, Red Hat type pairing. */
+:root {
+  --bg: #f4f6ff; --fg: #141b4d; --muted: #4d5585; --line: #dbe2ff; --card: #fff;
+  --accent: #3b5bdb; --accent-fg: #fff; --radius: 12px; --maxw: 1140px;
+  --font: "Red Hat Text", sans-serif; --head-font: "Red Hat Display", sans-serif;
+}
+h1, h2, h3 { font-weight: 900; }
+.wt-lid { display: inline-block; width: 24px; height: 24px; margin-right: 10px; vertical-align: middle; border-radius: 50%; background: repeating-radial-gradient(circle, var(--accent) 0 3px, #bac8ff 3px 5px); }
+.tpl .hero { background: var(--fg); color: #fff; }
+.tpl .hero::before { content: ""; position: absolute; right: -120px; top: -80px; width: 520px; height: 520px; border-radius: 50%; background: repeating-radial-gradient(circle, rgba(76, 110, 245, .35) 0 18px, transparent 18px 34px); }
+.tpl .hero h1 span { color: #91a7ff; }
+.tpl .kicker { color: #91a7ff; }
+.tpl .hero-lede { color: #c5cdf0; }
+.tpl .hero .btn-alt { background: transparent; color: #fff; box-shadow: inset 0 0 0 2px #91a7ff; }
+.tpl .hc { background: rgba(20, 27, 77, .9); border: 1px solid #364fc7; color: #fff; }
+.tpl .hc small { color: #a5b0dd; }
+.tpl .hc em { color: #91a7ff; }
+.tpl .cc { position: relative; overflow: hidden; }
+.tpl .cc::before { content: ""; position: absolute; right: -30px; top: -30px; width: 80px; height: 80px; border-radius: 50%; background: repeating-radial-gradient(circle, var(--line) 0 4px, transparent 4px 8px); }
+.tpl .cc .meta, .tpl .cc-foot b { color: var(--accent); }
+.eyebrow, .eyebrow a, .buy-price, .course-row-price, .guide-card .guide-card-cta { color: var(--accent); }
+.tpl .foot { background: var(--fg); color: #a5b0dd; border: 0; }
+.tpl .foot .logo, .tpl .foot h4 { color: #fff; }
+.prose a { color: var(--accent); font-weight: 700; }

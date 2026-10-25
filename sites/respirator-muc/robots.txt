@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://respirator-muc.hazwoperosha.us/sitemap.xml

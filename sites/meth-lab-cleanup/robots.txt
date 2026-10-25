@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://meth-lab-cleanup.hazwoperosha.us/sitemap.xml

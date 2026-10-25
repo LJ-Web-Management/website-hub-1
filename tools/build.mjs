@@ -150,11 +150,11 @@ ${allTrainings(h)}</section>`,
 <header class="page-head"><p class="eyebrow"><a href="/courses/">${L.courses}</a> / ${L.course} #${c.id}</p><h1>${esc(c.name)}</h1><p class="lede">${esc(c.summary)}</p></header>
 <div class="course-layout">
 <div class="prose">
-${h.md(c.body)}
-<h2>${L.learn}</h2>
-<ul class="topics">${c.topics.map((t) => `<li>${esc(t)}</li>`).join("")}</ul>
-<h2>${L.who}</h2>
-<p>${esc(c.who)}</p>
+${h.md(c.body || c.summary)}
+${c.topics?.length ? `<h2>${L.learn}</h2>
+<ul class="topics">${c.topics.map((t) => `<li>${esc(t)}</li>`).join("")}</ul>` : ""}
+${c.who || c.audience ? `<h2>${L.who}</h2>
+<p>${esc(c.who || c.audience)}</p>` : ""}
 ${related.length ? `<h2>${L.related}</h2><ul class="related">${related.map((g) => `<li><a href="${g.url}">${esc(g.title)}</a></li>`).join("")}</ul>` : ""}
 </div>
 <aside class="buy-box">
