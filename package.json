@@ -1,0 +1,10 @@
+{
+  "name": "website-hub",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "npx wrangler dev",
+    "deploy": "npx wrangler deploy",
+    "test": "node --test"
+  }
+}

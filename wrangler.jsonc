@@ -1,0 +1,17 @@
+{
+  "name": "website-hub",
+  "main": "src/index.js",
+  "compatibility_date": "2026-10-01",
+  "assets": {
+    "directory": "./sites",
+    "binding": "ASSETS",
+    // Every request goes through src/index.js, so one site can never serve another site's files.
+    "run_worker_first": true,
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "none"
+  },
+  // Replace abc.com with your domain (both places).
+  "routes": [
+    { "pattern": "*.abc.com/*", "zone_name": "abc.com" }
+  ]
+}
