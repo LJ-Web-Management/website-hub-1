@@ -1,0 +1,33 @@
+/* warehouse: pallet rack. Concrete floor gray, rack orange uprights, blue beams, location labels, Anton + Inter. */
+:root {
+  --bg: #f4f5f7; --fg: #15171c; --muted: #555b66; --line: #d7dae0; --card: #fff;
+  --accent: #f26a1b; --accent-fg: #fff; --beam: #1e4fa8; --radius: 3px; --maxw: 1180px;
+  --font: "Inter", sans-serif; --head-font: "Anton", sans-serif;
+}
+h1, h2, h3 { font-weight: 400; text-transform: uppercase; letter-spacing: .01em; }
+.btn { text-transform: uppercase; letter-spacing: .06em; }
+.btn-alt { color: var(--beam); box-shadow: inset 0 0 0 2px var(--beam); }
+.tpl .logo { font-size: 28px; letter-spacing: .04em; }
+.tpl .logo span { color: var(--accent); }
+.top { border-bottom: 6px solid var(--beam); }
+.tpl .hero { background: linear-gradient(90deg, var(--accent) 0 14px, transparent 14px), linear-gradient(270deg, var(--accent) 0 14px, transparent 14px), var(--bg); }
+.tpl .kicker { display: inline-block; background: #ffd400; color: var(--fg); padding: 6px 12px; font-family: ui-monospace, monospace; letter-spacing: .06em; }
+.tpl .hero h1 { font-size: clamp(60px, 9vw, 120px); line-height: .95; }
+.tpl .hero h1 span { color: var(--accent); display: block; }
+.tpl .hero-side { gap: 0; }
+.tpl .hc { border-radius: 0; border: 0; border-bottom: 8px solid var(--beam); background: var(--card); padding-top: 22px; }
+.tpl .hc em { color: var(--accent); }
+.tpl .title { font-size: clamp(42px, 6vw, 70px); }
+.tpl .cc { position: relative; border: 0; border-bottom: 8px solid var(--beam); box-shadow: 0 2px 10px rgba(0, 0, 0, .06); }
+.tpl .cc .meta { display: inline-block; align-self: flex-start; background: #ffd400; color: var(--fg); padding: 3px 8px; font-family: ui-monospace, monospace; }
+.tpl .cc h3 { font-size: 26px; }
+.tpl .cc-foot b { color: var(--accent); font-family: var(--font); font-weight: 800; }
+.guide-card { border: 0; border-left: 10px solid var(--accent); }
+.guide-card .guide-card-cta { color: var(--beam); }
+.tpl .foot { background: var(--fg); color: #b4bac5; border: 0; border-top: 8px solid var(--accent); }
+.tpl .foot .logo, .tpl .foot h4 { color: #fff; }
+.eyebrow, .eyebrow a { color: var(--beam); font-weight: 700; }
+.buy-box { border-bottom: 8px solid var(--beam); }
+.buy-price, .course-row-price { color: var(--accent); font-family: var(--font); }
+.prose a { color: var(--beam); font-weight: 600; }
+.prose th { background: var(--beam); color: #fff; font-family: var(--font); text-transform: uppercase; font-size: 13px; }

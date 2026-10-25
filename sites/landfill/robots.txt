@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://landfill.hazwoperosha.us/sitemap.xml

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://gulf-coast.hazwoperosha.us/sitemap.xml

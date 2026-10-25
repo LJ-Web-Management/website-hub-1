@@ -1,0 +1,40 @@
+/* data-centers: server rack. Near-black, rack units, blue/green status LEDs, Share Tech Mono + Inter. */
+:root {
+  --bg: #0a0f1a; --fg: #e3ecf8; --muted: #8fa1bb; --line: #1d2a42; --card: #101828;
+  --accent: #38bdf8; --accent-fg: #06121e; --green: #4ade80; --radius: 4px; --maxw: 1180px;
+  --font: "Inter", sans-serif; --head-font: "Share Tech Mono", monospace;
+  --checkout-bg: #0f1726;
+}
+h1, h2, h3 { font-weight: 400; }
+.btn-alt { color: var(--fg); }
+.leds { display: inline-flex; gap: 4px; margin-right: 10px; vertical-align: middle; }
+.leds i { width: 7px; height: 7px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 8px var(--accent); }
+.leds i:nth-child(2) { background: var(--green); box-shadow: 0 0 8px var(--green); }
+.tpl .logo { font-size: 18px; letter-spacing: .12em; }
+.top { border-bottom: 1px solid var(--line); }
+.tpl .top nav a:not(.btn) { color: var(--muted); }
+.rack { position: absolute; right: 4%; top: 40px; bottom: 40px; width: 300px; border: 2px solid var(--line); border-radius: 6px; background:
+  radial-gradient(circle, var(--accent) 2px, transparent 3px) 260px 14px / 300px 34px repeat-y,
+  radial-gradient(circle, var(--green) 2px, transparent 3px) 244px 14px / 300px 34px repeat-y,
+  repeating-linear-gradient(#131d31 0 28px, #0a0f1a 28px 34px);
+  opacity: .5; }
+.tpl .kicker { font-family: var(--head-font); color: var(--green); }
+.tpl .hero h1 { font-size: clamp(44px, 6.5vw, 80px); line-height: 1.02; }
+.tpl .hero h1 span { color: var(--accent); display: block; }
+.tpl .hc { background: rgba(16, 24, 40, .92); border-color: var(--line); position: relative; }
+.tpl .hc::before { content: ""; position: absolute; left: 10px; top: 50%; width: 6px; height: 6px; margin-top: -3px; border-radius: 50%; background: var(--green); box-shadow: 0 0 6px var(--green); }
+.tpl .hc { padding-left: 28px; }
+.tpl .hc b { font-family: var(--font); font-weight: 600; }
+.tpl .hc em { color: var(--accent); font-family: var(--head-font); }
+.tpl .cc .meta { font-family: var(--head-font); color: var(--green); }
+.tpl .cc h3 { font-family: var(--font); font-weight: 600; }
+.tpl .cc-foot b { color: var(--accent); font-family: var(--head-font); }
+.guide-card strong { font-family: var(--font); font-weight: 600; }
+.guide-card .guide-card-cta { color: var(--accent); }
+.tpl .foot { background: #060a12; }
+.eyebrow, .eyebrow a { font-family: var(--head-font); color: var(--green); }
+.buy-price, .course-row-price { color: var(--accent); }
+.prose a { color: var(--accent); }
+.prose th { color: var(--green); font-family: var(--head-font); font-weight: 400; }
+.co-dialog input { color-scheme: dark; }
+@media (max-width: 900px) { .rack { opacity: .15; } }

@@ -1,0 +1,37 @@
+/* rail: vintage railroad timetable. Cream newsprint, black rules, signal red, Old Standard TT + IBM Plex Mono. */
+:root {
+  --bg: #f4ecd8; --fg: #1a1a1a; --muted: #55504a; --line: #1a1a1a; --card: #faf5e8;
+  --accent: #9b1c1c; --accent-fg: #faf5e8; --radius: 0; --maxw: 1100px;
+  --font: "Old Standard TT", Georgia, serif; --head-font: "Old Standard TT", Georgia, serif;
+  --checkout-font: "IBM Plex Mono", monospace;
+}
+body { font-size: 18px; }
+h1, h2, h3 { font-weight: 700; }
+.btn { font-family: "IBM Plex Mono", monospace; text-transform: uppercase; font-size: 14px; }
+.btn-alt { color: var(--fg); box-shadow: inset 0 0 0 2px var(--fg); }
+.tpl .logo { font-size: 26px; letter-spacing: .1em; }
+.tpl .logo span { color: var(--accent); }
+.top { border-bottom: 4px double var(--fg); }
+.tpl .top nav { font-family: "IBM Plex Mono", monospace; font-size: 13px; text-transform: uppercase; }
+.tpl .hero { border-bottom: 4px double var(--fg); }
+.tpl .kicker { font-family: "IBM Plex Mono", monospace; color: var(--fg); border-top: 1px solid var(--fg); border-bottom: 1px solid var(--fg); padding: 6px 0; display: inline-block; }
+.tpl .hero h1 { font-size: clamp(54px, 8vw, 100px); }
+.tpl .hero h1 em { color: var(--accent); }
+.tpl .hero-side { gap: 0; border: 2px solid var(--fg); }
+.tpl .hc { border: 0; border-bottom: 1px dotted var(--fg); border-radius: 0; background: var(--card); font-family: "IBM Plex Mono", monospace; }
+.tpl .hc:last-child { border-bottom: 0; }
+.tpl .hc b { font-family: var(--font); }
+.tpl .hc em { color: var(--accent); font-family: "IBM Plex Mono", monospace; font-size: 18px; }
+.tpl .title { text-align: center; text-transform: uppercase; letter-spacing: .12em; font-size: clamp(30px, 4vw, 44px); border-top: 4px double var(--fg); border-bottom: 4px double var(--fg); padding: 10px 0; }
+.tpl .cgrid { gap: 0; border: 2px solid var(--fg); grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); }
+.tpl .cc { border: 0; border-right: 1px solid var(--fg); border-bottom: 1px solid var(--fg); }
+.tpl .cc .meta { font-family: "IBM Plex Mono", monospace; color: var(--accent); }
+.tpl .cc-foot b { font-family: "IBM Plex Mono", monospace; }
+.guide-card { border: 2px solid var(--fg); }
+.guide-card .guide-card-meta { font-family: "IBM Plex Mono", monospace; }
+.guide-card .guide-card-cta { color: var(--accent); }
+.tpl .foot { border-top: 4px double var(--fg); color: var(--muted); }
+.eyebrow, .eyebrow a { font-family: "IBM Plex Mono", monospace; color: var(--accent); }
+.buy-price, .course-row-price { color: var(--accent); }
+.prose a { color: var(--accent); }
+.prose th { font-family: "IBM Plex Mono", monospace; font-size: 13px; text-transform: uppercase; border-bottom: 2px solid var(--fg); }

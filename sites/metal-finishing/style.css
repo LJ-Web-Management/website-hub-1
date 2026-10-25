@@ -1,0 +1,30 @@
+/* metal-finishing: polished chrome. Brushed steel gradients, gunmetal text, Michroma + Inter. */
+:root {
+  --bg: #eef1f4; --fg: #1d242c; --muted: #56616d; --line: #cfd6dd; --card: #fff;
+  --accent: #2c3440; --accent-fg: #f4f6f8; --chrome: linear-gradient(135deg, #fdfdfd, #b8c1ca 45%, #eef1f4 55%, #9aa5b1); --radius: 8px; --maxw: 1180px;
+  --font: "Inter", sans-serif; --head-font: "Michroma", sans-serif;
+}
+h1, h2, h3 { font-weight: 400; letter-spacing: -.01em; }
+.btn { background: linear-gradient(180deg, #3a4452, #1d242c); }
+.btn-alt { background: var(--chrome); color: var(--fg); box-shadow: inset 0 0 0 1px #8a96a3; }
+.tpl .logo { font-size: 20px; letter-spacing: .1em; }
+.tpl .logo span { color: #7d8996; }
+.top { background: var(--chrome); border-bottom: 1px solid #8a96a3; }
+.tpl .hero { background: repeating-linear-gradient(90deg, rgba(255, 255, 255, .5) 0 1px, transparent 1px 3px), linear-gradient(160deg, #f4f6f8, #cdd4db); }
+.tpl .kicker { color: #7d8996; }
+.tpl .hero h1 { font-size: clamp(40px, 6vw, 76px); line-height: 1.08; }
+.tpl .hero h1 span { display: block; background: linear-gradient(180deg, #5b6672, #1d242c); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.tpl .hc { background: var(--chrome); border: 1px solid #8a96a3; box-shadow: inset 0 1px 0 #fff, 0 6px 14px rgba(29, 36, 44, .12); }
+.tpl .hc b { font-family: var(--font); font-weight: 700; }
+.tpl .hc em { color: var(--fg); }
+.tpl .title { font-size: clamp(30px, 4.4vw, 50px); }
+.tpl .cc { box-shadow: 0 6px 14px rgba(29, 36, 44, .06); }
+.tpl .cc h3 { font-family: var(--font); font-weight: 700; }
+.guide-card strong { font-family: var(--font); font-weight: 700; }
+.guide-card .guide-card-cta { color: var(--muted); }
+.tpl .foot { background: var(--fg); color: #a9b3be; border: 0; }
+.tpl .foot .logo, .tpl .foot h4 { color: #fff; }
+.eyebrow, .eyebrow a { color: #7d8996; }
+.buy-box { background: var(--chrome); border-color: #8a96a3; }
+.prose a { color: #34506e; font-weight: 600; }
+.prose th { background: var(--fg); color: #fff; font-family: var(--font); }

@@ -1,0 +1,34 @@
+/* federal-sites: field olive drab, stenciled lettering, khaki, IBM Plex Sans Condensed + Saira Stencil One. */
+:root {
+  --bg: #e3dcc2; --fg: #22251a; --muted: #555843; --line: #b9b294; --card: #ece6d0;
+  --accent: #4b5320; --accent-fg: #ece6d0; --radius: 2px; --maxw: 1160px;
+  --font: "IBM Plex Sans Condensed", sans-serif; --head-font: "Saira Stencil One", sans-serif;
+}
+h1, h2, h3 { font-weight: 400; text-transform: uppercase; }
+.btn { text-transform: uppercase; letter-spacing: .1em; }
+.btn-alt { color: var(--fg); box-shadow: inset 0 0 0 2px var(--fg); }
+.tpl .logo { font-size: 24px; color: var(--accent-fg); }
+.tpl .logo span { color: #c9b97a; }
+.top { background: var(--accent); color: var(--accent-fg); }
+.top .btn { background: var(--accent-fg); color: var(--accent); }
+.tpl .top nav a:not(.btn) { color: #d4cfb2; }
+.tpl .hero { background: repeating-linear-gradient(-45deg, rgba(75, 83, 32, .06) 0 12px, transparent 12px 24px), var(--bg); }
+.tpl .kicker { color: var(--accent); }
+.tpl .hero h1 { color: var(--accent); }
+.tpl .hero h1 span { color: var(--fg); display: block; }
+.tpl .hc { border: 2px solid var(--accent); background: var(--card); }
+.tpl .hc b { font-weight: 700; text-transform: uppercase; }
+.tpl .hc em { color: var(--accent); }
+.tpl .cc { border: 2px solid var(--accent); }
+.tpl .cc h3 { font-family: var(--head-font); font-size: 24px; color: var(--accent); }
+.tpl .cc .meta { text-transform: uppercase; letter-spacing: .08em; }
+.tpl .cc-foot b { color: var(--accent); }
+.guide-card { border: 2px solid var(--accent); }
+.guide-card strong { text-transform: uppercase; font-family: var(--font); font-weight: 700; }
+.guide-card .guide-card-cta { color: var(--accent); }
+.tpl .foot { background: var(--fg); color: #b9b294; border: 0; }
+.tpl .foot .logo, .tpl .foot h4 { color: var(--accent-fg); }
+.eyebrow, .eyebrow a { color: var(--accent); font-weight: 700; }
+.buy-price, .course-row-price { color: var(--accent); }
+.prose a { color: var(--accent); font-weight: 700; }
+.prose th { background: var(--accent); color: var(--accent-fg); font-family: var(--font); text-transform: uppercase; }

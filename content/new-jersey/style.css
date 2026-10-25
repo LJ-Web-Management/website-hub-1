@@ -1,0 +1,38 @@
+/* new-jersey: highway guide signs. Sign green, white reflective text, shield badges, Overpass. */
+:root {
+  --bg: #f2f4f1; --fg: #13221a; --muted: #4d5b53; --line: #c7d1ca; --card: #fff;
+  --accent: #00613a; --accent-fg: #fff; --radius: 10px; --maxw: 1160px;
+  --font: "Overpass", sans-serif; --head-font: "Overpass", sans-serif;
+}
+h1, h2, h3 { font-weight: 900; }
+.btn { border-radius: 8px; }
+.btn-alt { color: var(--accent); box-shadow: inset 0 0 0 2.5px var(--accent); }
+.shield { display: inline-grid; place-items: center; width: 36px; height: 36px; border-radius: 6px 6px 18px 18px; background: #fff; color: var(--accent); border: 2px solid var(--accent); font-size: 14px; margin-right: 8px; vertical-align: middle; }
+.top { background: var(--accent); color: #fff; }
+.top .btn { background: #fff; color: var(--accent); }
+.tpl .hero { background: var(--accent); color: #fff; }
+.tpl .hero::before { content: ""; position: absolute; inset: 18px; border: 3px solid rgba(255, 255, 255, .9); border-radius: 22px; pointer-events: none; }
+.tpl .kicker { color: #ffd34d; }
+.tpl .hero h1 span { color: #ffd34d; }
+.tpl .hero-lede { color: #d6eadf; }
+.tpl .hero .btn { background: #fff; color: var(--accent); }
+.tpl .hero .btn-alt { background: transparent; color: #fff; box-shadow: inset 0 0 0 2.5px #fff; }
+.tpl .hc { background: #004d2e; border: 2px solid #fff; color: #fff; }
+.tpl .hc small { color: #c3dccf; }
+.tpl .hc em { color: #ffd34d; }
+.signs-in { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.sign { background: var(--accent); color: #fff; border-radius: 12px; padding: 20px 22px; box-shadow: inset 0 0 0 3px #fff, 0 0 0 2px var(--accent); display: grid; gap: 2px; }
+.sign small { font-weight: 700; letter-spacing: .12em; color: #ffd34d; }
+.sign b { font-size: 30px; font-weight: 900; }
+.tpl .cc { border: 0; box-shadow: 0 6px 20px rgba(0, 0, 0, .06); }
+.tpl .cc .meta { color: var(--accent); }
+.tpl .cc-foot b { color: var(--accent); }
+.guide-card { border: 0; box-shadow: 0 6px 20px rgba(0, 0, 0, .06); }
+.guide-card .guide-card-cta { color: var(--accent); }
+.tpl .foot { background: var(--fg); color: #b9c6be; border: 0; }
+.tpl .foot .logo, .tpl .foot h4 { color: #fff; }
+.eyebrow, .eyebrow a { color: var(--accent); font-weight: 800; }
+.buy-price, .course-row-price { color: var(--accent); }
+.prose a { color: var(--accent); font-weight: 700; }
+.prose th { background: var(--accent); color: #fff; }
+@media (max-width: 800px) { .signs-in { grid-template-columns: 1fr; } }

@@ -1,0 +1,35 @@
+/* gulf-coast: refinery at night. Midnight navy, sodium-vapor orange glow, flare-stack skyline, Barlow Semi Condensed. */
+:root {
+  --bg: #0b1530; --fg: #eef2fb; --muted: #9eaccc; --line: #22325c; --card: #111f42;
+  --accent: #ffa53a; --accent-fg: #0b1530; --radius: 4px; --maxw: 1200px;
+  --font: "Inter", sans-serif; --head-font: "Barlow Semi Condensed", sans-serif;
+  --checkout-bg: #0f1c3d;
+}
+h1, h2, h3 { font-weight: 800; text-transform: uppercase; }
+.btn { font-family: var(--head-font); text-transform: uppercase; letter-spacing: .06em; font-size: 17px; }
+.btn-alt { color: var(--fg); }
+.tpl .logo { font-size: 24px; letter-spacing: .04em; }
+.tpl .logo span { color: var(--accent); }
+.top { border-bottom: 1px solid var(--line); }
+.top nav a:not(.btn) { color: var(--muted); }
+.tpl .hero { background: radial-gradient(ellipse at 70% 110%, rgba(255, 165, 58, .45), transparent 55%), linear-gradient(#070e22, #0b1530); padding-bottom: 180px; }
+.skyline { position: absolute; left: 0; right: 0; bottom: 0; height: 160px; background: #050a18;
+  clip-path: polygon(0 100%, 0 60%, 6% 60%, 6% 30%, 8% 30%, 8% 60%, 14% 60%, 14% 45%, 20% 45%, 20% 70%, 26% 70%, 26% 20%, 27.5% 20%, 27.5% 70%, 34% 70%, 34% 50%, 42% 50%, 42% 65%, 50% 65%, 50% 35%, 52% 35%, 52% 65%, 58% 65%, 58% 40%, 66% 40%, 66% 60%, 72% 60%, 72% 10%, 73.5% 10%, 73.5% 60%, 80% 60%, 80% 45%, 88% 45%, 88% 70%, 94% 70%, 94% 50%, 100% 50%, 100% 100%); }
+.skyline::after { content: ""; position: absolute; left: 72.2%; top: -10px; width: 12px; height: 26px; background: radial-gradient(#ffe2a3, #ff7a1a 60%, transparent 70%); }
+.tpl .hero h1 { font-size: clamp(60px, 9vw, 118px); line-height: .9; }
+.tpl .hero h1 span { color: var(--accent); text-shadow: 0 0 30px rgba(255, 165, 58, .5); }
+.tpl .hc { background: rgba(17, 31, 66, .85); border-left: 4px solid var(--accent); }
+.tpl .hc b { text-transform: uppercase; }
+.tpl .cc { border-top: 3px solid var(--accent); }
+.tpl .cc h3 { text-transform: uppercase; }
+.tpl .cc-foot b { color: var(--accent); }
+.tpl .title span, .tpl .kicker { color: var(--accent); }
+.guide-card strong { text-transform: uppercase; font-family: var(--head-font); }
+.guide-card .guide-card-cta { color: var(--accent); }
+.tpl .foot { background: #050a18; }
+.eyebrow, .eyebrow a { color: var(--accent); }
+.course-row-price, .buy-price { color: var(--accent); }
+.buy-box { border-top: 3px solid var(--accent); }
+.prose a { color: var(--accent); }
+.prose th { color: var(--accent); text-transform: uppercase; }
+.co-dialog input { color-scheme: dark; }

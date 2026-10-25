@@ -49,3 +49,45 @@ export function courseRow(c, h) {
 export function guideCard(g, h) {
   return `<a class="guide-card" href="${g.url}"><span class="guide-card-meta">${g.minutes} ${h.L.minRead}</span><strong>${esc(g.title)}</strong><span>${esc(g.description)}</span><span class="guide-card-cta">${h.L.read} →</span></a>`;
 }
+
+// Default header/footer and home page for sites that don't define their own shell() or home().
+// They render the classes styled under body.tpl in sites/_shared/base.css; the site's style.css
+// gives them their look. A site sets `hero` (and optionally `logo`, `heroArt`, `feature`).
+export function defaultShell(site, { body, h }) {
+  const logo = site.logo || esc(site.brand);
+  return `<header class="top"><div class="wrap top-in">
+<a class="logo" href="/">${logo}</a>
+<nav><a href="/courses/">${h.L.courses}</a><a href="/guides/">${h.L.guides}</a>${h.buy(site.hero.cta[0], site.navCta || h.L.enroll, "btn btn-sm")}</nav>
+</div></header>
+<main>${body}</main>
+<footer class="foot"><div class="wrap foot-in">
+<div><a class="logo" href="/">${logo}</a><p>${esc(site.footNote || `${site.brand}: training from HAZWOPER OSHA Training LLC, delivered on hazwoper-osha.com.`)}</p></div>
+<div><h4>${h.L.courses}</h4>${h.courses.map((c) => `<a href="${c.url}">${esc(c.short || c.name)}</a>`).join("")}</div>
+<div><h4>Contact</h4><a href="tel:+18664296742">+1-866-429-6742</a><a href="mailto:info@hazwoper-osha.com">info@hazwoper-osha.com</a><a href="/guides/">${h.L.guides}</a></div>
+</div></footer>`;
+}
+
+export function defaultHome(site, h) {
+  const { hero } = site;
+  const [ctaId, ctaLabel] = hero.cta;
+  const side = h.courses.slice(0, hero.sideCount || 4).map((c) =>
+    `<a class="hc" href="${c.url}"><span><b>${esc(c.short || c.name)}</b><small>${h.L.course} #${c.id} · ${esc(c.duration)}</small></span><em>${money(c.price)}</em></a>`).join("");
+  return `<section class="hero">${site.heroArt || ""}<div class="wrap hero-in">
+<div class="hero-copy">
+${hero.kicker ? `<p class="kicker">${esc(hero.kicker)}</p>` : ""}
+<h1>${hero.title}</h1>
+<p class="hero-lede">${esc(hero.lede)}</p>
+<div class="hero-cta">${h.buy(ctaId, ctaLabel)}${hero.alt ? `<a class="btn btn-alt" href="${hero.alt[0]}">${esc(hero.alt[1])}</a>` : ""}</div>
+</div>
+<div class="hero-side">${side}</div>
+</div></section>
+${site.feature ? site.feature(h) : ""}
+<section class="sec sec-courses"><div class="wrap">
+<h2 class="title">${site.coursesTitle || h.L.courses}</h2>
+<div class="cgrid">${h.courses.map((c) => `<article class="cc"><p class="meta">${esc(c.duration)} · #${c.id}</p><h3><a href="${c.url}">${esc(c.short || c.name)}</a></h3><p>${esc(c.summary)}</p><div class="cc-foot"><b>${money(c.price)}</b>${h.buy(c.id, h.L.enroll, "btn btn-sm")}</div></article>`).join("")}</div>
+</div></section>
+<section class="sec sec-guides"><div class="wrap">
+<h2 class="title">${site.guidesTitle || h.L.guides}</h2>
+<div class="guide-list">${h.guides.map(h.guideCard).join("")}</div>
+</div></section>`;
+}

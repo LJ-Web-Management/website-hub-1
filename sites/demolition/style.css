@@ -1,0 +1,40 @@
+/* demolition: brutalist concrete. Raw gray, formwork lines, black, caution yellow, wrecking ball, Bebas Neue. */
+:root {
+  --bg: #cfccc5; --fg: #111; --muted: #3f3d39; --line: #111; --card: #e1ded8;
+  --accent: #111; --accent-fg: #ffcc00; --yellow: #ffcc00; --radius: 0; --maxw: 1200px;
+  --font: "Inter", sans-serif; --head-font: "Bebas Neue", sans-serif;
+}
+body { background: var(--bg) repeating-linear-gradient(0deg, transparent 0 119px, rgba(0, 0, 0, .06) 119px 120px); }
+h1, h2, h3 { font-weight: 400; letter-spacing: .01em; }
+.btn { font-family: var(--head-font); font-size: 22px; letter-spacing: .06em; }
+.btn-sm { font-size: 17px; }
+.btn-alt { color: var(--fg); box-shadow: inset 0 0 0 3px var(--fg); }
+.tpl .logo { font: 400 34px var(--head-font); }
+.tpl .logo span { color: #8a867d; }
+.top { border-bottom: 6px solid var(--fg); }
+.tpl .hero { border-bottom: 6px solid var(--fg); padding-bottom: 110px; }
+.ball { position: absolute; right: 8%; top: -10px; width: 2px; height: 300px; background: var(--fg); transform-origin: top center; transform: rotate(-18deg); }
+.ball i { position: absolute; bottom: -90px; left: -90px; width: 180px; height: 180px; border-radius: 50%; background: radial-gradient(circle at 35% 30%, #555, #111 60%); }
+.tpl .kicker { color: var(--fg); background: var(--yellow); display: inline-block; padding: 4px 10px; }
+.tpl .hero h1 { font-size: clamp(76px, 12vw, 168px); line-height: .85; }
+.tpl .hero h1 span { color: #77736b; display: block; }
+.tpl .hero-side { position: relative; z-index: 1; }
+.tpl .hc { border: 3px solid var(--fg); background: var(--card); }
+.tpl .hc b { font: 400 26px var(--head-font); }
+.tpl .hc em { color: var(--fg); font-family: var(--head-font); font-size: 28px; }
+.tpl .title { font-size: clamp(60px, 9vw, 120px); line-height: .9; }
+.tpl .cgrid { gap: 0; border: 3px solid var(--fg); }
+.tpl .cc { border: 0; border-right: 3px solid var(--fg); border-bottom: 3px solid var(--fg); }
+.tpl .cc h3 { font-family: var(--head-font); font-size: 34px; }
+.tpl .cc-foot b { font-size: 32px; }
+.guide-card { border: 3px solid var(--fg); }
+.guide-card strong { font: 400 30px/1 var(--head-font); }
+.guide-card .guide-card-cta { color: var(--fg); background: var(--yellow); align-self: start; padding: 2px 8px; }
+.tpl .foot { background: var(--fg); color: #a9a59c; border: 0; }
+.tpl .foot .logo, .tpl .foot h4 { color: var(--yellow); }
+.page-head h1 { font-size: clamp(56px, 8vw, 110px); line-height: .9; }
+.course-row, .buy-box, .cta-card { border-width: 3px; }
+.buy-box { background: var(--yellow); }
+.prose a { color: var(--fg); font-weight: 700; text-decoration-color: var(--yellow); text-decoration-thickness: 4px; }
+.prose th { background: var(--fg); color: var(--yellow); font-family: var(--head-font); font-size: 18px; font-weight: 400; letter-spacing: .04em; }
+@media (max-width: 900px) { .ball { opacity: .3; } }

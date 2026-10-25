@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://auto-shops.hazwoperosha.us/sitemap.xml

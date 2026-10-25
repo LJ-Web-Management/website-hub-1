@@ -8,7 +8,7 @@
 import { readFileSync, writeFileSync, mkdirSync, rmSync, readdirSync, copyFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
-import { md, esc, money, courseRow, guideCard } from "./lib.mjs";
+import { md, esc, money, courseRow, guideCard, defaultShell, defaultHome } from "./lib.mjs";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const DOMAIN = "hazwoperosha.us";
@@ -53,6 +53,9 @@ async function buildSite(name) {
   const site = (await import(pathToFileURL(join(root, "content", name, "site.mjs")).href)).default;
   const base = `https://${name}.${DOMAIN}`;
   const L = LABELS[site.lang || "en"];
+  const shell = site.shell ? site.shell.bind(site) : (args) => defaultShell(site, args);
+  const home = site.home ? site.home.bind(site) : (h) => defaultHome(site, h);
+  const bodyClass = [site.bodyClass, site.shell ? "" : "tpl"].filter(Boolean).join(" ");
   const out = join(root, "sites", name);
   rmSync(out, { recursive: true, force: true });
 
@@ -102,8 +105,8 @@ ${ld}
 <script src="/_shared/catalog.js" defer></script>
 <script src="/_shared/checkout.js" data-site="${name}" data-lang="${site.lang || "en"}" defer></script>
 </head>
-<body class="${site.bodyClass || ""}">
-${site.shell({ path, body, h })}
+<body class="${bodyClass}">
+${shell({ path, body, h })}
 </body>
 </html>
 `;
@@ -114,7 +117,7 @@ ${site.shell({ path, body, h })}
   const org = { "@type": "Organization", name: "HAZWOPER OSHA Training LLC", url: "https://hazwoper-osha.com/", telephone: "+1-866-429-6742" };
 
   page("/", "index.html", {
-    title: site.title, description: site.description, body: site.home(h),
+    title: site.title, description: site.description, body: home(h),
     jsonld: [{ "@context": "https://schema.org", "@type": "WebSite", name: site.brand, url: base + "/", publisher: org },
       { "@context": "https://schema.org", "@type": "ItemList", itemListElement: courses.map((c, i) => ({ "@type": "ListItem", position: i + 1, url: base + c.url, name: c.name })) }],
   });

@@ -1,0 +1,30 @@
+/* agriculture: barn red, wheat gold, field green, board-and-batten, Bitter + Open Sans. */
+:root {
+  --bg: #fbf3dc; --fg: #2d2416; --muted: #6a5c40; --line: #e3d3a5; --card: #fffaea;
+  --accent: #9c2b23; --accent-fg: #fff7e3; --wheat: #e2b44f; --field: #4f6b2a; --radius: 6px; --maxw: 1160px;
+  --font: "Open Sans", sans-serif; --head-font: "Bitter", serif;
+}
+h1, h2, h3 { font-weight: 800; }
+.barn { color: var(--accent); }
+.btn-alt { color: var(--accent); box-shadow: inset 0 0 0 2px var(--accent); }
+.top { background: var(--card); border-bottom: 4px solid var(--accent); }
+.tpl .hero { background: linear-gradient(180deg, #fbf3dc 60%, #f3e3b5); padding-bottom: 130px; }
+.tpl .hero::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 90px; background: repeating-linear-gradient(100deg, var(--field) 0 18px, #5e7d33 18px 36px); clip-path: polygon(0 40%, 25% 20%, 55% 45%, 80% 15%, 100% 35%, 100% 100%, 0 100%); }
+.tpl .kicker { color: var(--field); }
+.tpl .hero h1 span { color: var(--accent); display: block; }
+.tpl .hc { background: var(--accent); color: var(--accent-fg); border: 0; background-image: repeating-linear-gradient(90deg, rgba(0, 0, 0, .08) 0 2px, transparent 2px 22px); }
+.tpl .hc small { color: #f2cdbd; }
+.tpl .hc em { color: var(--wheat); }
+.tpl .title { color: var(--accent); }
+.tpl .cc { border: 2px solid var(--line); }
+.tpl .cc .meta { color: var(--field); }
+.tpl .cc-foot b { color: var(--accent); }
+.guide-card { border: 2px solid var(--line); }
+.guide-card .guide-card-cta { color: var(--accent); }
+.tpl .foot { background: var(--field); color: #dfe8cf; border: 0; }
+.tpl .foot .logo, .tpl .foot h4 { color: var(--wheat); }
+.tpl .foot .barn { color: var(--wheat); }
+.eyebrow, .eyebrow a { color: var(--field); font-weight: 700; }
+.buy-price, .course-row-price { color: var(--accent); }
+.prose a { color: var(--accent); font-weight: 600; }
+.prose th { background: var(--accent); color: var(--accent-fg); }

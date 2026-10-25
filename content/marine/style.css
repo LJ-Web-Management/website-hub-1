@@ -1,0 +1,40 @@
+/* marine: nautical. Navy, sailcloth cream, signal-flag red/yellow/blue, rope borders, Libre Baskerville + Inter. */
+:root {
+  --bg: #f6efe0; --fg: #0e2a47; --muted: #4e6177; --line: #d9ccb0; --card: #fffaf0;
+  --accent: #0e2a47; --accent-fg: #f6efe0; --flag: #c8232c; --radius: 4px; --maxw: 1160px;
+  --font: "Inter", sans-serif; --head-font: "Libre Baskerville", serif;
+}
+h1, h2, h3 { font-weight: 700; }
+.btn:hover { background: var(--flag); }
+.btn-alt { color: var(--accent-fg); box-shadow: inset 0 0 0 2px var(--accent-fg); }
+.flags { display: inline-flex; gap: 2px; vertical-align: middle; margin-right: 8px; }
+.flags i { width: 12px; height: 16px; }
+.flags i:nth-child(1) { background: linear-gradient(90deg, #fff 50%, var(--flag) 50%); }
+.flags i:nth-child(2) { background: #f1c40f; }
+.flags i:nth-child(3) { background: linear-gradient(#1e5aa8 33%, #fff 33% 66%, #1e5aa8 66%); }
+.tpl .logo { color: var(--accent-fg); font-size: 22px; }
+.top { background: var(--fg); color: var(--accent-fg); }
+.top .btn { background: var(--flag); color: #fff; }
+.tpl .top nav a:not(.btn) { color: #c7d3e1; }
+.tpl .hero { background: var(--fg); color: var(--accent-fg); padding-bottom: 120px; }
+.tpl .hero::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 70px; background: radial-gradient(40px 20px at 40px 0, transparent 98%, #163a60 100%) 0 0 / 80px 40px repeat-x, #163a60; }
+.tpl .kicker { color: #f1c40f; }
+.tpl .hero h1 em { color: #f1c40f; display: block; }
+.tpl .hero-lede { color: #c7d3e1; }
+.tpl .hero .btn:not(.btn-alt) { background: var(--flag); }
+.tpl .hc { background: transparent; border: 2px dashed #c7b892; color: var(--accent-fg); }
+.tpl .hc small { color: #a9b9cc; }
+.tpl .hc em { color: #f1c40f; }
+.tpl .title { text-align: center; }
+.tpl .cc { border: 3px double var(--fg); }
+.tpl .cc .meta { color: var(--flag); }
+.tpl .cc-foot b { color: var(--fg); }
+.guide-card { border: 3px double var(--fg); }
+.guide-card .guide-card-cta { color: var(--flag); }
+.tpl .foot { background: var(--fg); color: #a9b9cc; border: 0; }
+.tpl .foot .logo, .tpl .foot h4 { color: var(--accent-fg); }
+.eyebrow, .eyebrow a { color: var(--flag); font-weight: 600; }
+.buy-price, .course-row-price { color: var(--fg); }
+.prose a { color: #1e5aa8; font-weight: 600; }
+.prose th { background: var(--fg); color: var(--accent-fg); font-family: var(--font); }
+.page .btn-alt { color: var(--fg); box-shadow: inset 0 0 0 2px var(--fg); }

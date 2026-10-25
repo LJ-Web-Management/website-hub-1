@@ -79,3 +79,38 @@ h1, h2, h3 { font-family: var(--head-font); line-height: 1.1; margin: 0 0 .5em; 
   .btn { white-space: normal; text-align: center; }
   .lede { font-size: 18px; }
 }
+
+/* Default template (tools/lib.mjs defaultShell/defaultHome). Only sites without their own templates
+   get body.tpl, so these rules never touch the hand-built sites. Each site's style.css adds the look. */
+.tpl .top-in { display: flex; justify-content: space-between; align-items: center; gap: 16px; min-height: 70px; }
+.tpl .logo { font: 800 22px var(--head-font); text-decoration: none; }
+.tpl .top nav { display: flex; align-items: center; gap: 24px; }
+.tpl .top nav a:not(.btn) { text-decoration: none; }
+.tpl .hero { position: relative; overflow: hidden; padding: 72px 0 88px; }
+.tpl .hero-in { position: relative; display: grid; grid-template-columns: 1.1fr 1fr; gap: 56px; align-items: center; }
+.tpl .hero-in > * { min-width: 0; }
+.tpl .kicker { margin: 0 0 16px; font-size: 13px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--accent); }
+.tpl .hero h1 { font-size: clamp(46px, 7vw, 84px); line-height: 1; margin: 0; }
+.tpl .hero-lede { font-size: 20px; color: var(--muted); margin: 22px 0 30px; max-width: 560px; }
+.tpl .hero-cta { display: flex; gap: 12px; flex-wrap: wrap; }
+.tpl .hero-side { display: grid; gap: 12px; }
+.tpl .hc { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 18px 20px; background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); text-decoration: none; }
+.tpl .hc b { display: block; font-family: var(--head-font); font-size: 18px; }
+.tpl .hc small { color: var(--muted); }
+.tpl .hc em { font: 800 21px var(--head-font); font-style: normal; color: var(--accent); white-space: nowrap; }
+.tpl .sec { padding: 80px 0; }
+.tpl .title { font-size: clamp(36px, 5vw, 58px); margin-bottom: 32px; }
+.tpl .cgrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 18px; }
+.tpl .cc { display: flex; flex-direction: column; gap: 8px; padding: 24px; background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); }
+.tpl .cc .meta { margin: 0; font-size: 13px; font-weight: 600; color: var(--muted); }
+.tpl .cc h3 { font-size: 22px; margin: 0; }
+.tpl .cc h3 a { text-decoration: none; }
+.tpl .cc p:not(.meta) { margin: 0; color: var(--muted); flex: 1; }
+.tpl .cc-foot { display: flex; justify-content: space-between; align-items: center; margin-top: 8px; }
+.tpl .cc-foot b { font: 800 24px var(--head-font); }
+.tpl .foot { border-top: 1px solid var(--line); padding: 56px 0 40px; color: var(--muted); }
+.tpl .foot-in { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 40px; }
+.tpl .foot h4 { color: var(--fg); margin: 0 0 12px; font-family: var(--head-font); }
+.tpl .foot-in > div:not(:first-child) a { display: block; text-decoration: none; padding: 3px 0; }
+@media (max-width: 900px) { .tpl .hero-in, .tpl .foot-in { grid-template-columns: 1fr; } }
+@media (max-width: 600px) { .tpl .top nav a:not(.btn) { display: none; } .tpl .hero { padding: 48px 0 64px; } }

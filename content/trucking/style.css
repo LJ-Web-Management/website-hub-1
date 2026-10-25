@@ -1,0 +1,32 @@
+/* trucking: truck-stop neon at night. Deep purple, neon pink + cyan glow, Monoton display + Inter. */
+:root {
+  --bg: #1a0b2e; --fg: #f4ecff; --muted: #b7a7d6; --line: #3a2560; --card: #24123f;
+  --accent: #ff4fd8; --accent-fg: #1a0b2e; --cyan: #3ef3ff; --radius: 10px; --maxw: 1180px;
+  --font: "Inter", sans-serif; --head-font: "Inter", sans-serif;
+  --checkout-bg: #221039;
+}
+h1, h2, h3 { font-weight: 700; }
+.btn { box-shadow: 0 0 18px rgba(255, 79, 216, .55); }
+.btn-alt { color: var(--cyan); box-shadow: inset 0 0 0 2px var(--cyan), 0 0 14px rgba(62, 243, 255, .35); }
+.tpl .logo { font: 400 22px "Monoton", cursive; color: var(--accent); text-shadow: 0 0 10px rgba(255, 79, 216, .8); letter-spacing: .04em; }
+.tpl .logo span { color: var(--cyan); text-shadow: 0 0 10px rgba(62, 243, 255, .8); }
+.top { border-bottom: 1px solid var(--line); }
+.tpl .top nav a:not(.btn) { color: var(--muted); }
+.tpl .hero { background: radial-gradient(ellipse at 30% 0, rgba(255, 79, 216, .25), transparent 60%), radial-gradient(ellipse at 90% 100%, rgba(62, 243, 255, .2), transparent 55%); }
+.tpl .kicker { color: var(--cyan); text-shadow: 0 0 8px rgba(62, 243, 255, .6); }
+.tpl .hero h1 { font: 400 clamp(56px, 9vw, 120px)/1 "Monoton", cursive; color: var(--accent); text-shadow: 0 0 20px rgba(255, 79, 216, .7); }
+.tpl .hero h1 span { color: var(--cyan); text-shadow: 0 0 20px rgba(62, 243, 255, .7); display: block; }
+.tpl .hc { border: 1px solid var(--accent); box-shadow: 0 0 14px rgba(255, 79, 216, .25); }
+.tpl .hc em { color: var(--cyan); }
+.tpl .title { font: 400 clamp(36px, 5vw, 56px)/1.1 "Monoton", cursive; color: var(--cyan); text-shadow: 0 0 14px rgba(62, 243, 255, .5); }
+.tpl .cc { border-color: var(--line); }
+.tpl .cc:hover { border-color: var(--accent); box-shadow: 0 0 18px rgba(255, 79, 216, .25); }
+.tpl .cc .meta { color: var(--cyan); }
+.tpl .cc-foot b { color: var(--accent); }
+.guide-card .guide-card-cta { color: var(--cyan); }
+.tpl .foot { background: #12071f; }
+.eyebrow, .eyebrow a { color: var(--cyan); }
+.buy-price, .course-row-price { color: var(--accent); }
+.prose a { color: var(--cyan); }
+.prose th { color: var(--accent); }
+.co-dialog input { color-scheme: dark; }

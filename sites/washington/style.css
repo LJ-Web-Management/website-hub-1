@@ -1,0 +1,31 @@
+/* washington: Pacific Northwest. Misty fog gradient, deep evergreen, moss, Cormorant Garamond + Inter. */
+:root {
+  --bg: #eef1ec; --fg: #1a2b22; --muted: #55645b; --line: #cfd8d0; --card: #f8faf7;
+  --accent: #1f3b2d; --accent-fg: #eef1ec; --moss: #6b8f5e; --radius: 4px; --maxw: 1160px;
+  --font: "Inter", sans-serif; --head-font: "Cormorant Garamond", serif;
+}
+h1, h2, h3 { font-weight: 600; }
+.tree { color: var(--moss); }
+.tpl .logo { font-weight: 700; font-size: 26px; }
+.tpl .hero { background: linear-gradient(180deg, #dfe6e1 0%, #eef1ec 55%, #cfdccf 100%); padding-bottom: 140px; }
+.fog { position: absolute; left: 0; right: 0; bottom: 0; height: 180px; background:
+  linear-gradient(transparent, rgba(238, 241, 236, .9)),
+  repeating-linear-gradient(90deg, transparent 0 10px, transparent 10px 40px);
+  -webkit-mask: none; }
+.fog::before { content: ""; position: absolute; inset: 0; background: #2f4a3a; clip-path: polygon(0 100%, 0 70%, 4% 40%, 8% 70%, 12% 30%, 16% 70%, 22% 45%, 26% 72%, 30% 25%, 35% 70%, 40% 50%, 45% 75%, 50% 35%, 55% 72%, 60% 40%, 66% 75%, 70% 20%, 75% 70%, 80% 50%, 86% 75%, 90% 35%, 95% 72%, 100% 45%, 100% 100%); opacity: .85; }
+.fog::after { content: ""; position: absolute; inset: 0; background: linear-gradient(transparent 30%, rgba(238, 241, 236, .55)); }
+.tpl .kicker { color: var(--moss); }
+.tpl .hero h1 { font-size: clamp(54px, 8vw, 100px); line-height: .95; }
+.tpl .hero h1 em { color: var(--moss); display: block; }
+.tpl .hc { background: rgba(248, 250, 247, .8); backdrop-filter: blur(6px); }
+.tpl .hc b { font-size: 22px; }
+.tpl .title { font-size: clamp(42px, 6vw, 66px); }
+.tpl .cc h3 { font-size: 26px; }
+.tpl .cc-foot b { color: var(--accent); }
+.guide-card strong { font-size: 26px; }
+.guide-card .guide-card-cta { color: var(--moss); }
+.tpl .foot { background: var(--accent); color: #c3d0c6; border: 0; }
+.tpl .foot .logo, .tpl .foot h4 { color: #eef1ec; }
+.eyebrow, .eyebrow a { color: var(--moss); font-weight: 600; }
+.prose a { color: #2f6b4a; font-weight: 600; }
+.prose th { color: var(--accent); font-family: var(--font); }
