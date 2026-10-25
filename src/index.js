@@ -1,5 +1,5 @@
 // Serves sites/<name>/ at <name>.<your domain>. The first part of the hostname picks the folder:
-// johnny.hazwoperosha.com/about -> sites/johnny/about.html (or sites/johnny/about/index.html).
+// johnny.hazwoperosha.us/about -> sites/johnny/about.html (or sites/johnny/about/index.html).
 
 const NAME = /^[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
 

@@ -10,8 +10,8 @@
     "html_handling": "auto-trailing-slash",
     "not_found_handling": "none"
   },
-  // Every subdomain of hazwoperosha.com runs this Worker. The domain must be on Cloudflare.
+  // Every subdomain of hazwoperosha.us runs this Worker. The domain must be on Cloudflare.
   "routes": [
-    { "pattern": "*.hazwoperosha.com/*", "zone_name": "hazwoperosha.com" }
+    { "pattern": "*.hazwoperosha.us/*", "zone_name": "hazwoperosha.us" }
   ]
 }
