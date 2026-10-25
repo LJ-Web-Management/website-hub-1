@@ -67,3 +67,6 @@ h1, h2, h3 { font-weight: 800; }
 
 /* Hero without the course stack: copy only. */
 .hero .hero-in { grid-template-columns: minmax(0, 820px); }
+
+/* Shared header: the accent is too light for the white bar. */
+:root { --hx-accent: #14806f; --hx-accent-fg: #fff; }

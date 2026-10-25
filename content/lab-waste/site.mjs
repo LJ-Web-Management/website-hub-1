@@ -168,10 +168,7 @@ Update the inventory, re-label surviving stock and set a schedule to review shel
   ],
 
   shell({ body, h }) {
-    return `<header class="top"><div class="wrap top-in">
-<a class="logo" href="/"><span class="el">Lw</span>LabWaste<i>.</i></a>
-<nav><a href="/courses/">Courses</a><a href="/guides/">Guides</a>${h.buy(415, "Train your lab", "btn btn-sm")}</nav>
-</div></header>
+    return `${h.header(415)}
 <main>${body}</main>
 <footer class="foot"><div class="wrap foot-in">
 <div><a class="logo" href="/"><span class="el">Lw</span>LabWaste<i>.</i></a><p>Hazardous waste training for laboratories from HAZWOPER OSHA Training LLC, delivered on hazwoper-osha.com.</p></div>

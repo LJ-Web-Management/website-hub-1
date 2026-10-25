@@ -152,10 +152,7 @@ Join the critique. Utilities and fire departments that train together respond be
 
   shell({ body, h }) {
     return `<div class="tape" aria-hidden="true"></div>
-<header class="top"><div class="wrap top-in">
-<a class="logo" href="/">LINE<span>CREW</span> HAZ</a>
-<nav><a href="/courses/">Courses</a><a href="/guides/">Guides</a>${h.buy(592, "Enroll the crew", "btn btn-sm")}</nav>
-</div></header>
+${h.header(592)}
 <main>${body}</main>
 <footer class="foot"><div class="tape" aria-hidden="true"></div><div class="wrap foot-in">
 <div><a class="logo" href="/">LINE<span>CREW</span> HAZ</a><p>Utility and pipeline HAZWOPER training from HAZWOPER OSHA Training LLC, delivered on hazwoper-osha.com.</p></div>

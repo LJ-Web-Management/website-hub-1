@@ -163,11 +163,7 @@ Many employers mix approaches. New hires take the online 40-hour for the classro
   ],
 
   shell({ body, h }) {
-    return `<header class="mast"><div class="wrap">
-<div class="mast-row"><span>Vol. I · Leadership Edition</span><span>Est. 2026</span><span>${h.buy(597, "Subscribe to the course", "mast-cta")}</span></div>
-<a class="logo" href="/">The Site Supervisor</a>
-<nav><a href="/">Front page</a><a href="/courses/">Courses</a><a href="/guides/">Essays &amp; guides</a><a href="/courses/hazwoper-train-the-trainer-certification">Train the trainer</a></nav>
-</div></header>
+    return `${h.header(597)}
 <main>${body}</main>
 <footer class="foot"><div class="wrap foot-in">
 <div><p class="foot-logo">The Site Supervisor</p><p>Leadership training for hazardous waste operations, published by HAZWOPER OSHA Training LLC. Courses delivered on hazwoper-osha.com.</p></div>

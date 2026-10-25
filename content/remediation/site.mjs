@@ -163,10 +163,7 @@ Remote drum handling (grapplers, drum openers) and non-sparking tools are standa
   ],
 
   shell({ body, h }) {
-    return `<header class="top"><div class="wrap top-in">
-<a class="logo" href="/">Remediate<span>.</span></a>
-<nav><a href="/courses/">Courses</a><a href="/guides/">Field notes</a>${h.buy(590, "Start training", "btn btn-sm")}</nav>
-</div></header>
+    return `${h.header(590)}
 <main>${body}</main>
 <footer class="foot"><div class="wrap foot-in">
 <div><a class="logo" href="/">Remediate<span>.</span></a><p>Training for environmental remediation crews from HAZWOPER OSHA Training LLC, delivered on hazwoper-osha.com.</p></div>

@@ -174,10 +174,7 @@ If someone is injured or exposed, life comes first. Remove gross contamination f
   ],
 
   shell({ body, h }) {
-    return `<header class="top"><div class="wrap top-in">
-<a class="logo" href="/">micro.hazwoper</a>
-<nav><a href="/courses/">Modules</a><a href="/guides/">Guides</a><a href="/#how">How it works</a>${h.buy(585, "Start · $12.99", "btn btn-sm")}</nav>
-</div></header>
+    return `${h.header(585)}
 <main>${body}</main>
 <footer class="foot"><div class="wrap foot-in">
 <div><a class="logo" href="/">micro.hazwoper</a><p>Bite-size HAZWOPER lessons from HAZWOPER OSHA Training LLC. Delivered on hazwoper-osha.com.</p></div>

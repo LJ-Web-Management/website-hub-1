@@ -158,10 +158,7 @@ Public employees need the same training as private workers in the same roles: re
   ],
 
   shell({ body, h }) {
-    return `<header class="top"><div class="wrap top-in">
-<a class="logo" href="/">State Plan HAZWOPER</a>
-<nav><a href="/guides/which-states-have-osha-state-plans">States</a><a href="/courses/">Courses</a><a href="/guides/">Guides</a>${h.buy(900, "Enroll", "btn btn-sm")}</nav>
-</div></header>
+    return `${h.header(900)}
 <main>${body}</main>
 <footer class="foot"><div class="wrap foot-in">
 <div><a class="logo" href="/">State Plan HAZWOPER</a><p>HAZWOPER training for state-plan states from HAZWOPER OSHA Training LLC, delivered on hazwoper-osha.com.</p></div>

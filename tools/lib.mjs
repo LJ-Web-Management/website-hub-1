@@ -53,12 +53,31 @@ export function guideCard(g, h) {
 // Default header/footer and home page for sites that don't define their own shell() or home().
 // They render the classes styled under body.tpl in sites/_shared/base.css; the site's style.css
 // gives them their look. A site sets `hero` (and optionally `logo`, `heroArt`, `feature`).
+// The header every site shares: a floating bar with the brand, page links, a call button and Enroll.
+// h.path is the page being built, so the current section gets the active underline.
+export function header(site, h, enrollId) {
+  const words = site.brand.replace(/[^A-Za-z0-9 ]/g, " ").trim().split(/\s+/);
+  const mark = words.length > 1 ? words[0][0] + words[1][0] : words[0].slice(0, 2);
+  const path = h.path || "/";
+  const link = (href, label, on) => `<a href="${href}"${on ? ' class="on" aria-current="page"' : ""}>${esc(label)}</a>`;
+  const links = [
+    link("/", h.L.home, path === "/"),
+    link("/courses/", h.L.courses, path.startsWith("/courses/")),
+    link("/guides/", h.L.guides, path.startsWith("/guides/")),
+    link("/courses/#all", h.L.allTrainings, false),
+  ].join("");
+  const enroll = `<a class="hx-cta" href="?buy=${enrollId}" data-buy="${enrollId}">${esc(h.L.enroll)}</a>`;
+  return `<header class="hx"><div class="hx-bar">
+<a class="hx-brand" href="/"><span class="hx-mark" aria-hidden="true">${esc(mark)}</span><span class="hx-name">${esc(site.brand)}</span></a>
+<nav class="hx-links" aria-label="Main">${links}</nav>
+<div class="hx-actions"><a class="hx-call" href="tel:+18664296742">${esc(h.L.call)} (866) 429-6742</a>${enroll}</div>
+<details class="hx-menu"><summary aria-label="${esc(h.L.menu)}"><span></span></summary><div class="hx-drop">${links}<a href="tel:+18664296742">${esc(h.L.call)} (866) 429-6742</a></div></details>
+</div></header>`;
+}
+
 export function defaultShell(site, { body, h }) {
   const logo = site.logo || esc(site.brand);
-  return `<header class="top"><div class="wrap top-in">
-<a class="logo" href="/">${logo}</a>
-<nav><a href="/courses/">${h.L.courses}</a><a href="/guides/">${h.L.guides}</a>${h.buy(site.hero.cta[0], site.navCta || h.L.enroll, "btn btn-sm")}</nav>
-</div></header>
+  return `${header(site, h, site.hero.cta[0])}
 <main>${body}</main>
 <footer class="foot"><div class="wrap foot-in">
 <div><a class="logo" href="/">${logo}</a><p>${esc(site.footNote || `${site.brand}: training from HAZWOPER OSHA Training LLC, delivered on hazwoper-osha.com.`)}</p></div>

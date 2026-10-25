@@ -155,10 +155,7 @@ If you can't read it from a safe distance, back off and report what you can see.
   ],
 
   shell({ body, h }) {
-    return `<header class="top"><div class="wrap top-in">
-<a class="logo" href="/">SPOT·IT·SAFE!</a>
-<nav><a href="/courses/">Courses</a><a href="/guides/">Guides</a>${h.buy(1099, "Get trained!", "btn btn-sm")}</nav>
-</div></header>
+    return `${h.header(1099)}
 <main>${body}</main>
 <footer class="foot"><div class="wrap foot-in">
 <div><a class="logo" href="/">SPOT·IT·SAFE!</a><p>First responder awareness training from HAZWOPER OSHA Training LLC, delivered on hazwoper-osha.com.</p></div>

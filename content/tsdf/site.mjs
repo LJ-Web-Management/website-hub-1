@@ -168,10 +168,7 @@ The simplest approach is to give the OSHA 24-hour at hire, which also covers muc
   ],
 
   shell({ body, h }) {
-    return `<header class="top"><div class="wrap top-in">
-<a class="logo" href="/">tsdf_ops<span>://</span></a>
-<nav><a href="/courses/">./courses</a><a href="/guides/">./docs</a>${h.buy(582, "$ enroll", "btn btn-sm")}</nav>
-</div></header>
+    return `${h.header(582)}
 <main>${body}</main>
 <footer class="foot"><div class="wrap foot-in">
 <div><a class="logo" href="/">tsdf_ops<span>://</span></a><p># TSD facility training by HAZWOPER OSHA Training LLC<br># delivered on hazwoper-osha.com</p></div>

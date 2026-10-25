@@ -172,10 +172,7 @@ Your certificates are your résumé in this industry. Keep copies on your phone 
   ],
 
   shell({ body, h }) {
-    return `<header class="top"><div class="wrap top-in">
-<a class="logo" href="/">ENV/SERVICES</a>
-<nav><a href="/courses/">Courses</a><a href="/guides/">Guides</a>${h.buy(599, "Train techs", "btn btn-sm")}</nav>
-</div></header>
+    return `${h.header(599)}
 <main>${body}</main>
 <footer class="foot"><div class="wrap foot-in">
 <div><a class="logo" href="/">ENV/SERVICES</a><p>Training for environmental services field technicians from HAZWOPER OSHA Training LLC, delivered on hazwoper-osha.com.</p></div>

@@ -162,10 +162,7 @@ Booms help with any oil sheen on top, but they won't contain the brine itself. F
   ],
 
   shell({ body, h }) {
-    return `<header class="top"><div class="wrap top-in">
-<a class="logo" href="/">Oilfield<span>HAZ</span></a>
-<nav><a href="/courses/">Courses</a><a href="/guides/">Field guides</a>${h.buy(591, "Get certified", "btn btn-sm")}</nav>
-</div></header>
+    return `${h.header(591)}
 <main>${body}</main>
 <footer class="foot"><div class="wrap foot-in">
 <div><a class="logo" href="/">Oilfield<span>HAZ</span></a><p>Oil and gas HAZWOPER training from HAZWOPER OSHA Training LLC, delivered on hazwoper-osha.com.</p></div>

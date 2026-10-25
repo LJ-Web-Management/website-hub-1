@@ -157,10 +157,7 @@ Your company still owns its own workers' safety under OSHA's multi-employer cita
   ],
 
   shell({ body, h }) {
-    return `<header class="top"><div class="wrap top-in">
-<a class="logo" href="/">SITEWORK<span>/</span>HAZ</a>
-<nav><a href="/courses/">DWG-01 Courses</a><a href="/guides/">DWG-02 Guides</a>${h.buy(588, "Enroll →", "btn btn-sm")}</nav>
-</div></header>
+    return `${h.header(588)}
 <main>${body}</main>
 <footer class="foot"><div class="wrap foot-in">
 <div class="titleblock"><div><span>PROJECT</span><b>SITEWORK/HAZ</b></div><div><span>BY</span><b>HAZWOPER OSHA Training LLC</b></div><div><span>DELIVERED ON</span><b>hazwoper-osha.com</b></div><div><span>SHEET</span><b>A-9</b></div></div>

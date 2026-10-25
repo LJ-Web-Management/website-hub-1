@@ -184,10 +184,7 @@ Yes. The certificate states the 40 hours under 1910.120(e). The industry name te
 
   shell({ body, h }) {
     return `<div class="tape" aria-hidden="true"></div>
-<header class="top"><div class="wrap top-in">
-<a class="logo" href="/">40HOUR<b>HAZWOPER</b></a>
-<nav><a href="/courses/">Tracks</a><a href="/guides/">Guides</a><a href="/#faq">FAQ</a>${h.buy(587, "Enroll", "btn btn-sm")}</nav>
-</div></header>
+${h.header(587)}
 <main>${body}</main>
 <footer class="foot"><div class="wrap foot-in">
 <div><a class="logo" href="/">40HOUR<b>HAZWOPER</b></a><p>Online OSHA 40-Hour HAZWOPER training from HAZWOPER OSHA Training LLC. Courses are delivered through the hazwoper-osha.com learning platform.</p></div>

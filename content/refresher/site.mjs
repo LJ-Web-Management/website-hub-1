@@ -145,10 +145,7 @@ Federal OSHA doesn't cover state and local government workers, but state plans d
   ],
 
   shell({ body, h }) {
-    return `<header class="top"><div class="wrap top-in">
-<a class="logo" href="/">Refresh<i>.</i>8</a>
-<nav><a href="/courses/">Courses</a><a href="/guides/">Guides</a><a href="/#due">Due date</a>${h.buy(595, "Renew", "btn btn-sm")}</nav>
-</div></header>
+    return `${h.header(595)}
 <main>${body}</main>
 <footer class="foot"><div class="wrap foot-in">
 <div class="foot-big">8</div>

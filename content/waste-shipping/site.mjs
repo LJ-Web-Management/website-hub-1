@@ -164,10 +164,7 @@ Many waste vendors prepare LDR notices for you, but **the generator is responsib
   ],
 
   shell({ body, h }) {
-    return `<header class="top"><div class="wrap top-in">
-<a class="logo" href="/">WASTE//FREIGHT</a>
-<nav><a href="/courses/">Courses</a><a href="/guides/">Guides</a>${h.buy(403, "Certify now", "btn btn-sm")}</nav>
-</div></header>
+    return `${h.header(403)}
 <main>${body}</main>
 <footer class="foot"><div class="wrap foot-in">
 <div><a class="logo" href="/">WASTE//FREIGHT</a><p>Hazardous waste shipping training from HAZWOPER OSHA Training LLC, delivered on hazwoper-osha.com.</p></div>

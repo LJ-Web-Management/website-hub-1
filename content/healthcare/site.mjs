@@ -154,10 +154,7 @@ Inspectors from EPA or your state agency will ask who was trained, when and on w
   ],
 
   shell({ body, h }) {
-    return `<header class="top"><div class="wrap top-in">
-<a class="logo" href="/"><span class="plus">+</span>CareWaste</a>
-<nav><a href="/courses/">Courses</a><a href="/guides/">Guides</a>${h.buy(601, "Train your team", "btn btn-sm")}</nav>
-</div></header>
+    return `${h.header(601)}
 <main>${body}</main>
 <footer class="foot"><div class="wrap foot-in">
 <div><a class="logo" href="/"><span class="plus">+</span>CareWaste</a><p>Hazardous waste training for healthcare from HAZWOPER OSHA Training LLC, delivered on hazwoper-osha.com.</p></div>

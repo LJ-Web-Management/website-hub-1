@@ -150,10 +150,7 @@ Even a fully certified worker needs your site's briefing: your site safety plan,
   ],
 
   shell({ body, h }) {
-    return `<header class="top"><div class="wrap top-in">
-<a class="logo" href="/"><span class="dot" aria-hidden="true"></span>crewseats</a>
-<nav><a href="/#calc">Pricing</a><a href="/courses/">Courses</a><a href="/guides/">Guides</a>${h.buy(587, "Buy seats", "btn btn-sm")}</nav>
-</div></header>
+    return `${h.header(587)}
 <main>${body}</main>
 <footer class="foot"><div class="wrap foot-in">
 <div><a class="logo" href="/"><span class="dot" aria-hidden="true"></span>crewseats</a><p>Crew HAZWOPER training from HAZWOPER OSHA Training LLC, delivered on hazwoper-osha.com. Invoices and purchase orders: +1-866-429-6742.</p></div>

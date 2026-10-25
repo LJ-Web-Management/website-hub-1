@@ -135,10 +135,7 @@ Your 24-hour qualification is the course certificate plus the field day record. 
   ],
 
   shell({ body, h }) {
-    return `<header class="top"><div class="wrap top-in">
-<a class="logo" href="/"><i class="s1"></i><i class="s2"></i><i class="s3"></i>24·Hour·HAZWOPER</a>
-<nav><a href="/courses/">Courses</a><a href="/guides/">Guides</a>${h.buy(581, "Enroll", "btn btn-sm")}</nav>
-</div></header>
+    return `${h.header(581)}
 <main>${body}</main>
 <footer class="foot"><div class="wrap foot-in">
 <div><p class="foot-big">24</p><p>OSHA 24-hour HAZWOPER from HAZWOPER OSHA Training LLC, delivered on hazwoper-osha.com.</p></div>

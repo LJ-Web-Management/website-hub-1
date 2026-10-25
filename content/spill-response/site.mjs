@@ -182,10 +182,7 @@ Collect saturated absorbent booms into lined drums or bags and treat them as was
   ],
 
   shell({ body, h }) {
-    return `<header class="top"><div class="wrap top-in">
-<a class="logo" href="/"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M12 2c4 5.5 6.5 9 6.5 12.2a6.5 6.5 0 01-13 0C5.5 11 8 7.5 12 2z" fill="#5eead4"/></svg>SpillReady</a>
-<nav><a href="/courses/">Courses</a><a href="/guides/">Guides</a><a href="/#kits">Kits</a>${h.buy(416, "Get trained", "btn btn-sm")}</nav>
-</div></header>
+    return `${h.header(416)}
 <main>${body}</main>
 <footer class="foot"><div class="wrap foot-in">
 <div><a class="logo" href="/">SpillReady</a><p>Spill prevention and response training by HAZWOPER OSHA Training LLC, delivered on hazwoper-osha.com.</p></div>

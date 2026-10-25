@@ -169,10 +169,7 @@ Bring your initial certificate, every refresher, any supervisor certificate, you
   ],
 
   shell({ body, h }) {
-    return `<header class="top"><div class="wrap top-in">
-<a class="logo" href="/">Cal HAZWOPER</a>
-<nav><a href="/courses/">Courses</a><a href="/guides/">Guides</a>${h.buy(577, "Enroll", "btn btn-sm")}</nav>
-</div></header>
+    return `${h.header(577)}
 <main>${body}</main>
 <footer class="foot"><div class="foot-sun" aria-hidden="true"></div><div class="wrap foot-in">
 <div><a class="logo" href="/">Cal HAZWOPER</a><p>Cal/OSHA HAZWOPER and California hazardous waste training from HAZWOPER OSHA Training LLC, delivered on hazwoper-osha.com.</p></div>

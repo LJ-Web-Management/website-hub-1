@@ -174,10 +174,7 @@ A release is likely **incidental** if:
   ],
 
   shell({ body, h }) {
-    return `<header class="top"><div class="wrap top-in">
-<a class="logo" href="/">First<b>Response</b></a>
-<nav><a href="/courses/">Courses</a><a href="/guides/">Briefings</a><a href="/#levels">Levels</a>${h.buy(1099, "Enroll", "btn btn-sm")}</nav>
-</div></header>
+    return `${h.header(1099)}
 <main>${body}</main>
 <footer class="foot"><div class="wrap foot-in">
 <div><a class="logo" href="/">First<b>Response</b></a><p>HAZWOPER emergency response training by HAZWOPER OSHA Training LLC, delivered on hazwoper-osha.com.</p></div>

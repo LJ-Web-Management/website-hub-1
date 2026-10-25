@@ -128,3 +128,41 @@ h1, h2, h3 { font-family: var(--head-font); line-height: 1.1; margin: 0 0 .5em; 
 .hero-call { margin: 0 0 18px; font: 500 16px/1.4 var(--font); letter-spacing: 0; text-transform: none; opacity: .85; }
 .hero-call a { color: inherit; font-weight: 700; text-decoration: none; white-space: nowrap; }
 .hero-call a:hover { text-decoration: underline; }
+
+/* Shared header (tools/lib.mjs header()): a floating white bar over the top of the page. The first
+   section gets a transparent top border the height of the bar, so its own background runs up
+   behind the header. Colors are fixed neutrals so the bar reads the same on light and dark sites;
+   the site's accent only tints the mark, the active link and the Enroll button. A site whose accent is
+   too light for a white bar sets --hx-accent and --hx-accent-fg. */
+.hx { position: sticky; top: 0; z-index: 50; height: 92px; margin-bottom: -92px; padding: 14px 16px 0; pointer-events: none; }
+.hx + main > :first-child { border-top: 92px solid transparent; background-origin: border-box; }
+.hx-bar { pointer-events: auto; max-width: var(--maxw, 1160px); margin: 0 auto; height: 64px; display: flex; align-items: center; gap: 24px; padding: 0 10px 0 12px;
+  background: #fff; border-radius: 18px; box-shadow: 0 1px 2px rgba(16, 24, 40, .06), 0 10px 30px rgba(16, 24, 40, .10); border: 1px solid rgba(16, 24, 40, .06);
+  font-family: var(--font); color: #1f2937; letter-spacing: 0; text-transform: none; }
+.hx-brand { display: flex; align-items: center; gap: 12px; text-decoration: none; color: #111827; min-width: 0; }
+.hx-mark { flex: none; display: grid; place-items: center; width: 40px; height: 40px; border-radius: 11px; background: var(--hx-accent, var(--accent)); color: var(--hx-accent-fg, var(--accent-fg)); font: 700 16px/1 var(--font); letter-spacing: .01em; }
+.hx-name { font: 700 19px/1.1 var(--font); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.hx-links { display: flex; align-items: stretch; height: 100%; gap: 6px; margin: 0 auto; }
+.hx-links a { position: relative; display: flex; align-items: center; padding: 0 14px; font: 500 15px var(--font); color: #4b5563; text-decoration: none; transition: color .15s; }
+.hx-links a:hover { color: #111827; }
+.hx-links a.on { color: #111827; font-weight: 600; }
+.hx-links a.on::after { content: ""; position: absolute; left: 12px; right: 12px; bottom: 0; height: 3px; border-radius: 3px 3px 0 0; background: var(--hx-accent, var(--accent)); }
+.hx-actions { display: flex; align-items: center; gap: 10px; flex: none; }
+.hx-call, .hx-cta { display: inline-flex; align-items: center; height: 44px; padding: 0 20px; border-radius: 999px; font: 600 15px var(--font); text-decoration: none; white-space: nowrap; transition: background .15s, box-shadow .15s, transform .15s; }
+.hx-call { color: #1f2937; box-shadow: inset 0 0 0 1px #d1d5db; background: #fff; }
+.hx-call:hover { box-shadow: inset 0 0 0 1px #9ca3af; }
+.hx-cta { background: var(--hx-accent, var(--accent)); color: var(--hx-accent-fg, var(--accent-fg)); box-shadow: 0 4px 12px rgba(16, 24, 40, .15); }
+.hx-cta:hover { transform: translateY(-1px); }
+.hx-menu { display: none; position: relative; }
+.hx-menu summary { list-style: none; cursor: pointer; display: grid; place-items: center; width: 44px; height: 44px; border-radius: 12px; box-shadow: inset 0 0 0 1px #d1d5db; }
+.hx-menu summary::-webkit-details-marker { display: none; }
+.hx-menu summary span, .hx-menu summary span::before, .hx-menu summary span::after { display: block; width: 18px; height: 2px; border-radius: 2px; background: #1f2937; position: relative; }
+.hx-menu summary span::before, .hx-menu summary span::after { content: ""; position: absolute; left: 0; }
+.hx-menu summary span::before { top: -6px; } .hx-menu summary span::after { top: 6px; }
+.hx-drop { position: absolute; right: 0; top: 54px; min-width: 220px; display: grid; padding: 8px; background: #fff; border-radius: 14px; box-shadow: 0 16px 40px rgba(16, 24, 40, .18); }
+.hx-drop a { padding: 12px 14px; border-radius: 10px; font: 500 15px var(--font); color: #1f2937; text-decoration: none; }
+.hx-drop a:hover, .hx-drop a.on { background: #f3f4f6; }
+.hx a:focus-visible, .hx summary:focus-visible { outline: 2px solid var(--hx-accent, var(--accent)); outline-offset: 2px; }
+@media (max-width: 1060px) { .hx-call { display: none; } }
+@media (max-width: 860px) { .hx-links { display: none; } .hx-menu { display: block; } .hx-actions { margin-left: auto; } }
+@media (max-width: 480px) { .hx { padding: 10px 10px 0; height: 84px; margin-bottom: -84px; } .hx + main > :first-child { border-top-width: 84px; } .hx-bar { gap: 10px; height: 60px; } .hx-name { font-size: 16px; } .hx-mark { width: 36px; height: 36px; } .hx-cta { padding: 0 16px; height: 40px; } .hx-menu summary { width: 40px; height: 40px; } }

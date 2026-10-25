@@ -87,3 +87,6 @@ h1, h2, h3 { color: var(--accent); text-shadow: 0 0 12px rgba(57, 255, 122, .35)
 
 /* Hero without the course stack: copy only. */
 .hero .hero-in { grid-template-columns: minmax(0, 820px); }
+
+/* Shared header: the accent is too light for the white bar. */
+:root { --hx-accent: #0b7a35; --hx-accent-fg: #fff; }

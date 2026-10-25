@@ -163,10 +163,7 @@ Descargue su certificado y guarde una copia en su teléfono y otra impresa. Recu
   ],
 
   shell({ body, h }) {
-    return `<header class="top"><div class="wrap top-in">
-<a class="logo" href="/">HAZWOPER <span>en Español</span></a>
-<nav><a href="/courses/">Cursos</a><a href="/guides/">Guías</a><a href="/#preguntas">Preguntas</a>${h.buy(1100, "Inscribirse", "btn btn-sm")}</nav>
-</div></header>
+    return `${h.header(1100)}
 <main>${body}</main>
 <footer class="foot"><div class="wrap foot-in">
 <div><a class="logo" href="/">HAZWOPER <span>en Español</span></a><p>Capacitación HAZWOPER de HAZWOPER OSHA Training LLC, impartida en la plataforma hazwoper-osha.com.</p></div>

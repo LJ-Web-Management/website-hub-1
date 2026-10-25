@@ -166,10 +166,7 @@ Hold a short debrief right after, while it's fresh, and a written critique withi
   ],
 
   shell({ body, h }) {
-    return `<header class="top"><div class="wrap top-in">
-<a class="logo" href="/">PLANT<span>SAFE</span></a>
-<nav><a href="/courses/">Courses</a><a href="/guides/">Guides</a>${h.buy(702, "Train your plant", "btn btn-sm")}</nav>
-</div></header>
+    return `${h.header(702)}
 <main>${body}</main>
 <footer class="foot"><div class="wrap foot-in">
 <div><a class="logo" href="/">PLANT<span>SAFE</span></a><p>Emergency response and hazardous waste training for manufacturing from HAZWOPER OSHA Training LLC, delivered on hazwoper-osha.com.</p></div>

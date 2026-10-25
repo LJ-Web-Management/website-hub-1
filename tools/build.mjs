@@ -9,7 +9,7 @@
 import { readFileSync, writeFileSync, mkdirSync, rmSync, readdirSync, copyFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
-import { md, esc, money, courseRow, guideCard, defaultShell, defaultHome } from "./lib.mjs";
+import { md, esc, money, courseRow, guideCard, defaultShell, header, defaultHome } from "./lib.mjs";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const DOMAIN = "hazwoperosha.us";
@@ -27,7 +27,7 @@ const LABELS = {
     buyNow: "Enroll now", minRead: "min read", certificate: "Certificate of completion included. 100% online, self-paced.",
     guidesIntro: "Plain-language articles for the people who take and assign this training.",
     coursesIntro: "Every course here is online, self-paced and issued with a certificate on completion.",
-    featured: "Featured on this site", allTrainings: "All trainings", allTrainingsIntro: "Every training available from HAZWOPER OSHA Training, all enrollable here.",
+    home: "Home", call: "Call", menu: "Menu", featured: "Featured on this site", allTrainings: "All trainings", allTrainingsIntro: "Every training available from HAZWOPER OSHA Training, all enrollable here.",
   },
   es: {
     home: "Inicio", courses: "Cursos", guides: "Guías", enroll: "Inscribirse", course: "Curso", hours: "Duración",
@@ -37,7 +37,7 @@ const LABELS = {
     buyNow: "Inscríbase ahora", minRead: "min de lectura", certificate: "Incluye certificado al terminar. 100% en línea, a su ritmo.",
     guidesIntro: "Artículos claros para los trabajadores y empleadores que toman esta capacitación.",
     coursesIntro: "Todos los cursos son en línea, a su propio ritmo y con certificado al terminar.",
-    featured: "Cursos destacados", allTrainings: "Todas las capacitaciones", allTrainingsIntro: "Todas las capacitaciones de HAZWOPER OSHA Training. Los cursos se imparten en inglés salvo que se indique lo contrario.",
+    home: "Inicio", call: "Llamar", menu: "Menú", featured: "Cursos destacados", allTrainings: "Todas las capacitaciones", allTrainingsIntro: "Todas las capacitaciones de HAZWOPER OSHA Training. Los cursos se imparten en inglés salvo que se indique lo contrario.",
   },
 };
 
@@ -81,6 +81,7 @@ async function buildSite(name) {
     courseRow: (c) => courseRow(c, h),
     guideCard: (g) => guideCard(g, h),
     courseLink: (id) => { const c = course(id); return c.url ? `<a href="${c.url}">${esc(c.name)}</a>` : esc(c.name); },
+    header: (enrollId) => header(site, h, enrollId),
   };
 
   const pages = [];
@@ -112,7 +113,7 @@ ${ld}
 <script src="/_shared/checkout.js" data-site="${name}" data-lang="${site.lang || "en"}" defer></script>
 </head>
 <body class="${bodyClass}">
-${shell({ path, body, h })}
+${(h.path = path, shell({ path, body, h }))}
 </body>
 </html>
 `;

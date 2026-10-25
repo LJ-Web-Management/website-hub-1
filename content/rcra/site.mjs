@@ -182,10 +182,7 @@ Since 2018, manifests are tracked in EPA's e-Manifest system. Receiving faciliti
   ],
 
   shell({ body, h }) {
-    return `<header class="top"><div class="wrap top-in">
-<a class="logo" href="/"><svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><rect width="24" height="24" rx="3" fill="#3ccf9e"/><path d="M6.5 12.5l3.5 3.5 7.5-8" stroke="#0b2545" stroke-width="2.6" fill="none" stroke-linecap="round"/></svg>RCRA Compliance Center</a>
-<nav><a href="/courses/">Courses</a><a href="/guides/">Guides</a><a href="/#plan">Training plans</a>${h.buy(601, "Enroll", "btn btn-sm")}</nav>
-</div></header>
+    return `${h.header(601)}
 <main>${body}</main>
 <footer class="foot"><div class="wrap foot-in">
 <div><p class="foot-brand">RCRA Compliance Center</p><p>EPA hazardous waste training for generators, by HAZWOPER OSHA Training LLC. Courses are delivered on hazwoper-osha.com with completion certificates for your training records.</p></div>
