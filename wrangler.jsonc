@@ -10,6 +10,8 @@
     "html_handling": "auto-trailing-slash",
     "not_found_handling": "none"
   },
+  // Lets non-production branch builds (`wrangler preview`) succeed. Production deploys ignore it.
+  "previews": {},
   // Every subdomain of hazwoperosha.us runs this Worker. The domain must be on Cloudflare.
   "routes": [
     { "pattern": "*.hazwoperosha.us/*", "zone_name": "hazwoperosha.us" }
