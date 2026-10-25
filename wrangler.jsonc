@@ -10,8 +10,8 @@
     "html_handling": "auto-trailing-slash",
     "not_found_handling": "none"
   },
-  // Replace abc.com with your domain (both places).
+  // Every subdomain of hazwoperosha.com runs this Worker. The domain must be on Cloudflare.
   "routes": [
-    { "pattern": "*.abc.com/*", "zone_name": "abc.com" }
+    { "pattern": "*.hazwoperosha.com/*", "zone_name": "hazwoperosha.com" }
   ]
 }
