@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://state-plans.hazwoperosha.us/sitemap.xml

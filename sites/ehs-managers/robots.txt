@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ehs-managers.hazwoperosha.us/sitemap.xml

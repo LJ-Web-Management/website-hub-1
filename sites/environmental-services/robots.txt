@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://environmental-services.hazwoperosha.us/sitemap.xml

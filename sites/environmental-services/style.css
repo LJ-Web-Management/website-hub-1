@@ -1,0 +1,62 @@
+/* environmental-services: risograph print. Off-white paper, fluorescent pink + teal overprint, grain, Rubik Mono One + Karla. */
+:root {
+  --bg: #f6f1e7; --fg: #1b1b3a; --muted: #4b4b6b; --line: #1b1b3a; --card: #fffaf0;
+  --accent: #1b1b3a; --accent-fg: #f6f1e7; --pink: #ff48b0; --teal: #00a9b5; --radius: 0; --maxw: 1160px;
+  --font: "Karla", sans-serif; --head-font: "Rubik Mono One", sans-serif;
+  --checkout-accent: #ff48b0; --checkout-accent-fg: #1b1b3a; --checkout-head-font: "Rubik Mono One", sans-serif;
+}
+h1, h2, h3 { font-weight: 400; }
+.btn:hover { background: var(--pink); color: var(--fg); }
+.btn-alt { color: var(--fg); box-shadow: inset 0 0 0 2px var(--fg); }
+.logo { font: 400 18px var(--head-font); text-decoration: none; }
+
+.top { border-bottom: 2px solid var(--fg); }
+.top-in { display: flex; justify-content: space-between; align-items: center; gap: 16px; min-height: 68px; }
+.top nav { display: flex; align-items: center; gap: 24px; font-weight: 700; }
+.top nav a:not(.btn) { text-decoration: none; }
+
+.hero { position: relative; overflow: hidden; padding: 88px 0 110px; }
+.r1, .r2 { position: absolute; width: 420px; height: 420px; border-radius: 50%; mix-blend-mode: multiply; opacity: .85; }
+.r1 { right: 14%; top: 40px; background: var(--pink); }
+.r2 { right: 2%; top: 180px; background: var(--teal); }
+.grain { position: absolute; inset: 0; background-image: radial-gradient(rgba(0, 0, 0, .12) 1px, transparent 1px); background-size: 4px 4px; opacity: .5; pointer-events: none; }
+.hero-in { position: relative; }
+.hero-in > div { max-width: 640px; }
+.kicker { font-weight: 700; text-transform: uppercase; letter-spacing: .14em; font-size: 13px; color: var(--teal); margin: 0 0 18px; }
+.hero h1 { font-size: clamp(40px, 6vw, 72px); line-height: 1.05; }
+.hero h1 span { color: var(--pink); }
+.hero-lede { font-size: 20px; margin: 22px 0 30px; background: rgba(246, 241, 231, .8); }
+.hero-cta { display: flex; gap: 12px; flex-wrap: wrap; }
+
+.sec { padding: 72px 0; }
+.sec-ink { background: var(--fg); color: var(--bg); }
+.title { font-size: clamp(30px, 4.4vw, 48px); margin-bottom: 32px; }
+.cgrid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 20px; }
+.cc { position: relative; display: flex; flex-direction: column; gap: 8px; padding: 24px; background: var(--card); border: 2px solid var(--fg); }
+.cc::after { content: ""; position: absolute; inset: 6px -6px -6px 6px; z-index: -1; mix-blend-mode: multiply; }
+.cc0::after { background: var(--pink); } .cc1::after { background: var(--teal); }
+.meta { margin: 0; font-weight: 700; font-size: 13px; color: var(--muted); }
+.cc h3 { font-size: 20px; margin: 0; }
+.cc h3 a { text-decoration: none; }
+.cc p:not(.meta) { margin: 0; color: var(--muted); flex: 1; }
+.cc-foot { display: flex; justify-content: space-between; align-items: center; margin-top: 8px; }
+.cc-foot b { font: 400 22px var(--head-font); }
+.sec-ink .guide-card { background: var(--bg); color: var(--fg); border: 0; }
+.guide-card strong { font: 400 17px/1.3 var(--head-font); }
+.guide-card .guide-card-cta { color: #d9168a; }
+
+.foot { border-top: 2px solid var(--fg); padding: 56px 0 40px; }
+.foot-in { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 40px; }
+.foot h4 { font: 400 14px var(--head-font); margin: 0 0 12px; }
+.foot-in > div:not(:first-child) a { display: block; text-decoration: none; padding: 3px 0; }
+
+.eyebrow, .eyebrow a { color: var(--teal); font-weight: 700; }
+.page-head h1 { font-size: clamp(30px, 4.4vw, 50px); line-height: 1.1; }
+.course-row, .buy-box { border-width: 2px; box-shadow: 6px 6px 0 var(--pink); }
+.course-row-name { font-weight: 700; }
+.prose a { color: #d9168a; font-weight: 700; }
+.prose th { background: var(--teal); color: #fff; font-family: var(--font); }
+.prose blockquote { border-left-color: var(--pink); }
+
+@media (max-width: 900px) { .r1, .r2 { opacity: .35; } .foot-in { grid-template-columns: 1fr; } }
+@media (max-width: 600px) { .top nav a:not(.btn) { display: none; } .logo { font-size: 15px; } }

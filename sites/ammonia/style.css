@@ -1,0 +1,60 @@
+/* ammonia: ice frost. Pale sky gradient, frosted glass, deep navy text, Sora. */
+:root {
+  --bg: #eaf6fe; --fg: #0b2a4a; --muted: #4c6a87; --line: rgba(255, 255, 255, .9); --card: rgba(255, 255, 255, .6);
+  --accent: #0b2a4a; --accent-fg: #e8f6ff; --ice: #6cc3f5; --radius: 18px; --maxw: 1160px;
+  --font: "Sora", sans-serif; --head-font: "Sora", sans-serif;
+  --checkout-line: #cfe3f2;
+}
+body { background: linear-gradient(160deg, #f1f9ff, #d9eefb 45%, #c4e3f7); }
+h1, h2, h3 { font-weight: 600; letter-spacing: -.02em; }
+.btn { border-radius: 14px; }
+.btn-alt { color: var(--fg); box-shadow: inset 0 0 0 1.5px var(--fg); }
+.logo { font-weight: 700; font-size: 22px; text-decoration: none; }
+.logo sub { font-size: .6em; }
+
+.top-in { display: flex; justify-content: space-between; align-items: center; gap: 16px; min-height: 74px; }
+.top nav { display: flex; align-items: center; gap: 24px; }
+.top nav a:not(.btn) { text-decoration: none; }
+
+.hero { position: relative; overflow: hidden; padding: 64px 0 96px; }
+.flake { position: absolute; right: 6%; top: -40px; font-size: 460px; line-height: 1; color: rgba(255, 255, 255, .6); pointer-events: none; }
+.hero-in { position: relative; display: grid; grid-template-columns: 1.1fr 1fr; gap: 56px; align-items: center; }
+.pill { display: inline-block; background: var(--card); border: 1px solid var(--line); border-radius: 999px; padding: 7px 16px; font-size: 13px; margin: 0 0 20px; }
+.hero h1 { font-size: clamp(52px, 7.5vw, 88px); line-height: 1; font-weight: 300; }
+.hero h1 b { font-weight: 600; display: block; }
+.hero-lede { font-size: 19px; color: var(--muted); margin: 22px 0 30px; font-weight: 300; }
+.hero-cta { display: flex; gap: 12px; flex-wrap: wrap; }
+.glass { display: grid; gap: 14px; }
+.gc { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 20px 22px; background: var(--card); border: 1px solid var(--line); border-radius: 20px; backdrop-filter: blur(10px); text-decoration: none; }
+.gc b { display: block; font-weight: 600; }
+.gc small { color: var(--muted); }
+.gc em { font-style: normal; font-weight: 600; font-size: 20px; }
+
+.sec { padding: 72px 0; }
+.title { font-size: clamp(36px, 5vw, 56px); margin-bottom: 32px; font-weight: 300; }
+.nums { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+.nums div { padding: 26px; background: var(--card); border: 1px solid var(--line); border-radius: 20px; backdrop-filter: blur(10px); display: grid; gap: 6px; }
+.nums b { font-size: 44px; font-weight: 600; letter-spacing: -.03em; }
+.nums span { color: var(--muted); font-size: 14px; }
+.cgrid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 18px; }
+.cc { display: flex; flex-direction: column; gap: 8px; padding: 26px; background: var(--card); border: 1px solid var(--line); border-radius: 22px; backdrop-filter: blur(10px); }
+.meta { margin: 0; color: var(--muted); font-size: 13px; }
+.cc h3 { font-size: 22px; margin: 0; }
+.cc h3 a { text-decoration: none; }
+.cc p:not(.meta) { margin: 0; color: var(--muted); flex: 1; }
+.cc-foot { display: flex; justify-content: space-between; align-items: center; margin-top: 8px; }
+.cc-foot b { font-size: 24px; }
+.guide-card, .course-row, .buy-box { background: var(--card); border-color: var(--line); backdrop-filter: blur(10px); }
+
+.foot { padding: 56px 0 40px; color: var(--muted); border-top: 1px solid var(--line); }
+.foot-in { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 40px; }
+.foot h4 { color: var(--fg); margin: 0 0 12px; }
+.foot-in > div:not(:first-child) a { display: block; text-decoration: none; padding: 3px 0; }
+
+.eyebrow, .eyebrow a { color: #1d6fa5; }
+.prose a { color: #1d6fa5; font-weight: 600; }
+.prose th { color: #1d6fa5; }
+.prose blockquote { background: var(--card); border-left-color: var(--ice); }
+
+@media (max-width: 900px) { .hero-in, .foot-in { grid-template-columns: 1fr; } .nums { grid-template-columns: 1fr 1fr; } .flake { font-size: 300px; } }
+@media (max-width: 600px) { .top nav a:not(.btn) { display: none; } .nums { grid-template-columns: 1fr; } }

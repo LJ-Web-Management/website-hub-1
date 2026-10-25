@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://24-hour.hazwoperosha.us/sitemap.xml

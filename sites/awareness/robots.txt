@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://awareness.hazwoperosha.us/sitemap.xml

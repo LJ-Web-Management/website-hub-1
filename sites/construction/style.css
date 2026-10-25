@@ -1,0 +1,67 @@
+/* construction: blueprint. Prussian blue, grid paper, white linework, Archivo Narrow + Roboto Mono. */
+:root {
+  --bg: #0d3b78; --fg: #e6f0ff; --muted: #a9c6ef; --line: rgba(156, 195, 255, .55); --card: rgba(255, 255, 255, .05);
+  --accent: #fff; --accent-fg: #0d3b78; --radius: 0; --maxw: 1180px;
+  --font: "Archivo Narrow", sans-serif; --head-font: "Archivo Narrow", sans-serif;
+  --checkout-bg: #0f4285; --checkout-font: "Roboto Mono", monospace;
+}
+body { font-size: 18px; background-image: linear-gradient(rgba(255, 255, 255, .07) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, .07) 1px, transparent 1px), linear-gradient(rgba(255, 255, 255, .03) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, .03) 1px, transparent 1px); background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px; }
+h1, h2, h3 { text-transform: uppercase; font-weight: 700; }
+.btn { font-family: "Roboto Mono", monospace; font-size: 15px; text-transform: uppercase; }
+.btn-alt { color: var(--fg); box-shadow: inset 0 0 0 1.5px var(--fg); }
+.tag { display: inline-block; font: 500 13px "Roboto Mono", monospace; border: 1px solid var(--fg); padding: 4px 10px; margin: 0 0 20px; }
+
+.top { border-bottom: 1px solid var(--line); background: rgba(13, 59, 120, .9); }
+.top-in { display: flex; justify-content: space-between; align-items: center; gap: 16px; min-height: 66px; }
+.logo { font-weight: 700; font-size: 24px; text-decoration: none; letter-spacing: .04em; }
+.logo span { color: #ffd36b; }
+.top nav { display: flex; align-items: center; gap: 24px; font: 500 14px "Roboto Mono", monospace; }
+.top nav a:not(.btn) { text-decoration: none; color: var(--muted); }
+.top nav a:not(.btn):hover { color: #fff; }
+
+.hero { padding: 72px 0 80px; }
+.hero-in { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center; }
+.hero h1 { font-size: clamp(56px, 8vw, 96px); line-height: .92; }
+.hero-lede { font-size: 20px; color: var(--muted); margin: 22px 0 30px; }
+.hero-cta { display: flex; gap: 12px; flex-wrap: wrap; }
+.plan { border: 1.5px solid var(--fg); padding: 12px; background: rgba(13, 59, 120, .6); }
+
+.sec { padding: 64px 0; border-top: 1px dashed var(--line); }
+.schedule { border: 1.5px solid var(--fg); font-family: "Roboto Mono", monospace; font-size: 15px; }
+.srow { display: grid; grid-template-columns: 80px 1fr 110px 110px 110px; gap: 16px; align-items: center; padding: 14px 18px; border-bottom: 1px dashed var(--line); }
+.srow:last-child { border-bottom: 0; }
+.shead { background: rgba(255, 255, 255, .08); font-weight: 700; font-size: 12px; letter-spacing: .1em; }
+.srow a:not(.btn) { font-family: var(--font); font-size: 19px; font-weight: 600; text-decoration: none; }
+.srow a:not(.btn):hover { text-decoration: underline; }
+.srow b { color: #ffd36b; }
+.notes { font: 15px/1.9 "Roboto Mono", monospace; padding-left: 24px; max-width: 900px; margin: 0; }
+.guide-card { border-style: dashed; }
+.guide-card strong { text-transform: uppercase; }
+.guide-card .guide-card-meta { font-family: "Roboto Mono", monospace; }
+
+.foot { border-top: 1.5px solid var(--fg); padding: 48px 0; color: var(--muted); }
+.foot-in { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 40px; }
+.titleblock { display: grid; grid-template-columns: 1fr 1fr; border: 1.5px solid var(--fg); }
+.titleblock div { padding: 10px 14px; border: .5px solid var(--line); display: grid; }
+.titleblock span { font: 11px "Roboto Mono", monospace; letter-spacing: .1em; }
+.titleblock b { color: var(--fg); }
+.foot h4 { font: 700 13px "Roboto Mono", monospace; letter-spacing: .1em; color: var(--fg); margin: 0 0 12px; }
+.foot-in > div:not(:first-child) a { display: block; text-decoration: none; padding: 3px 0; }
+
+.eyebrow, .eyebrow a { font-family: "Roboto Mono", monospace; color: #ffd36b; }
+.course-row, .buy-box, .cta-card { border-style: dashed; }
+.course-row-price, .buy-price { color: #ffd36b; }
+.course-row-name { text-transform: uppercase; }
+.prose a { color: #ffd36b; }
+.prose th { font-family: "Roboto Mono", monospace; font-size: 13px; color: #ffd36b; }
+.prose blockquote { border-left-color: #ffd36b; }
+.co-dialog input { color-scheme: dark; }
+
+@media (max-width: 900px) {
+  .hero-in, .foot-in { grid-template-columns: 1fr; }
+  .srow { grid-template-columns: 1fr auto; }
+  .srow span:first-child, .srow span:nth-child(3) { display: none; }
+  .shead { display: none; }
+  .srow .btn { grid-column: 1 / -1; justify-self: start; }
+}
+@media (max-width: 600px) { .top nav a:not(.btn) { display: none; } }

@@ -1,0 +1,68 @@
+/* utility: hi-vis. Navy, fluorescent lime, safety orange, reflective tape, Saira Condensed. */
+:root {
+  --bg: #0f1a2e; --fg: #fff; --muted: #b9c2d3; --line: #24324d; --card: #17243d;
+  --accent: #c6ff00; --accent-fg: #0f1a2e; --orange: #ff7a00; --radius: 4px; --maxw: 1200px;
+  --font: "Inter", sans-serif; --head-font: "Saira Condensed", sans-serif;
+  --checkout-bg: #14213a;
+}
+h1, h2, h3 { text-transform: uppercase; font-weight: 800; }
+.btn { font-family: var(--head-font); text-transform: uppercase; font-size: 19px; letter-spacing: .04em; }
+.btn-sm { font-size: 15px; }
+.btn-alt { color: var(--fg); }
+.tape { height: 14px; background: repeating-linear-gradient(90deg, #c6ff00 0 60px, #c0c6cc 60px 90px); }
+.logo { font: 800 26px var(--head-font); text-decoration: none; }
+.logo span { color: var(--accent); }
+
+.top { border-bottom: 1px solid var(--line); }
+.top-in { display: flex; justify-content: space-between; align-items: center; gap: 16px; min-height: 68px; }
+.top nav { display: flex; align-items: center; gap: 24px; font-weight: 500; }
+.top nav a:not(.btn) { text-decoration: none; color: var(--muted); }
+
+.hero { padding: 64px 0 88px; }
+.hero-in { display: grid; grid-template-columns: 1.1fr 1fr; gap: 56px; align-items: center; }
+.hero h1 { font: 800 clamp(72px, 11vw, 136px)/.86 var(--head-font); text-transform: uppercase; }
+.hero h1 span { color: var(--accent); }
+.hero-lede { font-size: 19px; color: var(--muted); margin: 24px 0 30px; max-width: 480px; }
+.hero-cta { display: flex; gap: 12px; flex-wrap: wrap; }
+.list { display: grid; gap: 12px; }
+.row { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 18px 20px; background: var(--card); border-left: 8px solid var(--orange); text-decoration: none; }
+.row:hover { border-left-color: var(--accent); }
+.row b { display: block; font: 700 22px var(--head-font); text-transform: uppercase; }
+.row small { color: var(--muted); }
+.row em { font: 800 24px var(--head-font); font-style: normal; color: var(--accent); }
+
+.band { background: var(--accent); color: var(--bg); }
+.band-in { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; padding: 18px 0; font: 800 26px var(--head-font); text-transform: uppercase; }
+.band-in span::before { content: "▸ "; color: var(--orange); }
+
+.sec { padding: 80px 0; }
+.title { font: 800 clamp(44px, 6vw, 72px)/.95 var(--head-font); margin-bottom: 36px; }
+.title span { color: var(--accent); }
+.cgrid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.cc { display: flex; flex-direction: column; gap: 8px; padding: 24px; background: var(--card); border-top: 6px solid var(--orange); }
+.meta { margin: 0; color: var(--accent); font-weight: 600; font-size: 13px; }
+.cc h3 { font-size: 23px; line-height: 1.05; margin: 0; }
+.cc h3 a { text-decoration: none; }
+.cc p:not(.meta) { margin: 0; color: var(--muted); flex: 1; }
+.cc-foot { display: flex; justify-content: space-between; align-items: center; margin-top: 8px; }
+.cc-foot b { font: 800 28px var(--head-font); color: var(--accent); }
+.guide-card { border-top: 6px solid var(--accent); }
+.guide-card strong { text-transform: uppercase; }
+.guide-card .guide-card-cta { color: var(--accent); }
+
+.foot { background: #0a1120; color: var(--muted); }
+.foot-in { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 40px; padding: 48px 0 40px; }
+.foot h4 { font: 700 18px var(--head-font); text-transform: uppercase; color: var(--fg); margin: 0 0 12px; }
+.foot-in > div:not(:first-child) a { display: block; text-decoration: none; padding: 3px 0; }
+
+.eyebrow, .eyebrow a { color: var(--accent); }
+.page-head h1 { font-size: clamp(42px, 6vw, 72px); }
+.course-row { border-left: 6px solid var(--orange); }
+.course-row-price, .buy-price { color: var(--accent); }
+.buy-box { border-top: 6px solid var(--accent); }
+.prose a { color: var(--accent); }
+.prose th { color: var(--accent); text-transform: uppercase; }
+.co-dialog input { color-scheme: dark; }
+
+@media (max-width: 900px) { .hero-in, .foot-in { grid-template-columns: 1fr; } .cgrid { grid-template-columns: 1fr; } }
+@media (max-width: 600px) { .top nav a:not(.btn) { display: none; } .band-in { font-size: 20px; } }

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://waste-shipping.hazwoperosha.us/sitemap.xml

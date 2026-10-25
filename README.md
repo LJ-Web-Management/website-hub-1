@@ -30,7 +30,7 @@ and the base styles the course sites use. `_shared` can't be a subdomain, so it 
 
 ## Course landing sites
 
-Ten sites sell hazwoper-osha.com courses, each with its own niche, design, guides and course pages:
+Twenty-five sites sell hazwoper-osha.com courses, each with its own niche, design, guides and course pages:
 
 | Site | Niche | LMS course ids |
 |---|---|---|
@@ -44,6 +44,21 @@ Ten sites sell hazwoper-osha.com courses, each with its own niche, design, guide
 | [micro-modules](https://micro-modules.hazwoperosha.us) | 15-20 minute modules | 585, 584, 583, 586, 478, 479 |
 | [first-responder](https://first-responder.hazwoperosha.us) | Emergency response (q) | 1099, 593, 702, 589, 574 |
 | [tsdf](https://tsdf.hazwoperosha.us) | TSD facility operations (p) | 582, 594, 599, 575, 579 |
+| [24-hour](https://24-hour.hazwoperosha.us) | 24-hour HAZWOPER, low-exposure workers | 581, 576, 595, 1099 |
+| [construction](https://construction.hazwoperosha.us) | Construction on contaminated sites | 588, 581, 597, 595, 585 |
+| [oil-gas](https://oil-gas.hazwoperosha.us) | Oil and gas crews | 591, 1056, 416, 478, 592, 595 |
+| [remediation](https://remediation.hazwoperosha.us) | Environmental remediation crews | 590, 586, 583, 584, 1056, 595 |
+| [lab-waste](https://lab-waste.hazwoperosha.us) | Laboratory hazardous waste | 415, 601, 600, 580, 602, 412 |
+| [healthcare](https://healthcare.hazwoperosha.us) | Hospitals, clinics, pharmacies | 601, 415, 602, 600, 1099, 412 |
+| [manufacturing](https://manufacturing.hazwoperosha.us) | Plant ERTs and waste | 702, 1099, 593, 601, 416, 412 |
+| [ammonia](https://ammonia.hazwoperosha.us) | Ammonia refrigeration | 598, 1056, 593, 1099, 574 |
+| [utility](https://utility.hazwoperosha.us) | Gas, pipeline and electric utilities | 592, 1056, 593, 1099, 595, 574 |
+| [waste-shipping](https://waste-shipping.hazwoperosha.us) | Shipping hazardous waste (RCRA + DOT) | 403, 580, 601, 600, 602 |
+| [ehs-managers](https://ehs-managers.hazwoperosha.us) | Running a HAZWOPER program | 1016, 597, 593, 412, 601, 900 |
+| [state-plans](https://state-plans.hazwoperosha.us) | OSHA state-plan states | 900, 595, 577, 576, 578 |
+| [crews](https://crews.hazwoperosha.us) | Seats for whole crews | 587, 581, 595, 597, 1016, 1099 |
+| [awareness](https://awareness.hazwoperosha.us) | First responder awareness | 1099, 479, 585, 416 |
+| [environmental-services](https://environmental-services.hazwoperosha.us) | Field waste technicians | 599, 403, 582, 594, 580, 584 |
 
 They're generated. Edit the sources, then rebuild and commit the output:
 

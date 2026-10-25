@@ -1,0 +1,59 @@
+/* crews: fintech. White, deep navy, skewed gradient mesh, blurple buttons, Plus Jakarta Sans. */
+:root {
+  --bg: #fff; --fg: #0a2540; --muted: #425466; --line: #e6ebf1; --card: #f6f9fc;
+  --accent: #635bff; --accent-fg: #fff; --radius: 12px; --maxw: 1180px;
+  --font: "Plus Jakarta Sans", sans-serif; --head-font: "Plus Jakarta Sans", sans-serif;
+}
+h1, h2, h3 { font-weight: 800; letter-spacing: -.03em; }
+.btn { border-radius: 999px; }
+.btn:hover { background: #0a2540; }
+.btn-alt { color: var(--fg); background: #fff; box-shadow: none; }
+.logo { display: inline-flex; align-items: center; gap: 8px; font-weight: 800; font-size: 22px; text-decoration: none; letter-spacing: -.02em; }
+.dot { width: 20px; height: 20px; border-radius: 6px; background: linear-gradient(135deg, #ff7ab6, #a960ee 50%, #5ad1ff); }
+
+.top { position: absolute; left: 0; right: 0; z-index: 10; }
+.top-in { display: flex; justify-content: space-between; align-items: center; gap: 16px; min-height: 74px; }
+.top nav { display: flex; align-items: center; gap: 24px; font-weight: 600; }
+.top nav a:not(.btn) { text-decoration: none; }
+body:not(:has(.hero)) .top { position: static; border-bottom: 1px solid var(--line); }
+
+.hero { position: relative; overflow: hidden; padding: 140px 0 100px; }
+.mesh { position: absolute; left: 0; right: 0; top: 0; height: 560px; background: linear-gradient(120deg, #ff7ab6, #a960ee 30%, #5ad1ff 60%, #ffcb57); transform: skewY(-8deg); transform-origin: 0 0; }
+.hero-in { position: relative; display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center; }
+.hero h1 { font-size: clamp(46px, 6.5vw, 76px); line-height: 1.02; }
+.hero-lede { font-size: 20px; margin: 22px 0 30px; color: #1d3550; }
+.hero-cta { display: flex; gap: 12px; flex-wrap: wrap; }
+.calc { background: #fff; border-radius: 18px; box-shadow: 0 50px 100px -20px rgba(50, 50, 93, .25), 0 30px 60px -30px rgba(0, 0, 0, .3); padding: 26px; }
+.calc-head { margin: 0 0 8px; font-weight: 700; color: var(--accent); }
+.crow { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 10px 0; border-bottom: 1px solid var(--line); }
+.crow b { display: block; font-size: 15px; }
+.crow small { color: var(--muted); font-size: 12.5px; }
+.crow input { width: 84px; padding: 8px 10px; border: 1px solid var(--line); border-radius: 8px; font: 600 16px var(--font); color: var(--fg); text-align: right; }
+.crow input:focus { outline: 2px solid var(--accent); }
+.ctotal { display: flex; justify-content: space-between; align-items: baseline; margin-top: 14px; }
+.ctotal span { color: var(--muted); }
+.ctotal strong { font-size: 34px; letter-spacing: -.03em; }
+.cnote { font-size: 12.5px; color: var(--muted); margin: 10px 0 0; }
+
+.sec { padding: 80px 0; }
+.sec-alt { background: var(--card); }
+.title { font-size: clamp(34px, 4.6vw, 50px); margin-bottom: 32px; }
+.steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+.steps b { display: grid; place-items: center; width: 40px; height: 40px; border-radius: 50%; background: #efeefe; color: var(--accent); margin-bottom: 14px; }
+.steps h3 { font-size: 20px; margin: 0 0 6px; }
+.steps p { margin: 0; color: var(--muted); }
+.course-row { background: #fff; }
+.guide-card .guide-card-cta { color: var(--accent); }
+
+.foot { border-top: 1px solid var(--line); padding: 56px 0 40px; color: var(--muted); }
+.foot-in { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 40px; }
+.foot h4 { color: var(--fg); margin: 0 0 12px; }
+.foot-in > div:not(:first-child) a { display: block; text-decoration: none; padding: 3px 0; }
+
+.eyebrow, .eyebrow a { color: var(--accent); font-weight: 700; }
+.buy-price { color: var(--accent); }
+.prose a { color: var(--accent); font-weight: 600; }
+.prose th { color: var(--accent); }
+
+@media (max-width: 900px) { .hero-in, .foot-in { grid-template-columns: 1fr; } .steps { grid-template-columns: 1fr 1fr; } .mesh { height: 480px; } }
+@media (max-width: 600px) { .top nav a:not(.btn) { display: none; } .steps { grid-template-columns: 1fr; } }

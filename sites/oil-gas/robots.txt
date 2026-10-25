@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://oil-gas.hazwoperosha.us/sitemap.xml
