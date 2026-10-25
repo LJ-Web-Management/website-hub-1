@@ -86,7 +86,8 @@ tagged `order_from: <site>-hazwoperosha-us`, for example `rcra-hazwoperosha-us`.
    - Deploy command: `npx wrangler deploy`
    - Production branch: `main`
 
-   Every push to `main` now redeploys all the sites.
+   Every push to `main` now redeploys all the sites. Pushes to other branches only build a preview
+   (`wrangler preview`, enabled by the `previews` block in `wrangler.jsonc`) and never change the live sites.
 
 ### Existing subdomains
 
