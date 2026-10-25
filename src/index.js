@@ -2,9 +2,11 @@
 // johnny.hazwoperosha.us/about -> sites/johnny/about.html (or sites/johnny/about/index.html).
 // /_shared/ is the exception: every site gets sites/_shared/ there (checkout, course catalog).
 // "_shared" can't be a subdomain, so it is never served as a site of its own.
+// hub.<domain> lists every site (tools/hub.mjs) and is kept out of search engines.
 
 const NAME = /^[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
 const SHARED = "/_shared/";
+const NOINDEX = new Set(["hub"]);
 
 export function siteFor(hostname) {
   const name = hostname.toLowerCase().split(".")[0];
@@ -13,35 +15,43 @@ export function siteFor(hostname) {
 
 export default {
   async fetch(request, env) {
-    const url = new URL(request.url);
-    const site = siteFor(url.hostname);
-    if (!site) return notFound();
-
-    const prefix = `/${site}`;
-    const path = url.pathname.startsWith(SHARED) ? url.pathname : prefix + url.pathname;
-    const res = await env.ASSETS.fetch(new Request(new URL(path + url.search, url), request));
-
-    // Asset serving redirects /about.html -> /about and /docs -> /docs/. Those redirects carry the
-    // folder prefix, which visitors must never see.
-    const location = res.headers.get("Location");
-    if (location) {
-      const target = new URL(location, url);
-      if (target.pathname === prefix || target.pathname.startsWith(prefix + "/")) {
-        target.pathname = target.pathname.slice(prefix.length) || "/";
-        const headers = new Headers(res.headers);
-        headers.set("Location", target.pathname + target.search);
-        return new Response(res.body, { status: res.status, headers });
-      }
-    }
-
-    if (res.status === 404) {
-      const page = await env.ASSETS.fetch(new Request(new URL(`${prefix}/404.html`, url)));
-      if (page.ok) return new Response(page.body, { status: 404, headers: page.headers });
-      return notFound();
-    }
-    return res;
+    const site = siteFor(new URL(request.url).hostname);
+    const res = await serve(request, env, site);
+    if (!NOINDEX.has(site)) return res;
+    const headers = new Headers(res.headers);
+    headers.set("X-Robots-Tag", "noindex, nofollow");
+    return new Response(res.body, { status: res.status, headers });
   },
 };
+
+async function serve(request, env, site) {
+  const url = new URL(request.url);
+  if (!site) return notFound();
+
+  const prefix = `/${site}`;
+  const path = url.pathname.startsWith(SHARED) ? url.pathname : prefix + url.pathname;
+  const res = await env.ASSETS.fetch(new Request(new URL(path + url.search, url), request));
+
+  // Asset serving redirects /about.html -> /about and /docs -> /docs/. Those redirects carry the
+  // folder prefix, which visitors must never see.
+  const location = res.headers.get("Location");
+  if (location) {
+    const target = new URL(location, url);
+    if (target.pathname === prefix || target.pathname.startsWith(prefix + "/")) {
+      target.pathname = target.pathname.slice(prefix.length) || "/";
+      const headers = new Headers(res.headers);
+      headers.set("Location", target.pathname + target.search);
+      return new Response(res.body, { status: res.status, headers });
+    }
+  }
+
+  if (res.status === 404) {
+    const page = await env.ASSETS.fetch(new Request(new URL(`${prefix}/404.html`, url)));
+    if (page.ok) return new Response(page.body, { status: 404, headers: page.headers });
+    return notFound();
+  }
+  return res;
+}
 
 function notFound() {
   return new Response("Not found", { status: 404, headers: { "Content-Type": "text/plain; charset=utf-8" } });

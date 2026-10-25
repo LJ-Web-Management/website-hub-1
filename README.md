@@ -22,6 +22,13 @@ hostname and serves the matching folder.
 - `www` is just another folder: `sites/www/` would serve `www.hazwoperosha.us`.
 - The bare domain (`hazwoperosha.us`) is not served by this repo.
 
+## Hub
+
+https://hub.hazwoperosha.us is a plain list of links to every site. `tools/hub.mjs` writes it from
+the folders in `sites/`, and Wrangler runs that script before every deploy (the `build` block in
+`wrangler.jsonc`), so new sites appear on their own. The hub is hidden from search engines: its page
+has a `noindex, nofollow` meta tag, and the Worker sends `X-Robots-Tag: noindex, nofollow` for it.
+
 ## Shared files
 
 `sites/_shared/` is served to every site at `/_shared/` (for example

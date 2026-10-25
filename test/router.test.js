@@ -48,3 +48,9 @@ test("serves sites/_shared/ to every site", async () => {
   assert.equal(await (await get("https://tim.hazwoperosha.us/_shared/checkout.js", env)).text(), "shared js");
   assert.equal(siteFor("_shared.hazwoperosha.us"), null);
 });
+
+test("keeps the hub out of search engines", async () => {
+  const env = { ASSETS: assets({ "/hub/": "hub", "/tim/": "tim home" }) };
+  assert.equal((await get("https://hub.hazwoperosha.us/", env)).headers.get("X-Robots-Tag"), "noindex, nofollow");
+  assert.equal((await get("https://tim.hazwoperosha.us/", env)).headers.get("X-Robots-Tag"), null);
+});

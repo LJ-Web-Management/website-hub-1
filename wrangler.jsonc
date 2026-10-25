@@ -2,6 +2,8 @@
   "name": "website-hub-1",
   "main": "src/index.js",
   "compatibility_date": "2026-10-01",
+  // Runs before every deploy: rewrites sites/hub/ with a link to every site folder.
+  "build": { "command": "node tools/hub.mjs" },
   "assets": {
     "directory": "./sites",
     "binding": "ASSETS",
