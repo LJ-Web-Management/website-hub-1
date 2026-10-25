@@ -1,0 +1,26 @@
+/* dc-security: audit binder. Navy cover, gold seal, cream paper, Libre Baskerville headings, tabbed cards. */
+:root {
+  --bg: #fbf8f1; --fg: #14213d; --muted: #545d72; --line: #e6dfcd; --card: #fff;
+  --accent: #14213d; --accent-fg: #fff; --radius: 4px; --maxw: 1120px;
+  --font: "Source Sans 3", sans-serif; --head-font: "Libre Baskerville", serif;
+  --gold: #c9a227;
+}
+.ar-seal { display: inline-grid; place-items: center; width: 30px; height: 30px; border-radius: 50%; border: 2px solid var(--gold); color: var(--gold); background: var(--fg); margin-right: 10px; font-size: 15px; }
+.tpl .top { background: var(--fg); }
+.tpl .top .logo, .tpl .top nav a:not(.btn) { color: #fff; }
+.tpl .top .btn { background: var(--gold); color: var(--fg); }
+.tpl .hero { background: linear-gradient(90deg, var(--fg) 0 14px, transparent 14px); }
+.tpl .hero h1 { font-size: clamp(40px, 6vw, 72px); line-height: 1.1; }
+.tpl .hero h1 span { font-style: italic; color: #8a6d0b; }
+.tpl .kicker { color: #8a6d0b; }
+.btn-alt { background: transparent; color: var(--fg); box-shadow: inset 0 0 0 2px var(--fg); }
+.tpl .hc { border-left: 5px solid var(--gold); }
+.tpl .hc em, .tpl .cc-foot b { color: var(--fg); }
+.tpl .cc { position: relative; border-top: 5px solid var(--fg); }
+.tpl .cc::after { content: ""; position: absolute; top: -5px; right: 24px; width: 44px; height: 16px; background: var(--gold); border-radius: 0 0 4px 4px; }
+.tpl .cc .meta { color: #8a6d0b; }
+.tpl .sec-guides { background: #f3eedf; }
+.eyebrow, .eyebrow a, .buy-price, .course-row-price, .guide-card .guide-card-cta { color: #8a6d0b; }
+.tpl .foot { background: var(--fg); color: #b8bfd0; border: 0; }
+.tpl .foot .logo, .tpl .foot h4 { color: #fff; }
+.prose a { color: var(--fg); font-weight: 600; text-decoration-color: var(--gold); }

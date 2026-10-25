@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://dc-maintenance.hazwoperosha.us/sitemap.xml

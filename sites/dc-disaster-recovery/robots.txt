@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://dc-disaster-recovery.hazwoperosha.us/sitemap.xml

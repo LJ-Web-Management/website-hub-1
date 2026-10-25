@@ -1,0 +1,35 @@
+/* lithium-ion: heat map. Graphite, a yellow-to-red thermal gradient, wide Unbounded headings. */
+:root {
+  --bg: #1a1a1d; --fg: #f5f3ef; --muted: #a9a6a0; --line: #2d2d32; --card: #232327;
+  --accent: #ff7b00; --accent-fg: #1a1a1d; --radius: 12px; --maxw: 1160px;
+  --font: "Inter", sans-serif; --head-font: "Unbounded", sans-serif;
+  --heat: linear-gradient(90deg, #ffba08, #f48c06, #e85d04, #dc2f02, #9d0208);
+}
+body { background: var(--bg); color: var(--fg); }
+a { color: var(--fg); }
+h1, h2, h3 { font-weight: 800; }
+.rw-cell { display: inline-block; width: 14px; height: 24px; border-radius: 3px; background: linear-gradient(0deg, #ffba08, #d00000); margin-right: 10px; vertical-align: middle; }
+.tpl .hero::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 6px; background: var(--heat); }
+.tpl .hero h1 { font-size: clamp(40px, 6vw, 76px); }
+.tpl .hero h1 span { background: var(--heat); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.tpl .kicker { color: #ffba08; }
+.btn-alt { background: transparent; color: var(--fg); box-shadow: inset 0 0 0 1px #555; }
+.tpl .hc em, .tpl .cc-foot b { color: #ffba08; }
+.tpl .cc .meta { color: var(--accent); }
+.rw-track { display: grid; grid-template-columns: repeat(5, 1fr); gap: 6px; }
+.rw-track button { --c: hsl(calc(45 - var(--h) * 11), 100%, calc(52% - var(--h) * 4%)); border: 0; padding: 18px 10px; background: var(--card); color: var(--fg); font: 700 14px var(--head-font); cursor: pointer; border-top: 6px solid var(--c); display: grid; gap: 6px; text-align: left; }
+.rw-track b { font-size: 26px; color: var(--c); }
+.rw-track button.on { background: var(--c); color: #1a1a1d; }
+.rw-track button.on b { color: #1a1a1d; }
+.rw-card { margin-top: 14px; background: var(--card); border-radius: 12px; padding: 28px; }
+.rw-card h3 { margin: 0 0 8px; font-size: 26px; }
+.rw-card p { font-size: 18px; color: #ddd8d0; margin: 0 0 10px; }
+.rw-a { color: #ffba08 !important; }
+.rw-note { color: var(--muted); font-size: 13px; }
+.guide-card, .page-list .course-row, .buy-box { background: var(--card); border-color: var(--line); color: var(--fg); }
+.eyebrow, .eyebrow a, .buy-price, .course-row-price, .guide-card .guide-card-cta { color: #ffba08; }
+.prose a { color: #ffba08; }
+.prose table th { background: var(--card); }
+.prose th, .prose td { border-color: var(--line); }
+.tpl .foot { background: #111113; }
+@media (max-width: 700px) { .rw-track { grid-template-columns: 1fr 1fr; } }

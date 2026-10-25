@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://clean-agent.hazwoperosha.us/sitemap.xml

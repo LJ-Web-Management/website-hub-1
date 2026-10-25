@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://raised-floor.hazwoperosha.us/sitemap.xml

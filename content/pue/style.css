@@ -1,0 +1,31 @@
+/* pue: efficiency label. Forest and mint, green-to-red rating scale, big Lexend numerals. */
+:root {
+  --bg: #f3fbf5; --fg: #1b3a2c; --muted: #4c6b5c; --line: #cfe8d7; --card: #fff;
+  --accent: #2d6a4f; --accent-fg: #fff; --radius: 14px; --maxw: 1120px;
+  --font: "Lexend", sans-serif; --head-font: "Lexend", sans-serif;
+}
+h1, h2, h3 { font-weight: 800; }
+.btn { border-radius: 999px; }
+.btn-alt { color: var(--accent); box-shadow: inset 0 0 0 2px var(--accent); background: #fff; }
+.pu-mark { display: inline-grid; place-items: center; height: 28px; padding: 0 8px; border-radius: 6px; background: var(--accent); color: #d8f3dc; font-size: 14px; margin-right: 10px; }
+.tpl .hero h1 { font-size: clamp(56px, 10vw, 128px); font-weight: 300; }
+.tpl .hero h1 span { font-weight: 800; color: var(--accent); }
+.tpl .hc em, .tpl .cc-foot b, .tpl .cc .meta { color: var(--accent); }
+.pu-sec { background: var(--accent); color: #fff; }
+.pu-in { display: grid; grid-template-columns: 1fr 1.3fr; gap: 32px; align-items: start; }
+.pu-form { background: #fff; color: var(--fg); border-radius: 18px; padding: 28px; display: grid; gap: 16px; }
+.pu-form label { display: grid; gap: 6px; font-weight: 600; font-size: 14px; }
+.pu-form input { font: 20px var(--font); padding: 10px 14px; border: 2px solid var(--line); border-radius: 12px; min-width: 0; }
+.pu-big { margin: 0; font-size: clamp(90px, 14vw, 160px); font-weight: 800; line-height: 1; display: flex; align-items: baseline; gap: 14px; }
+.pu-big small { font-size: 24px; font-weight: 400; color: #b7e4c7; }
+.pu-scale { position: relative; height: 18px; border-radius: 999px; margin: 18px 0 6px; background: linear-gradient(90deg, #52b788, #b7e4c7 25%, #ffd166 50%, #f4845f 75%, #d62828); }
+.pu-scale i { position: absolute; top: -6px; width: 6px; height: 30px; margin-left: -3px; background: #fff; border-radius: 3px; box-shadow: 0 0 0 2px var(--fg); transition: left .3s; }
+.pu-lbl { display: flex; justify-content: space-between; font-size: 13px; color: #b7e4c7; }
+.pu-out dl { display: grid; grid-template-columns: auto 1fr; gap: 8px 20px; margin: 22px 0 0; }
+.pu-out dt { color: #b7e4c7; } .pu-out dd { margin: 0; font-weight: 600; }
+.pu-note { font-size: 14px; color: #b7e4c7; }
+.eyebrow, .eyebrow a, .buy-price, .course-row-price, .guide-card .guide-card-cta { color: var(--accent); }
+.tpl .foot { background: var(--fg); color: #a9c7b6; border: 0; }
+.tpl .foot .logo, .tpl .foot h4 { color: #fff; }
+.prose a { color: var(--accent); font-weight: 600; }
+@media (max-width: 800px) { .pu-in { grid-template-columns: 1fr; } }

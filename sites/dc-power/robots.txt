@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://dc-power.hazwoperosha.us/sitemap.xml

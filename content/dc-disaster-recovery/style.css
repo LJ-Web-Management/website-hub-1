@@ -1,0 +1,28 @@
+/* dc-disaster-recovery: storm radar. Deep navy, cyan sweep and magenta alert, Space Grotesk. */
+:root {
+  --bg: #f4f6fb; --fg: #0d1b2a; --muted: #4f5d73; --line: #d8dee9; --card: #fff;
+  --accent: #f72585; --accent-fg: #fff; --radius: 12px; --maxw: 1160px;
+  --font: "Space Grotesk", sans-serif; --head-font: "Space Grotesk", sans-serif;
+  --cyan: #4cc9f0;
+}
+h1, h2, h3 { font-weight: 700; }
+.fv-ring { display: inline-block; width: 22px; height: 22px; border-radius: 50%; border: 3px solid var(--cyan); border-right-color: var(--accent); margin-right: 10px; vertical-align: middle; }
+.tpl .top { background: #0d1b2a; border: 0; }
+.tpl .top .logo, .tpl .top nav a:not(.btn) { color: #fff; }
+.tpl .hero { background: #1b263b; color: #fff; }
+.fv-radar { position: absolute; right: -180px; top: 50%; width: 640px; height: 640px; margin-top: -320px; border-radius: 50%; background: repeating-radial-gradient(circle, transparent 0 60px, rgba(76, 201, 240, .18) 60px 61px), conic-gradient(from 0deg, rgba(76, 201, 240, .35), transparent 25%); }
+@media (prefers-reduced-motion: no-preference) { .fv-radar { animation: fvspin 8s linear infinite; } }
+@keyframes fvspin { to { transform: rotate(360deg); } }
+.tpl .hero h1 span { color: var(--cyan); }
+.tpl .kicker { color: var(--cyan); }
+.tpl .hero-lede { color: #b9c6dc; }
+.tpl .hero .btn-alt { background: transparent; color: #fff; box-shadow: inset 0 0 0 2px var(--cyan); }
+.tpl .hc { background: rgba(13, 27, 42, .85); border: 1px solid #33415c; color: #fff; backdrop-filter: blur(4px); }
+.tpl .hc small { color: #9aa8c0; }
+.tpl .hc em { color: var(--cyan); }
+.tpl .cc { border-top: 4px solid var(--cyan); }
+.tpl .cc .meta, .tpl .cc-foot b { color: var(--fg); }
+.eyebrow, .eyebrow a, .buy-price, .course-row-price, .guide-card .guide-card-cta { color: #c9135f; }
+.tpl .foot { background: #0d1b2a; color: #9aa8c0; border: 0; }
+.tpl .foot .logo, .tpl .foot h4 { color: #fff; }
+.prose a { color: #c9135f; font-weight: 500; }

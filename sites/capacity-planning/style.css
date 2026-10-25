@@ -1,0 +1,31 @@
+/* capacity-planning: spreadsheet grid. Indigo with pink threshold line, cell borders, Inter Tight + Roboto Mono figures. */
+:root {
+  --bg: #f7f6fd; --fg: #1a1446; --muted: #555077; --line: #dcd8f2; --card: #fff;
+  --accent: #3a0ca3; --accent-fg: #fff; --radius: 6px; --maxw: 1140px;
+  --font: "Inter Tight", sans-serif; --head-font: "Inter Tight", sans-serif;
+  --pink: #f72585;
+}
+h1, h2, h3 { font-weight: 800; letter-spacing: -.02em; }
+.hr-meter { display: inline-block; width: 30px; height: 14px; border: 2px solid var(--accent); border-radius: 3px; margin-right: 10px; vertical-align: middle; position: relative; }
+.hr-meter i { position: absolute; inset: 1px; right: 25%; background: var(--accent); }
+.tpl .hero { background-image: linear-gradient(var(--line) 1px, transparent 1px), linear-gradient(90deg, var(--line) 1px, transparent 1px); background-size: 120px 32px; }
+.tpl .hero::after { content: "80%"; position: absolute; left: 0; right: 0; top: 40px; border-top: 2px dashed var(--pink); color: var(--pink); font: 500 12px "Roboto Mono", monospace; text-align: right; padding-right: 12px; }
+.tpl .hero h1 span { color: var(--accent); background: #fff; box-shadow: 0 0 0 6px #fff; }
+.btn-alt { color: var(--accent); box-shadow: inset 0 0 0 2px var(--accent); background: #fff; }
+.tpl .hc em, .tpl .cc-foot b { color: var(--accent); font-family: "Roboto Mono", monospace; }
+.tpl .cc .meta { color: var(--pink); font-family: "Roboto Mono", monospace; }
+.hr-sec { background: #fff; border-block: 1px solid var(--line); }
+.hr-grid { display: grid; grid-template-columns: repeat(4, 1fr); border: 1px solid var(--fg); }
+.hr-grid label { display: grid; gap: 4px; padding: 12px 14px; font-weight: 600; font-size: 13px; border-right: 1px solid var(--line); min-width: 0; background: #f1effc; }
+.hr-grid label:last-child { border-right: 0; }
+.hr-grid input, .hr-grid select { font: 500 20px "Roboto Mono", monospace; border: 0; background: transparent; padding: 4px 0; min-width: 0; width: 100%; color: var(--fg); }
+.hr-table { width: 100%; border-collapse: collapse; border: 1px solid var(--fg); border-top: 0; }
+.hr-table th, .hr-table td { padding: 14px; border-top: 1px solid var(--line); text-align: left; }
+.hr-table th { width: 45%; font-weight: 600; }
+.hr-table td { font: 500 22px "Roboto Mono", monospace; color: var(--accent); }
+.hr-note { color: var(--muted); font-size: 14px; }
+.eyebrow, .eyebrow a, .buy-price, .course-row-price, .guide-card .guide-card-cta { color: var(--accent); }
+.tpl .foot { background: var(--fg); color: #b4aee0; border: 0; }
+.tpl .foot .logo, .tpl .foot h4 { color: #fff; }
+.prose a { color: var(--accent); font-weight: 600; }
+@media (max-width: 800px) { .hr-grid { grid-template-columns: 1fr 1fr; } .hr-grid label:nth-child(2) { border-right: 0; } .hr-grid label { border-bottom: 1px solid var(--line); } }

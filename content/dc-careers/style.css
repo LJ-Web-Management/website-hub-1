@@ -1,0 +1,31 @@
+/* dc-careers: transit map. White, six colored lines with station dots, heavy Overpass. */
+:root {
+  --bg: #fff; --fg: #1b2a30; --muted: #56656b; --line: #e6ecee; --card: #fff;
+  --accent: #264653; --accent-fg: #fff; --radius: 12px; --maxw: 1180px;
+  --font: "Overpass", sans-serif; --head-font: "Overpass", sans-serif;
+}
+h1, h2, h3 { font-weight: 900; }
+.cl-lines { display: inline-flex; flex-direction: column; gap: 3px; margin-right: 10px; vertical-align: middle; }
+.cl-lines i { width: 24px; height: 4px; border-radius: 2px; background: #e63946; } .cl-lines i:nth-child(2) { background: #1d9bf0; } .cl-lines i:nth-child(3) { background: #2a9d8f; }
+.tpl .hero h1 span { color: #e63946; }
+.btn-alt { color: var(--accent); box-shadow: inset 0 0 0 3px var(--accent); background: #fff; }
+.tpl .hc { border: 0; border-left: 6px solid; border-radius: 4px; background: #f6f9fa; }
+.tpl .hc:nth-child(1) { border-color: #e63946; } .tpl .hc:nth-child(2) { border-color: #2a9d8f; } .tpl .hc:nth-child(3) { border-color: #2a9d8f; } .tpl .hc:nth-child(4) { border-color: #f4a261; }
+.tpl .hc em, .tpl .cc-foot b { color: var(--accent); }
+.tpl .cc .meta { color: #e63946; }
+.cl-sec { background: #f6f9fa; }
+.cl-hint { color: var(--muted); margin: -16px 0 24px; }
+.cl-map { display: grid; gap: 26px; }
+.cl-line h3 { margin: 0 0 6px; font-size: 18px; color: var(--c); }
+.cl-line ol { list-style: none; margin: 0; padding: 0; display: flex; overflow-x: auto; position: relative; padding-bottom: 6px; }
+.cl-line ol::before { content: ""; position: absolute; left: 0; right: 0; top: 13px; height: 8px; border-radius: 4px; background: var(--c); }
+.cl-line li { flex: 1 0 130px; position: relative; }
+.cl-line button { display: grid; justify-items: start; gap: 4px; background: none; border: 0; padding: 0 10px 0 0; text-align: left; cursor: pointer; font: 600 13px var(--font); color: var(--fg); width: 100%; }
+.cl-line button i { width: 26px; height: 26px; border-radius: 50%; background: #fff; border: 6px solid var(--c); position: relative; z-index: 1; transition: transform .15s; }
+.cl-line button:hover i, .cl-line button:focus-visible i { transform: scale(1.25); }
+.cl-line small { color: var(--muted); font-weight: 400; }
+.eyebrow, .eyebrow a, .buy-price, .course-row-price, .guide-card .guide-card-cta { color: var(--accent); }
+.tpl .foot { background: var(--fg); color: #a9b9be; border: 0; }
+.tpl .foot .logo, .tpl .foot h4 { color: #fff; }
+.prose a { color: var(--accent); font-weight: 700; }
+.cl-line { min-width: 0; }

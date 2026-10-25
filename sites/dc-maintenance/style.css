@@ -1,0 +1,21 @@
+/* dc-maintenance: work-order tags. Kraft paper, ochre tags with eyelets, Bitter slab + Karla. */
+:root {
+  --bg: #f5efe3; --fg: #2a2116; --muted: #66563f; --line: #e2d5bb; --card: #fffaf0;
+  --accent: #c98f12; --accent-fg: #2a2116; --radius: 4px; --maxw: 1120px;
+  --font: "Karla", sans-serif; --head-font: "Bitter", serif;
+}
+h1, h2, h3 { font-weight: 800; }
+.wo-tag { display: inline-grid; place-items: center; height: 26px; padding: 0 10px 0 16px; margin-right: 10px; background: var(--accent); color: var(--fg); font: 700 13px var(--font); clip-path: polygon(8px 0, 100% 0, 100% 100%, 8px 100%, 0 50%); }
+.tpl .hero h1 span { background: var(--accent); padding: 0 .12em; box-decoration-break: clone; -webkit-box-decoration-break: clone; }
+.tpl .kicker { color: #8a5f00; }
+.btn { background: var(--fg); color: #fff; }
+.btn-alt { background: transparent; color: var(--fg); box-shadow: inset 0 0 0 2px var(--fg); }
+.tpl .hc { position: relative; padding-left: 40px; clip-path: polygon(18px 0, 100% 0, 100% 100%, 18px 100%, 0 50%); border: 0; background: #ffe8b0; }
+.tpl .hc::before { content: ""; position: absolute; left: 14px; top: 50%; width: 10px; height: 10px; margin-top: -5px; border-radius: 50%; background: var(--bg); box-shadow: inset 0 0 0 2px #8a5f00; }
+.tpl .hc em, .tpl .cc-foot b { color: var(--fg); }
+.tpl .cc { background: var(--card); border: 1px dashed #b89a63; }
+.tpl .cc .meta { color: #8a5f00; }
+.eyebrow, .eyebrow a, .buy-price, .course-row-price, .guide-card .guide-card-cta { color: #8a5f00; }
+.tpl .foot { background: var(--fg); color: #cbbd9f; border: 0; }
+.tpl .foot .logo, .tpl .foot h4 { color: #ffd166; }
+.prose a { color: #8a5f00; font-weight: 700; }

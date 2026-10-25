@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://dc-access-control.hazwoperosha.us/sitemap.xml

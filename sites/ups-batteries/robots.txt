@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ups-batteries.hazwoperosha.us/sitemap.xml

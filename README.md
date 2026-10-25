@@ -37,7 +37,7 @@ and the base styles the course sites use. `_shared` can't be a subdomain, so it 
 
 ## Course landing sites
 
-Sixty-five sites sell hazwoper-osha.com courses, each with its own niche, design, guides and course pages. Every site's
+Ninety sites sell hazwoper-osha.com courses, each with its own niche, design, guides and course pages. Every site's
 `/courses/` page lists its own featured courses first, then all trainings in the catalog, grouped by category, each with an Enroll button:
 
 | Site | Niche | LMS course ids |
@@ -107,6 +107,31 @@ Sixty-five sites sell hazwoper-osha.com courses, each with its own niche, design
 | [hazwoper-faq](https://hazwoper-faq.hazwoperosha.us) | Tool: searchable FAQ | 587, 581, 595, 1100, 597 |
 | [site-zones](https://site-zones.hazwoperosha.us) | Tool: clickable site control zone map | 584, 586, 587, 597 |
 | [flashcards](https://flashcards.hazwoperosha.us) | Tool: flip-card study deck | 587, 581, 595, 585, 583 |
+| [dc-design](https://dc-design.hazwoperosha.us) | DC: design and planning | 842, 849, 845, 829, 834 |
+| [dc-tiers](https://dc-tiers.hazwoperosha.us) | DC: Tier I–IV (tier explorer) | 849, 842, 844, 847 |
+| [dc-operations](https://dc-operations.hazwoperosha.us) | DC: operations management | 843, 839, 837, 830, 1097 |
+| [dc-security](https://dc-security.hazwoperosha.us) | DC: SOC 2 / ISO 27001 compliance | 848, 828, 855, 833 |
+| [dc-power](https://dc-power.hazwoperosha.us) | DC: power systems | 847, 1092, 1098, 840, 1102, 831 |
+| [dc-cooling](https://dc-cooling.hazwoperosha.us) | DC: cooling | 841, 836, 851, 832, 838 |
+| [dc-disaster-recovery](https://dc-disaster-recovery.hazwoperosha.us) | DC: disaster recovery and continuity | 844, 880, 837, 1098 |
+| [dc-commissioning](https://dc-commissioning.hazwoperosha.us) | DC: commissioning L1–L5 (level stepper) | 845, 842, 840, 835 |
+| [dc-bms](https://dc-bms.hazwoperosha.us) | DC: BMS, BAS and monitoring | 846, 1104, 830, 832 |
+| [dc-hvac](https://dc-hvac.hazwoperosha.us) | DC: HVAC and mechanical technicians | 836, 838, 851, 1096 |
+| [ups-batteries](https://ups-batteries.hazwoperosha.us) | DC: UPS and batteries (runtime estimator) | 857, 1102, 840, 1084, 1021 |
+| [dc-fiber](https://dc-fiber.hazwoperosha.us) | DC: fiber and cabling | 834, 829, 830, 855 |
+| [dc-generators](https://dc-generators.hazwoperosha.us) | DC: generators (fuel runtime estimator) | 835, 1098, 853, 416, 479 |
+| [pue](https://pue.hazwoperosha.us) | DC: energy efficiency (PUE calculator) | 832, 841, 846, 830 |
+| [capacity-planning](https://capacity-planning.hazwoperosha.us) | DC: capacity planning (rack load calculator) | 829, 842, 843, 1092, 830 |
+| [dc-maintenance](https://dc-maintenance.hazwoperosha.us) | DC: maintenance programs | 839, 838, 1097, 1096, 1101 |
+| [dc-compliance](https://dc-compliance.hazwoperosha.us) | DC: environmental compliance | 833, 851, 416, 602, 601 |
+| [dc-incident-response](https://dc-incident-response.hazwoperosha.us) | DC: incident and emergency response | 837, 853, 1021, 854, 1099 |
+| [dcim](https://dcim.hazwoperosha.us) | DC: DCIM platforms | 830, 846, 843, 829 |
+| [arc-flash](https://arc-flash.hazwoperosha.us) | DC: arc flash, NFPA 70E (PPE category explorer) | 850, 852, 831, 847 |
+| [clean-agent](https://clean-agent.hazwoperosha.us) | DC: clean agent fire suppression | 854, 853, 837, 1099 |
+| [lithium-ion](https://lithium-ion.hazwoperosha.us) | DC: lithium-ion thermal runaway (stage explorer) | 1021, 857, 1084, 602 |
+| [raised-floor](https://raised-floor.hazwoperosha.us) | DC: raised floor and ergonomics | 856, 858, 852, 855 |
+| [dc-access-control](https://dc-access-control.hazwoperosha.us) | DC: physical security and access | 828, 855, 848 |
+| [dc-careers](https://dc-careers.hazwoperosha.us) | DC: career tracks (clickable track map) | 852, 856, 858, 855, 843 |
 
 They're generated. Edit the sources, then rebuild and commit the output:
 

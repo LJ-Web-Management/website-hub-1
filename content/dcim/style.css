@@ -1,0 +1,20 @@
+/* dcim: SaaS dashboard. Soft periwinkle canvas, floating widget cards, Figtree. */
+:root {
+  --bg: #f5f7ff; --fg: #141b3c; --muted: #5a6386; --line: #e1e6fb; --card: #fff;
+  --accent: #4361ee; --accent-fg: #fff; --radius: 20px; --maxw: 1160px;
+  --font: "Figtree", sans-serif; --head-font: "Figtree", sans-serif;
+}
+h1, h2, h3 { font-weight: 800; letter-spacing: -.02em; }
+.btn { border-radius: 12px; }
+.btn-alt { color: var(--accent); background: #fff; box-shadow: 0 4px 14px rgba(67, 97, 238, .15); }
+.sp-panes { display: inline-grid; grid-template-columns: 1fr 1fr; gap: 2px; width: 22px; height: 22px; margin-right: 10px; vertical-align: middle; }
+.sp-panes i { background: var(--accent); border-radius: 2px; } .sp-panes i:nth-child(2), .sp-panes i:nth-child(3) { background: #9fb3ff; }
+.tpl .hero { background: radial-gradient(circle at 90% 10%, #e3e8ff, transparent 40%), radial-gradient(circle at 5% 90%, #f0e4ff, transparent 35%); }
+.tpl .hero h1 span { background: linear-gradient(90deg, #4361ee, #7209b7); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.tpl .hc, .tpl .cc { border: 0; box-shadow: 0 10px 30px rgba(20, 27, 60, .08); }
+.tpl .hc em, .tpl .cc-foot b { color: var(--accent); }
+.tpl .cc .meta { color: #7209b7; }
+.guide-card { border-radius: 20px; }
+.eyebrow, .eyebrow a, .buy-price, .course-row-price, .guide-card .guide-card-cta { color: var(--accent); }
+.tpl .foot { background: #fff; border-top: 1px solid var(--line); }
+.prose a { color: var(--accent); font-weight: 600; }

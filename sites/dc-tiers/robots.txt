@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://dc-tiers.hazwoperosha.us/sitemap.xml

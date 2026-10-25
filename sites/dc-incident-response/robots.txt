@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://dc-incident-response.hazwoperosha.us/sitemap.xml

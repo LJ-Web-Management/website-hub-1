@@ -4,7 +4,8 @@
 //
 // content/<name>/site.mjs   copy, course list, guides and the site's header/footer/home page
 // content/<name>/style.css  the site's design (copied to sites/<name>/style.css)
-// content/catalog.json      every course: LMS course id, name, list price, duration, citation
+// content/catalog.json      every HAZWOPER course: LMS course id, name, list price, duration, citation
+// content/dc-catalog.json   data center courses, same fields plus `dc` (copy from datacentertraining.us)
 import { readFileSync, writeFileSync, mkdirSync, rmSync, readdirSync, copyFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
@@ -158,7 +159,7 @@ ${related.length ? `<h2>${L.related}</h2><ul class="related">${related.map((g) =
 </div>
 <aside class="buy-box">
 <p class="buy-price">${money(c.price)} <span>${L.perSeat}</span></p>
-<dl><dt>${L.hours}</dt><dd>${esc(c.duration)}</dd><dt>${L.standard}</dt><dd>${esc(c.citation)}</dd><dt>${L.course}</dt><dd>#${c.id}</dd></dl>
+<dl><dt>${L.hours}</dt><dd>${esc(c.duration)}</dd>${c.citation ? `<dt>${L.standard}</dt><dd>${esc(c.citation)}</dd>` : ""}<dt>${L.course}</dt><dd>#${c.id}</dd></dl>
 ${h.buy(c.id, L.buyNow)}
 <p class="buy-note">${L.certificate}</p>
 </aside>

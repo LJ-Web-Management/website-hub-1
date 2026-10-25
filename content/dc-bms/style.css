@@ -1,0 +1,26 @@
+/* dc-bms: trend-graph UI. Deep violet hero with teal trend lines, Plus Jakarta Sans + Fira Code point names. */
+:root {
+  --bg: #faf7ff; --fg: #1d0b33; --muted: #5c4d70; --line: #e6dcf5; --card: #fff;
+  --accent: #5a189a; --accent-fg: #fff; --radius: 14px; --maxw: 1160px;
+  --font: "Plus Jakarta Sans", sans-serif; --head-font: "Plus Jakarta Sans", sans-serif;
+  --teal: #2ec4b6;
+}
+h1, h2, h3 { font-weight: 800; }
+.pt-spark { display: inline-block; width: 28px; height: 20px; margin-right: 10px; vertical-align: middle; background: linear-gradient(135deg, transparent 45%, var(--teal) 45% 55%, transparent 55%), #240046; border-radius: 5px; }
+.tpl .hero { background: #240046; color: #fff; }
+.pt-trend { position: absolute; left: 0; bottom: 0; width: 100%; height: 55%; opacity: .45; }
+.tpl .kicker { font: 500 14px "Fira Code", monospace; color: var(--teal); text-transform: none; letter-spacing: 0; }
+.tpl .hero h1 span { color: #c77dff; }
+.tpl .hero-lede { color: #cdbde6; }
+.tpl .hero .btn { background: var(--teal); color: #10002b; }
+.tpl .hero .btn-alt { background: transparent; color: #fff; box-shadow: inset 0 0 0 2px #c77dff; }
+.tpl .hc { background: rgba(36, 0, 70, .88); border: 1px solid rgba(199, 125, 255, .35); color: #fff; }
+.tpl .hc small { color: #b9a5d8; font-family: "Fira Code", monospace; }
+.tpl .hc em { color: var(--teal); }
+.tpl .cc .meta { font-family: "Fira Code", monospace; color: #0f8f84; }
+.tpl .cc-foot b { color: var(--accent); }
+.tpl .cc { border-color: var(--line); }
+.eyebrow, .eyebrow a, .buy-price, .course-row-price, .guide-card .guide-card-cta { color: var(--accent); }
+.tpl .foot { background: #10002b; color: #b9a5d8; border: 0; }
+.tpl .foot .logo, .tpl .foot h4 { color: #fff; }
+.prose a { color: var(--accent); font-weight: 600; }
