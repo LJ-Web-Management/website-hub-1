@@ -22,10 +22,10 @@ hostname and serves the matching folder.
 - `www` is just another folder: `sites/www/` would serve `www.hazwoperosha.us`.
 - The bare domain (`hazwoperosha.us`) is not served by this repo.
 
-## Google Analytics
+## Analytics
 
-The Worker adds the Google Analytics tag (`G-CSJ7GHDZXW`) before `</head>` on every HTML page it
-serves, for every site except the internal hub, so pages never include it themselves. To change the ID, edit `GA_ID` in
+The Worker adds the Google Analytics tag (`G-CSJ7GHDZXW`) and the Microsoft Clarity tag (`z3cea3et53`) before `</head>` on every HTML page it
+serves, for every site except the internal hub, so pages never include them themselves. To change the IDs, edit `GA_ID` or `CLARITY_ID` in
 `src/index.js`.
 
 ## Hub

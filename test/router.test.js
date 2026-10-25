@@ -55,7 +55,7 @@ test("keeps the hub out of search engines", async () => {
   assert.equal((await get("https://tim.hazwoperosha.us/", env)).headers.get("X-Robots-Tag"), null);
 });
 
-test("adds the Google Analytics tag to HTML pages only", async () => {
+test("adds the Google Analytics and Clarity tags to HTML pages only", async () => {
   const html = (body) => new Response(body, { headers: { "Content-Type": "text/html; charset=utf-8" } });
   const env = { ASSETS: { async fetch(req) {
     const path = new URL(req.url).pathname;
@@ -67,6 +67,8 @@ test("adds the Google Analytics tag to HTML pages only", async () => {
   const page = await (await get("https://tim.hazwoperosha.us/", env)).text();
   assert.match(page, /googletagmanager\.com\/gtag\/js\?id=G-CSJ7GHDZXW"><\/script>[\s\S]*<\/script>\n<\/head>/);
   assert.equal(page.split("G-CSJ7GHDZXW").length - 1, 2);
+  assert.match(page, /clarity\.ms\/tag\/"\+i;[\s\S]*"z3cea3et53"\);\n<\/script>\n<\/head>/);
+  assert.equal(page.split("z3cea3et53").length - 1, 1);
   const missing = await get("https://tim.hazwoperosha.us/nope", env);
   assert.equal(missing.status, 404);
   assert.match(await missing.text(), /G-CSJ7GHDZXW/);
@@ -76,6 +78,8 @@ test("adds the Google Analytics tag to HTML pages only", async () => {
 test("leaves the hub untracked", async () => {
   const env = { ASSETS: { async fetch() { return new Response("<html><head></head><body>hub</body></html>", { headers: { "Content-Type": "text/html" } }); } } };
   const res = await get("https://hub.hazwoperosha.us/", env);
-  assert.doesNotMatch(await res.text(), /G-CSJ7GHDZXW/);
+  const hub = await res.text();
+  assert.doesNotMatch(hub, /G-CSJ7GHDZXW/);
+  assert.doesNotMatch(hub, /clarity/);
   assert.equal(res.headers.get("X-Robots-Tag"), "noindex, nofollow");
 });
