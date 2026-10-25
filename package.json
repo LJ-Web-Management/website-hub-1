@@ -3,6 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "build": "node tools/build.mjs",
     "dev": "npx wrangler dev",
     "deploy": "npx wrangler deploy",
     "test": "node --test"

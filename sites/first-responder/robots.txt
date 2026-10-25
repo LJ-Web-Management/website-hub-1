@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://first-responder.hazwoperosha.us/sitemap.xml

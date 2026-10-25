@@ -1,7 +1,10 @@
 // Serves sites/<name>/ at <name>.<your domain>. The first part of the hostname picks the folder:
 // johnny.hazwoperosha.us/about -> sites/johnny/about.html (or sites/johnny/about/index.html).
+// /_shared/ is the exception: every site gets sites/_shared/ there (checkout, course catalog).
+// "_shared" can't be a subdomain, so it is never served as a site of its own.
 
 const NAME = /^[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
+const SHARED = "/_shared/";
 
 export function siteFor(hostname) {
   const name = hostname.toLowerCase().split(".")[0];
@@ -15,7 +18,8 @@ export default {
     if (!site) return notFound();
 
     const prefix = `/${site}`;
-    const res = await env.ASSETS.fetch(new Request(new URL(prefix + url.pathname + url.search, url), request));
+    const path = url.pathname.startsWith(SHARED) ? url.pathname : prefix + url.pathname;
+    const res = await env.ASSETS.fetch(new Request(new URL(path + url.search, url), request));
 
     // Asset serving redirects /about.html -> /about and /docs -> /docs/. Those redirects carry the
     // folder prefix, which visitors must never see.

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://forty-hour.hazwoperosha.us/sitemap.xml

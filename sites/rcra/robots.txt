@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://rcra.hazwoperosha.us/sitemap.xml

@@ -41,3 +41,10 @@ test("uses the site's 404.html when it has one", async () => {
   assert.equal(await res.text(), "lucy 404");
   assert.equal((await get("https://nobody.hazwoperosha.us/", env)).status, 404);
 });
+
+test("serves sites/_shared/ to every site", async () => {
+  const env = { ASSETS: assets({ "/_shared/checkout.js": "shared js", "/johnny/_shared/checkout.js": "johnny's own" }) };
+  assert.equal(await (await get("https://johnny.hazwoperosha.us/_shared/checkout.js", env)).text(), "shared js");
+  assert.equal(await (await get("https://tim.hazwoperosha.us/_shared/checkout.js", env)).text(), "shared js");
+  assert.equal(siteFor("_shared.hazwoperosha.us"), null);
+});

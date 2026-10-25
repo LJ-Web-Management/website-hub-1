@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://spill-response.hazwoperosha.us/sitemap.xml

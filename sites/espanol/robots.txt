@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://espanol.hazwoperosha.us/sitemap.xml
