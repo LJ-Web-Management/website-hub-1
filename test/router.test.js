@@ -54,3 +54,21 @@ test("keeps the hub out of search engines", async () => {
   assert.equal((await get("https://hub.hazwoperosha.us/", env)).headers.get("X-Robots-Tag"), "noindex, nofollow");
   assert.equal((await get("https://tim.hazwoperosha.us/", env)).headers.get("X-Robots-Tag"), null);
 });
+
+test("adds the Google Analytics tag to HTML pages only", async () => {
+  const html = (body) => new Response(body, { headers: { "Content-Type": "text/html; charset=utf-8" } });
+  const env = { ASSETS: { async fetch(req) {
+    const path = new URL(req.url).pathname;
+    if (path === "/tim/") return html("<html><head><title>t</title></head><body>hi</body></html>");
+    if (path === "/tim/404.html") return html("<html><head></head><body>gone</body></html>");
+    if (path === "/tim/app.js") return new Response("const x = '</head>';", { headers: { "Content-Type": "text/javascript" } });
+    return new Response("missing", { status: 404 });
+  } } };
+  const page = await (await get("https://tim.hazwoperosha.us/", env)).text();
+  assert.match(page, /googletagmanager\.com\/gtag\/js\?id=G-CSJ7GHDZXW"><\/script>[\s\S]*<\/script>\n<\/head>/);
+  assert.equal(page.split("G-CSJ7GHDZXW").length - 1, 2);
+  const missing = await get("https://tim.hazwoperosha.us/nope", env);
+  assert.equal(missing.status, 404);
+  assert.match(await missing.text(), /G-CSJ7GHDZXW/);
+  assert.equal(await (await get("https://tim.hazwoperosha.us/app.js", env)).text(), "const x = '</head>';");
+});

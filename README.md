@@ -22,6 +22,12 @@ hostname and serves the matching folder.
 - `www` is just another folder: `sites/www/` would serve `www.hazwoperosha.us`.
 - The bare domain (`hazwoperosha.us`) is not served by this repo.
 
+## Google Analytics
+
+The Worker adds the Google Analytics tag (`G-CSJ7GHDZXW`) before `</head>` on every HTML page it
+serves, for every site, so pages never include it themselves. To change the ID, edit `GA_ID` in
+`src/index.js`.
+
 ## Hub
 
 https://hub.hazwoperosha.us is a plain list of links to every site. `tools/hub.mjs` writes it from
