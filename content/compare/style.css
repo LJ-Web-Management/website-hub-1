@@ -1,0 +1,32 @@
+/* compare: spec sheet. Clean white, deep teal, split A|B motif, Space Grotesk + Inter. */
+:root {
+  --bg: #f4fbfc; --fg: #0b2a30; --muted: #4f6b70; --line: #cfe8ec; --card: #fff;
+  --accent: #0b7285; --accent-fg: #fff; --radius: 10px; --maxw: 1180px;
+  --font: "Inter", sans-serif; --head-font: "Space Grotesk", sans-serif;
+}
+h1, h2, h3 { font-weight: 700; }
+.btn-alt { color: var(--accent); box-shadow: inset 0 0 0 2px var(--accent); background: #fff; }
+.vs { display: inline-block; background: var(--accent); color: #fff; font-size: 12px; padding: 4px 6px; border-radius: 6px; margin-right: 8px; letter-spacing: .1em; }
+.tpl .hero { background: linear-gradient(90deg, #fff 0 50%, #e3f6f9 50%); }
+.tpl .hero h1 span { color: var(--accent); display: block; }
+.tpl .hc { border-color: var(--line); }
+.tpl .hc em { color: var(--accent); }
+.cmp-sec { background: #fff; border-block: 1px solid var(--line); }
+.pickers { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-bottom: 20px; }
+.pickers label { display: grid; gap: 6px; font-weight: 600; font-size: 14px; color: var(--muted); }
+.pickers select { font: 15px var(--font); padding: 12px; border: 2px solid var(--line); border-radius: 10px; background: #fff; color: var(--fg); width: 100%; }
+.cmp { width: 100%; border-collapse: collapse; min-width: 640px; }
+.cmp th, .cmp td { text-align: left; padding: 14px; border-bottom: 1px solid var(--line); vertical-align: top; }
+.cmp tr:first-child th { background: var(--accent); color: #fff; font-family: var(--head-font); }
+.cmp tr:first-child th:first-child { background: transparent; }
+.cmp th { width: 180px; color: var(--muted); font-weight: 600; }
+.cmp tr:first-child th:not(:first-child) { width: auto; }
+.cmp td:nth-child(even) { background: #f4fbfc; }
+.tpl .cc .meta, .tpl .cc-foot b { color: var(--accent); }
+.guide-card .guide-card-cta { color: var(--accent); }
+.tpl .foot { background: var(--fg); color: #a5c4c9; border: 0; }
+.tpl .foot .logo, .tpl .foot h4 { color: #fff; }
+.eyebrow, .eyebrow a, .buy-price, .course-row-price { color: var(--accent); }
+.prose a { color: var(--accent); font-weight: 600; }
+.prose th { background: var(--accent); color: #fff; }
+@media (max-width: 700px) { .pickers { grid-template-columns: 1fr; } .tpl .hero { background: #e3f6f9; } }

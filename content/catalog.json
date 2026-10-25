@@ -6,7 +6,8 @@
   "price": 149.99,
   "duration": "8 Hours",
   "citation": "RCRA + 49 CFR 172",
-  "audience": "Waste generators who also ship hazardous materials"
+  "audience": "Waste generators who also ship hazardous materials",
+  "category": "Environmental / EPA"
  },
  {
   "id": 412,
@@ -15,7 +16,8 @@
   "price": 99.99,
   "duration": "4 Hours",
   "citation": "40 CFR Parts 262 and 264/265",
-  "audience": "LQGs, TSDFs, emergency coordinators, EHS managers"
+  "audience": "LQGs, TSDFs, emergency coordinators, EHS managers",
+  "category": "Environmental / EPA"
  },
  {
   "id": 415,
@@ -24,7 +26,8 @@
   "price": 59.99,
   "duration": "2 Hours",
   "citation": "40 CFR 262.15",
-  "audience": "Laboratories, manufacturing, healthcare, hazardous waste generators"
+  "audience": "Laboratories, manufacturing, healthcare, hazardous waste generators",
+  "category": "Environmental / EPA"
  },
  {
   "id": 416,
@@ -33,7 +36,8 @@
   "price": 49.99,
   "duration": "2 Hours",
   "citation": "29 CFR 1910.120 / 40 CFR 112",
-  "audience": "General industry, environmental services"
+  "audience": "General industry, environmental services",
+  "category": "Environmental / EPA"
  },
  {
   "id": 478,
@@ -42,7 +46,8 @@
   "price": 24.99,
   "duration": "1 Hour",
   "citation": "40 CFR 112 / 29 CFR 1910.120",
-  "audience": "Industrial facilities, fuel handling"
+  "audience": "Industrial facilities, fuel handling",
+  "category": "Equipment & Process-Specific Mini Courses"
  },
  {
   "id": 479,
@@ -51,7 +56,8 @@
   "price": 24.99,
   "duration": "1 Hour",
   "citation": "40 CFR 112 / 29 CFR 1910.120",
-  "audience": "Manufacturing, warehousing, fuel terminals"
+  "audience": "Manufacturing, warehousing, fuel terminals",
+  "category": "Equipment & Process-Specific Mini Courses"
  },
  {
   "id": 574,
@@ -60,7 +66,8 @@
   "price": 159.99,
   "duration": "8 Hours",
   "citation": "29 CFR 1910.120(q)(8)",
-  "audience": "Emergency responders, incident commanders (annual)"
+  "audience": "Emergency responders, incident commanders (annual)",
+  "category": "HAZWOPER & RCRA Hazardous Waste"
  },
  {
   "id": 575,
@@ -69,7 +76,8 @@
   "price": 249.99,
   "duration": "24 Hours",
   "citation": "8 CCR 5192(p) / RCRA",
-  "audience": "California TSD facility operators"
+  "audience": "California TSD facility operators",
+  "category": "HAZWOPER & RCRA Hazardous Waste"
  },
  {
   "id": 576,
@@ -78,7 +86,8 @@
   "price": 169.99,
   "duration": "24 Hours",
   "citation": "8 CCR 5192(e)",
-  "audience": "California occasional-exposure site workers"
+  "audience": "California occasional-exposure site workers",
+  "category": "HAZWOPER & RCRA Hazardous Waste"
  },
  {
   "id": 577,
@@ -87,7 +96,8 @@
   "price": 219.99,
   "duration": "40 Hours",
   "citation": "8 CCR 5192(e)",
-  "audience": "California environmental remediation, emergency response"
+  "audience": "California environmental remediation, emergency response",
+  "category": "HAZWOPER & RCRA Hazardous Waste"
  },
  {
   "id": 578,
@@ -96,7 +106,8 @@
   "price": 89.99,
   "duration": "8 Hours",
   "citation": "8 CCR 5192(e)(8)",
-  "audience": "California HAZWOPER-certified workers (annual)"
+  "audience": "California HAZWOPER-certified workers (annual)",
+  "category": "HAZWOPER & RCRA Hazardous Waste"
  },
  {
   "id": 579,
@@ -105,7 +116,8 @@
   "price": 109.99,
   "duration": "8 Hours",
   "citation": "8 CCR 5192(p)(8) / RCRA",
-  "audience": "California TSD facility operators (annual)"
+  "audience": "California TSD facility operators (annual)",
+  "category": "HAZWOPER & RCRA Hazardous Waste"
  },
  {
   "id": 580,
@@ -114,7 +126,8 @@
   "price": 34.99,
   "duration": "2 Hours",
   "citation": "40 CFR 262 Subpart B (RCRA)",
-  "audience": "Waste generators, transporters, TSD facility staff"
+  "audience": "Waste generators, transporters, TSD facility staff",
+  "category": "HAZWOPER & RCRA Hazardous Waste"
  },
  {
   "id": 581,
@@ -123,7 +136,8 @@
   "price": 169.99,
   "duration": "24 Hours",
   "citation": "29 CFR 1910.120(e)",
-  "audience": "Environmental remediation, occasional-exposure site workers"
+  "audience": "Environmental remediation, occasional-exposure site workers",
+  "category": "HAZWOPER & RCRA Hazardous Waste"
  },
  {
   "id": 582,
@@ -132,7 +146,8 @@
   "price": 229.99,
   "duration": "24 Hours",
   "citation": "29 CFR 1910.120(p) / RCRA",
-  "audience": "TSD facility operators, hazardous waste facility staff"
+  "audience": "TSD facility operators, hazardous waste facility staff",
+  "category": "HAZWOPER & RCRA Hazardous Waste"
  },
  {
   "id": 583,
@@ -141,7 +156,8 @@
   "price": 14.99,
   "duration": "20 Min",
   "citation": "29 CFR 1910.120(e) / 1926.65(e)",
-  "audience": "Environmental remediation, emergency response, waste management, construction, refining"
+  "audience": "Environmental remediation, emergency response, waste management, construction, refining",
+  "category": "HAZWOPER & RCRA Hazardous Waste"
  },
  {
   "id": 584,
@@ -150,7 +166,8 @@
   "price": 14.99,
   "duration": "20 Min",
   "citation": "29 CFR 1910.120(e) / 1926.65(e)",
-  "audience": "Environmental remediation, emergency response, waste management, construction, refining"
+  "audience": "Environmental remediation, emergency response, waste management, construction, refining",
+  "category": "HAZWOPER & RCRA Hazardous Waste"
  },
  {
   "id": 585,
@@ -159,7 +176,8 @@
   "price": 12.99,
   "duration": "15 Min",
   "citation": "29 CFR 1910.120(e) / 1926.65(e)",
-  "audience": "Environmental remediation, emergency response, waste management, construction, refining"
+  "audience": "Environmental remediation, emergency response, waste management, construction, refining",
+  "category": "HAZWOPER & RCRA Hazardous Waste"
  },
  {
   "id": 586,
@@ -168,7 +186,8 @@
   "price": 14.99,
   "duration": "20 Min",
   "citation": "29 CFR 1910.120(e) / 1926.65(e)",
-  "audience": "Environmental remediation, emergency response, waste management, construction, refining"
+  "audience": "Environmental remediation, emergency response, waste management, construction, refining",
+  "category": "HAZWOPER & RCRA Hazardous Waste"
  },
  {
   "id": 587,
@@ -177,7 +196,8 @@
   "price": 249.99,
   "duration": "40 Hours",
   "citation": "29 CFR 1910.120(e) / 1926.65(e)",
-  "audience": "Environmental remediation, emergency response, waste management, construction, refining"
+  "audience": "Environmental remediation, emergency response, waste management, construction, refining",
+  "category": "HAZWOPER & RCRA Hazardous Waste"
  },
  {
   "id": 588,
@@ -186,7 +206,8 @@
   "price": 249.99,
   "duration": "40 Hours",
   "citation": "29 CFR 1910.120(e) / 1926.65(e)",
-  "audience": "Construction (Contaminated Sites)"
+  "audience": "Construction (Contaminated Sites)",
+  "category": "HAZWOPER & RCRA Hazardous Waste"
  },
  {
   "id": 589,
@@ -195,7 +216,8 @@
   "price": 249.99,
   "duration": "40 Hours",
   "citation": "29 CFR 1910.120(e) / 1926.65(e)",
-  "audience": "Emergency Response/Fire-Hazmat Teams"
+  "audience": "Emergency Response/Fire-Hazmat Teams",
+  "category": "HAZWOPER & RCRA Hazardous Waste"
  },
  {
   "id": 590,
@@ -204,7 +226,8 @@
   "price": 249.99,
   "duration": "40 Hours",
   "citation": "29 CFR 1910.120(e) / 1926.65(e)",
-  "audience": "Environmental Remediation"
+  "audience": "Environmental Remediation",
+  "category": "HAZWOPER & RCRA Hazardous Waste"
  },
  {
   "id": 591,
@@ -213,7 +236,8 @@
   "price": 249.99,
   "duration": "40 Hours",
   "citation": "29 CFR 1910.120(e) / 1926.65(e)",
-  "audience": "Oil & Gas Spill Response"
+  "audience": "Oil & Gas Spill Response",
+  "category": "HAZWOPER & RCRA Hazardous Waste"
  },
  {
   "id": 592,
@@ -222,7 +246,8 @@
   "price": 249.99,
   "duration": "40 Hours",
   "citation": "29 CFR 1910.120(e) / 1926.65(e)",
-  "audience": "Utility/Pipeline Emergency Response"
+  "audience": "Utility/Pipeline Emergency Response",
+  "category": "HAZWOPER & RCRA Hazardous Waste"
  },
  {
   "id": 593,
@@ -231,7 +256,8 @@
   "price": 179.99,
   "duration": "8 Hours",
   "citation": "29 CFR 1910.120(q)",
-  "audience": "Emergency responders, fire/hazmat teams, incident commanders"
+  "audience": "Emergency responders, fire/hazmat teams, incident commanders",
+  "category": "HAZWOPER & RCRA Hazardous Waste"
  },
  {
   "id": 594,
@@ -240,7 +266,8 @@
   "price": 99.99,
   "duration": "8 Hours",
   "citation": "29 CFR 1910.120(p)(8) / RCRA",
-  "audience": "TSD facility operators (annual)"
+  "audience": "TSD facility operators (annual)",
+  "category": "HAZWOPER & RCRA Hazardous Waste"
  },
  {
   "id": 595,
@@ -249,7 +276,8 @@
   "price": 89.99,
   "duration": "8 Hours",
   "citation": "29 CFR 1910.120(e)(8)",
-  "audience": "All previously HAZWOPER-certified workers (annual)"
+  "audience": "All previously HAZWOPER-certified workers (annual)",
+  "category": "HAZWOPER & RCRA Hazardous Waste"
  },
  {
   "id": 596,
@@ -258,7 +286,8 @@
   "price": 149.99,
   "duration": "8 Hours",
   "citation": "29 CFR 1910.120(e)(4)/(e)(8)",
-  "audience": "HAZWOPER supervisors (annual)"
+  "audience": "HAZWOPER supervisors (annual)",
+  "category": "HAZWOPER & RCRA Hazardous Waste"
  },
  {
   "id": 597,
@@ -267,7 +296,8 @@
   "price": 179.99,
   "duration": "8 Hours",
   "citation": "29 CFR 1910.120(e)(4)",
-  "audience": "On-scene incident commanders/supervisors, remediation site leads"
+  "audience": "On-scene incident commanders/supervisors, remediation site leads",
+  "category": "HAZWOPER & RCRA Hazardous Waste"
  },
  {
   "id": 598,
@@ -276,7 +306,8 @@
   "price": 109.99,
   "duration": "8 Hours",
   "citation": "29 CFR 1910.120(e)(8) / 1910.111",
-  "audience": "Ammonia refrigeration facility technicians"
+  "audience": "Ammonia refrigeration facility technicians",
+  "category": "HAZWOPER & RCRA Hazardous Waste"
  },
  {
   "id": 599,
@@ -285,7 +316,8 @@
   "price": 199.99,
   "duration": "24 Hours",
   "citation": "29 CFR 1910.120 / RCRA",
-  "audience": "Waste management technicians, environmental services"
+  "audience": "Waste management technicians, environmental services",
+  "category": "HAZWOPER & RCRA Hazardous Waste"
  },
  {
   "id": 600,
@@ -294,7 +326,8 @@
   "price": 59.99,
   "duration": "4 Hours",
   "citation": "40 CFR 262.17 (RCRA, annual)",
-  "audience": "LQG/SQG hazardous waste generators (annual)"
+  "audience": "LQG/SQG hazardous waste generators (annual)",
+  "category": "HAZWOPER & RCRA Hazardous Waste"
  },
  {
   "id": 601,
@@ -303,7 +336,8 @@
   "price": 89.99,
   "duration": "8 Hours",
   "citation": "40 CFR 262.17 (RCRA)",
-  "audience": "Manufacturing, industrial, healthcare, LQG/SQG waste generators"
+  "audience": "Manufacturing, industrial, healthcare, LQG/SQG waste generators",
+  "category": "HAZWOPER & RCRA Hazardous Waste"
  },
  {
   "id": 602,
@@ -312,7 +346,8 @@
   "price": 34.99,
   "duration": "2 Hours",
   "citation": "40 CFR 273 (RCRA)",
-  "audience": "Retail, facilities management, battery/lamp/e-waste handlers"
+  "audience": "Retail, facilities management, battery/lamp/e-waste handlers",
+  "category": "HAZWOPER & RCRA Hazardous Waste"
  },
  {
   "id": 702,
@@ -321,7 +356,8 @@
   "price": 149.99,
   "duration": "8 Hours",
   "citation": "29 CFR 1910.120(q)",
-  "audience": "Manufacturing facility emergency response teams"
+  "audience": "Manufacturing facility emergency response teams",
+  "category": "Manufacturing & Industrial Operations"
  },
  {
   "id": 900,
@@ -330,7 +366,8 @@
   "price": 84.99,
   "duration": "8 Hours",
   "citation": "State-plan equivalents of federal OSHA standard (see parent course)",
-  "audience": "HAZWOPER-certified workers (state-plan jurisdictions)"
+  "audience": "HAZWOPER-certified workers (state-plan jurisdictions)",
+  "category": "State-Plan Specific Training"
  },
  {
   "id": 1016,
@@ -339,7 +376,8 @@
   "price": 399.99,
   "duration": "24 Hours",
   "citation": "29 CFR 1910.120(e)",
-  "audience": "In-house HAZWOPER trainers/EHS managers"
+  "audience": "In-house HAZWOPER trainers/EHS managers",
+  "category": "Train-the-Trainer & Certification Programs"
  },
  {
   "id": 1051,
@@ -348,7 +386,8 @@
   "price": 49.99,
   "duration": "4 Hours",
   "citation": "22 CCR Div. 4.5 / 40 CFR 262.17 / 8 CCR 5192",
-  "audience": "California hazardous waste generators"
+  "audience": "California hazardous waste generators",
+  "category": "Cal/OSHA Specific"
  },
  {
   "id": 1056,
@@ -357,7 +396,8 @@
   "price": 49.99,
   "duration": "2 Hours",
   "citation": "29 CFR 1910.120 / 1910.146 / 1910.1000",
-  "audience": "Confined space attendants, hazmat technicians, industrial hygiene"
+  "audience": "Confined space attendants, hazmat technicians, industrial hygiene",
+  "category": "Chemical & Substance-Specific Exposure"
  },
  {
   "id": 1099,
@@ -366,7 +406,8 @@
   "price": 61.99,
   "duration": "4 Hours",
   "citation": "29 CFR 1910.120(q)(6)(i)",
-  "audience": "First responders, security, facility staff who may witness a release"
+  "audience": "First responders, security, facility staff who may witness a release",
+  "category": "HAZWOPER & RCRA Hazardous Waste"
  },
  {
   "id": 1100,
@@ -375,6 +416,7 @@
   "price": 249.99,
   "duration": "40 Hours",
   "citation": "29 CFR 1910.120(e)(3)(i) - Spanish language",
-  "audience": "Spanish-speaking hazardous waste site workers"
+  "audience": "Spanish-speaking hazardous waste site workers",
+  "category": "HAZWOPER & RCRA Hazardous Waste"
  }
 ]

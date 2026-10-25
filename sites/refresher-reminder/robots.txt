@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://refresher-reminder.hazwoperosha.us/sitemap.xml

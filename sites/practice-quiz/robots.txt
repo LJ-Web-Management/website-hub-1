@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://practice-quiz.hazwoperosha.us/sitemap.xml

@@ -1,0 +1,32 @@
+/* spill-kit-sizer: calculator. Olive green, absorbent yellow, receipt-style result card, Manrope + Inter. */
+:root {
+  --bg: #f6faf0; --fg: #1d2a0e; --muted: #56653f; --line: #dbe7c8; --card: #fff;
+  --accent: #5c940d; --accent-fg: #fff; --yellow: #ffe066; --radius: 12px; --maxw: 1140px;
+  --font: "Inter", sans-serif; --head-font: "Manrope", sans-serif;
+}
+h1, h2, h3 { font-weight: 800; }
+.btn-alt { color: var(--accent); box-shadow: inset 0 0 0 2px var(--accent); background: #fff; }
+.gal { display: inline-block; background: var(--yellow); color: var(--fg); font-weight: 800; font-size: 12px; padding: 3px 6px; border-radius: 4px; margin-right: 8px; }
+.tpl .hero h1 span { color: var(--accent); display: block; }
+.tpl .hc em { color: var(--accent); }
+.sz-sec { background: var(--accent); }
+.sz-in { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+.sz { background: #fff; border-radius: 18px; padding: 28px; display: grid; gap: 16px; }
+.sz label { display: grid; gap: 6px; font-weight: 600; font-size: 14px; }
+.sz input, .sz select { font: 16px var(--font); padding: 12px; border: 2px solid var(--line); border-radius: 10px; background: #fff; color: var(--fg); }
+.sz-out { background: #fffbe6; border-radius: 18px; padding: 28px; border: 2px dashed #c9a227; }
+.sz-out .k { margin: 14px 0 4px; font-size: 12px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+.sz-out .k:first-child { margin-top: 0; }
+.sz-out h3 { font-size: 26px; margin: 0; }
+.sz-out .t { margin: 6px 0 0; font-weight: 600; }
+.sz-out ul { margin: 0 0 6px; padding-left: 20px; }
+.sz-note { width: min(var(--maxw), 100% - 32px); margin: 18px auto 0; color: #e8f5d6; font-size: 14px; }
+.tpl .cc .meta, .tpl .cc-foot b { color: var(--accent); }
+.guide-card .guide-card-cta { color: var(--accent); }
+.tpl .foot { background: var(--fg); color: #b7c79e; border: 0; }
+.tpl .foot .logo, .tpl .foot h4 { color: #fff; }
+.eyebrow, .eyebrow a, .buy-price, .course-row-price { color: var(--accent); }
+.prose a { color: var(--accent); font-weight: 600; }
+@media (max-width: 800px) { .sz-in { grid-template-columns: 1fr; } }
+.sz-in > *, .sz label, .sz input, .sz select { min-width: 0; max-width: 100%; }
+@media (max-width: 600px) { .sz { padding: 20px; } }

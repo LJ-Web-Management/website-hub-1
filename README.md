@@ -37,7 +37,8 @@ and the base styles the course sites use. `_shared` can't be a subdomain, so it 
 
 ## Course landing sites
 
-Fifty sites sell hazwoper-osha.com courses, each with its own niche, design, guides and course pages:
+Sixty-five sites sell hazwoper-osha.com courses, each with its own niche, design, guides and course pages. Every site's
+`/courses/` page lists its own featured courses first, then all trainings in the catalog, grouped by category, each with an Enroll button:
 
 | Site | Niche | LMS course ids |
 |---|---|---|
@@ -91,11 +92,27 @@ Fifty sites sell hazwoper-osha.com courses, each with its own niche, design, gui
 | [careers](https://careers.hazwoperosha.us) | Starting a career | 587, 581, 403, 599, 595, 1099 |
 | [small-business](https://small-business.hazwoperosha.us) | Small businesses | 601, 415, 602, 580, 416, 1099 |
 | [data-centers](https://data-centers.hazwoperosha.us) | Data center facilities | 416, 479, 602, 1099, 1056, 601 |
+| [course-finder](https://course-finder.hazwoperosha.us) | Tool: question wizard that picks a course | 587, 581, 595, 1099, 582, 601 |
+| [refresher-reminder](https://refresher-reminder.hazwoperosha.us) | Tool: renewal reminder (.ics and Google Calendar) | 595, 596, 574, 594, 578, 900 |
+| [compare](https://compare.hazwoperosha.us) | Tool: compare up to three courses side by side | 587, 581, 582, 595, 900, 577 |
+| [glossary](https://glossary.hazwoperosha.us) | Tool: searchable A–Z glossary | 587, 585, 583, 584, 1099 |
+| [ppe-picker](https://ppe-picker.hazwoperosha.us) | Tool: PPE level A–D picker | 585, 587, 583, 597 |
+| [practice-quiz](https://practice-quiz.hazwoperosha.us) | Tool: 10-question practice quiz | 587, 595, 585, 584, 1099 |
+| [exposure-limits](https://exposure-limits.hazwoperosha.us) | Tool: PEL and IDLH lookup table | 1056, 583, 587, 585 |
+| [decon-drill](https://decon-drill.hazwoperosha.us) | Tool: put the decon stations in order | 584, 587, 585, 589 |
+| [safety-plan-checklist](https://safety-plan-checklist.hazwoperosha.us) | Tool: printable site safety plan checklist | 597, 596, 1016, 587 |
+| [cert-tracker](https://cert-tracker.hazwoperosha.us) | Tool: crew refresher tracker with CSV export | 595, 596, 574, 594, 587 |
+| [spill-kit-sizer](https://spill-kit-sizer.hazwoperosha.us) | Tool: spill kit size recommendation | 479, 416, 478, 1099 |
+| [hazwoper-history](https://hazwoper-history.hazwoperosha.us) | Tool: timeline of hazardous waste law | 587, 601, 580, 593 |
+| [hazwoper-faq](https://hazwoper-faq.hazwoperosha.us) | Tool: searchable FAQ | 587, 581, 595, 1100, 597 |
+| [site-zones](https://site-zones.hazwoperosha.us) | Tool: clickable site control zone map | 584, 586, 587, 597 |
+| [flashcards](https://flashcards.hazwoperosha.us) | Tool: flip-card study deck | 587, 581, 595, 585, 583 |
 
 They're generated. Edit the sources, then rebuild and commit the output:
 
 ```
-content/catalog.json        every course: LMS course id, name, list price, length, citation
+content/catalog.json        every HAZWOPER course: LMS course id, name, list price, length, citation, category
+content/dc-catalog.json     data center courses from the datacentertraining.us repo (js/config.js), same fields plus `dc`
 content/<site>/site.mjs     the site's copy, course list, guides, header/footer and home page
 content/<site>/style.css    the site's design
 tools/build.mjs             writes sites/<site>/ and sites/_shared/catalog.js
@@ -110,6 +127,10 @@ To add a course site, copy a folder in `content/`, change it and run the build. 
 page in `tools/lib.mjs` (most sites from `texas` onward do this). Its `style.css` gives it its look. Course prices and
 names come from `content/catalog.json`, which was taken from the hazwoperosha.us repo
 (`data/source.json` and `data/lms-ids.json`). Update both places when a price changes.
+
+Two data center courses are left out of `dc-catalog.json` because their LMS ids are already used by
+HAZWOPER courses: Facility Management Fundamentals (1099) and Generator Fundamentals (1100). Add them
+back once their real ids are confirmed.
 
 ### Checkout
 

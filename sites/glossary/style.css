@@ -1,0 +1,33 @@
+/* glossary: printed dictionary. Cream pages, sepia ink, thumb-index letters, Libre Caslon + Inter. */
+:root {
+  --bg: #f6efe4; --fg: #2a1f16; --muted: #6b5a4a; --line: #ddcfb8; --card: #fbf6ec;
+  --accent: #3d2c1e; --accent-fg: #f6efe4; --red: #9a3b2b; --radius: 2px; --maxw: 1080px;
+  --font: "Inter", sans-serif; --head-font: "Libre Caslon Text", serif;
+}
+h1, h2, h3 { font-weight: 700; }
+.aa { font-family: var(--head-font); font-style: italic; color: var(--red); margin-right: 6px; }
+.btn-alt { color: var(--fg); box-shadow: inset 0 0 0 1.5px var(--fg); }
+.top { border-bottom: 1px solid var(--line); }
+.tpl .hero h1 { font-size: clamp(44px, 6.4vw, 84px); }
+.tpl .hero h1 em { color: var(--red); }
+.tpl .kicker { color: var(--red); }
+.tpl .hc em { color: var(--red); }
+.gl-sec { background: var(--card); border-block: 1px solid var(--line); }
+.gl-search { display: flex; align-items: center; gap: 14px; margin-bottom: 14px; }
+.gl-search input { flex: 1; font: 18px var(--font); padding: 14px 16px; border: 1.5px solid var(--fg); border-radius: 2px; background: #fff; }
+.gl-search span { color: var(--muted); white-space: nowrap; }
+.az { display: flex; flex-wrap: wrap; gap: 4px; margin-bottom: 24px; }
+.az a { display: grid; place-items: center; width: 34px; height: 34px; background: var(--fg); color: var(--bg); font: 700 15px var(--head-font); text-decoration: none; border-radius: 0 8px 8px 0; }
+.az a:hover { background: var(--red); }
+.gl { columns: 2 340px; column-gap: 40px; margin: 0; }
+.gl-item { break-inside: avoid; padding: 12px 0; border-bottom: 1px solid var(--line); scroll-margin-top: 20px; }
+.gl-item[hidden] { display: none; }
+.gl dt { font: 700 19px var(--head-font); }
+.gl dd { margin: 4px 0 0; color: var(--muted); font-size: 15.5px; }
+.tpl .cc .meta { color: var(--red); }
+.guide-card .guide-card-cta { color: var(--red); }
+.tpl .foot { background: var(--fg); color: #cbbca6; border: 0; }
+.tpl .foot .logo, .tpl .foot h4 { color: var(--bg); }
+.eyebrow, .eyebrow a, .buy-price, .course-row-price { color: var(--red); }
+.prose a { color: var(--red); }
+.prose th { font-family: var(--head-font); border-bottom: 2px solid var(--fg); }

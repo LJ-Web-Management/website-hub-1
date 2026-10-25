@@ -63,7 +63,7 @@ export function defaultShell(site, { body, h }) {
 <footer class="foot"><div class="wrap foot-in">
 <div><a class="logo" href="/">${logo}</a><p>${esc(site.footNote || `${site.brand}: training from HAZWOPER OSHA Training LLC, delivered on hazwoper-osha.com.`)}</p></div>
 <div><h4>${h.L.courses}</h4>${h.courses.map((c) => `<a href="${c.url}">${esc(c.short || c.name)}</a>`).join("")}</div>
-<div><h4>Contact</h4><a href="tel:+18664296742">+1-866-429-6742</a><a href="mailto:info@hazwoper-osha.com">info@hazwoper-osha.com</a><a href="/guides/">${h.L.guides}</a></div>
+<div><h4>Contact</h4><a href="tel:+18664296742">+1-866-429-6742</a><a href="mailto:info@hazwoper-osha.com">info@hazwoper-osha.com</a><a href="/guides/">${h.L.guides}</a><a href="/courses/#all">${h.L.allTrainings}</a></div>
 </div></footer>`;
 }
 
@@ -85,6 +85,7 @@ ${site.feature ? site.feature(h) : ""}
 <section class="sec sec-courses"><div class="wrap">
 <h2 class="title">${site.coursesTitle || h.L.courses}</h2>
 <div class="cgrid">${h.courses.map((c) => `<article class="cc"><p class="meta">${esc(c.duration)} · #${c.id}</p><h3><a href="${c.url}">${esc(c.short || c.name)}</a></h3><p>${esc(c.summary)}</p><div class="cc-foot"><b>${money(c.price)}</b>${h.buy(c.id, h.L.enroll, "btn btn-sm")}</div></article>`).join("")}</div>
+<p class="all-link"><a href="/courses/#all">${h.L.allTrainings} (${h.total}) →</a></p>
 </div></section>
 <section class="sec sec-guides"><div class="wrap">
 <h2 class="title">${site.guidesTitle || h.L.guides}</h2>

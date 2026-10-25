@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://hazwoper-history.hazwoperosha.us/sitemap.xml

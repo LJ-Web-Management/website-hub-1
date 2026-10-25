@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Decon Line Drill: Put the Decontamination Steps in Order | Decon Drill</title>
+<meta name="description" content="A hands-on drill: put a typical Level B decontamination line in the right order, see why the order matters, and train with decon and HAZWOPER courses.">
+<link rel="canonical" href="https://decon-drill.hazwoperosha.us/">
+<meta name="theme-color" content="#f08c00">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Decon Line Drill: Put the Decontamination Steps in Order | Decon Drill">
+<meta property="og:description" content="A hands-on drill: put a typical Level B decontamination line in the right order, see why the order matters, and train with decon and HAZWOPER courses.">
+<meta property="og:url" content="https://decon-drill.hazwoperosha.us/">
+<meta property="og:site_name" content="Decon Drill">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2032%2032%22%3E%3Crect%20width%3D%2232%22%20height%3D%2232%22%20fill%3D%22%23f08c00%22%2F%3E%3Cpath%20d%3D%22M16%205c4%206%206%209%206%2012a6%206%200%2001-12%200c0-3%202-6%206-12z%22%20fill%3D%22%23fff%22%2F%3E%3C%2Fsvg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700;800&family=Barlow+Condensed:wght@700;800&display=swap">
+<link rel="stylesheet" href="/_shared/base.css">
+<link rel="stylesheet" href="/_shared/checkout.css">
+<link rel="stylesheet" href="/style.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Decon Drill","url":"https://decon-drill.hazwoperosha.us/","publisher":{"@type":"Organization","name":"HAZWOPER OSHA Training LLC","url":"https://hazwoper-osha.com/","telephone":"+1-866-429-6742"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"ItemList","itemListElement":[{"@type":"ListItem","position":1,"url":"https://decon-drill.hazwoperosha.us/courses/hazwoper-micro-module-decontamination-procedures","name":"HAZWOPER Micro-Module: Decontamination Procedures"},{"@type":"ListItem","position":2,"url":"https://decon-drill.hazwoperosha.us/courses/osha-40-hour-hazwoper-training","name":"OSHA 40 Hour HAZWOPER Training"},{"@type":"ListItem","position":3,"url":"https://decon-drill.hazwoperosha.us/courses/hazwoper-micro-module-ppe-levels-a-b-c-and-d-explained","name":"HAZWOPER Micro-Module: PPE Levels A, B, C & D Explained"},{"@type":"ListItem","position":4,"url":"https://decon-drill.hazwoperosha.us/courses/osha-40-hour-hazwoper-for-emergency-response-fire-hazmat-teams","name":"OSHA 40 Hour HAZWOPER for Emergency Response/Fire-Hazmat Teams"}]}</script>
+<script src="/_shared/catalog.js" defer></script>
+<script src="/_shared/checkout.js" data-site="decon-drill" data-lang="en" defer></script>
+</head>
+<body class="tpl">
+<header class="top"><div class="wrap top-in">
+<a class="logo" href="/"><span class="drip">◆</span> Decon Drill</a>
+<nav><a href="/courses/">Courses</a><a href="/guides/">Guides</a><a class="btn btn-sm" href="?buy=584" data-buy="584">Enroll</a></nav>
+</div></header>
+<main><section class="hero"><div class="wrap hero-in">
+<div class="hero-copy">
+<p class="kicker">Hot zone → warm zone → cold zone</p>
+<h1>Can you run <span>the decon line?</span></h1>
+<p class="hero-lede">Decon only works if the steps happen in the right order. Try putting a typical Level B line in sequence, then learn why each step sits where it does.</p>
+<div class="hero-cta"><a class="btn" href="?buy=584" data-buy="584">Decon module · $14.99</a><a class="btn btn-alt" href="#drill">Start the drill</a></div>
+</div>
+<div class="hero-side"><a class="hc" href="/courses/hazwoper-micro-module-decontamination-procedures"><span><b>Decontamination</b><small>Course #584 · 20 Min</small></span><em>$14.99</em></a><a class="hc" href="/courses/osha-40-hour-hazwoper-training"><span><b>40-Hour HAZWOPER</b><small>Course #587 · 40 Hours</small></span><em>$249.99</em></a><a class="hc" href="/courses/hazwoper-micro-module-ppe-levels-a-b-c-and-d-explained"><span><b>PPE Levels A–D</b><small>Course #585 · 15 Min</small></span><em>$12.99</em></a><a class="hc" href="/courses/osha-40-hour-hazwoper-for-emergency-response-fire-hazmat-teams"><span><b>40 Hr Fire / Hazmat</b><small>Course #589 · 40 Hours</small></span><em>$249.99</em></a></div>
+</div></section>
+<section class="sec drill-sec" id="drill"><div class="wrap">
+<div class="drill">
+<p class="d-intro">Tap the stations in the order a worker leaving the hot zone goes through them.</p>
+<ol class="d-picked" id="dPicked"></ol>
+<div class="d-pool" id="dPool"></div>
+<p class="d-msg" id="dMsg" aria-live="polite"></p>
+<button type="button" class="btn" id="dReset">Shuffle and restart</button>
+</div></div></section>
+<script>
+window.DECON = ["Equipment drop","Outer boot and glove wash","Outer boot and glove rinse","Tape removal","Outer boot and glove removal","Suit removal","SCBA removal","Inner glove removal","Field wash"];
+(function () {
+  var S = window.DECON, pool = document.getElementById("dPool"), picked = document.getElementById("dPicked"), msg = document.getElementById("dMsg");
+  var next = 0, mistakes = 0;
+  function shuffle(a) { a = a.slice(); for (var i = a.length - 1; i > 0; i--) { var j = Math.floor(Math.random() * (i + 1)); var t = a[i]; a[i] = a[j]; a[j] = t; } return a; }
+  function start() {
+    next = 0; mistakes = 0; pool.textContent = ""; picked.textContent = ""; msg.textContent = "";
+    shuffle(S).forEach(function (s) {
+      var b = document.createElement("button"); b.type = "button"; b.className = "d-step"; b.textContent = s;
+      b.addEventListener("click", function () {
+        if (s === S[next]) {
+          var li = document.createElement("li"); li.textContent = s; picked.appendChild(li); b.remove(); next++;
+          msg.textContent = next === S.length ? "Line complete with " + mistakes + " mistake" + (mistakes === 1 ? "" : "s") + ". Dirtiest to cleanest, inner gloves last." : "";
+        } else {
+          mistakes++; b.classList.add("shake"); setTimeout(function () { b.classList.remove("shake"); }, 400);
+          msg.textContent = "Not yet. Think: which gear is dirtiest right now?";
+        }
+      });
+      pool.appendChild(b);
+    });
+  }
+  document.getElementById("dReset").addEventListener("click", start);
+  start();
+})();
+</script>
+<section class="sec sec-courses"><div class="wrap">
+<h2 class="title">Courses</h2>
+<div class="cgrid"><article class="cc"><p class="meta">20 Min · #584</p><h3><a href="/courses/hazwoper-micro-module-decontamination-procedures">Decontamination</a></h3><p>Decon stations and doffing in 20 minutes.</p><div class="cc-foot"><b>$14.99</b><a class="btn btn-sm" href="?buy=584" data-buy="584">Enroll</a></div></article><article class="cc"><p class="meta">40 Hours · #587</p><h3><a href="/courses/osha-40-hour-hazwoper-training">40-Hour HAZWOPER</a></h3><p>Decon and site control in depth.</p><div class="cc-foot"><b>$249.99</b><a class="btn btn-sm" href="?buy=587" data-buy="587">Enroll</a></div></article><article class="cc"><p class="meta">15 Min · #585</p><h3><a href="/courses/hazwoper-micro-module-ppe-levels-a-b-c-and-d-explained">PPE Levels A–D</a></h3><p>What you&#39;re taking off, level by level.</p><div class="cc-foot"><b>$12.99</b><a class="btn btn-sm" href="?buy=585" data-buy="585">Enroll</a></div></article><article class="cc"><p class="meta">40 Hours · #589</p><h3><a href="/courses/osha-40-hour-hazwoper-for-emergency-response-fire-hazmat-teams">40 Hr Fire / Hazmat</a></h3><p>Technical and mass decon for response teams.</p><div class="cc-foot"><b>$249.99</b><a class="btn btn-sm" href="?buy=589" data-buy="589">Enroll</a></div></article></div>
+<p class="all-link"><a href="/courses/#all">All trainings (83) →</a></p>
+</div></section>
+<section class="sec sec-guides"><div class="wrap">
+<h2 class="title">Guides</h2>
+<div class="guide-list"><a class="guide-card" href="/guides/why-decon-order-matters"><span class="guide-card-meta">2 min read</span><strong>Why the decon order matters</strong><span>Every station in the line is placed to keep contamination moving away from the clean side.</span><span class="guide-card-cta">Read guide →</span></a><a class="guide-card" href="/guides/running-a-decon-team"><span class="guide-card-meta">2 min read</span><strong>Running a decon team</strong><span>The people who run decon need their own plan, PPE and rotation.</span><span class="guide-card-cta">Read guide →</span></a></div>
+</div></section></main>
+<footer class="foot"><div class="wrap foot-in">
+<div><a class="logo" href="/"><span class="drip">◆</span> Decon Drill</a><p>Decon Drill: training from HAZWOPER OSHA Training LLC, delivered on hazwoper-osha.com.</p></div>
+<div><h4>Courses</h4><a href="/courses/hazwoper-micro-module-decontamination-procedures">Decontamination</a><a href="/courses/osha-40-hour-hazwoper-training">40-Hour HAZWOPER</a><a href="/courses/hazwoper-micro-module-ppe-levels-a-b-c-and-d-explained">PPE Levels A–D</a><a href="/courses/osha-40-hour-hazwoper-for-emergency-response-fire-hazmat-teams">40 Hr Fire / Hazmat</a></div>
+<div><h4>Contact</h4><a href="tel:+18664296742">+1-866-429-6742</a><a href="mailto:info@hazwoper-osha.com">info@hazwoper-osha.com</a><a href="/guides/">Guides</a><a href="/courses/#all">All trainings</a></div>
+</div></footer>
+</body>
+</html>

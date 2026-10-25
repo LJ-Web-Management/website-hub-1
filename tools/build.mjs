@@ -12,7 +12,9 @@ import { md, esc, money, courseRow, guideCard, defaultShell, defaultHome } from 
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const DOMAIN = "hazwoperosha.us";
-const catalog = JSON.parse(readFileSync(join(root, "content/catalog.json"), "utf8"));
+// HAZWOPER courses (from hazwoperosha.us) and data center courses (from datacentertraining.us).
+// Every course has an LMS course id; the two lists must never share one.
+const catalog = ["content/catalog.json", "content/dc-catalog.json"].flatMap((f) => JSON.parse(readFileSync(join(root, f), "utf8")));
 const byId = Object.fromEntries(catalog.map((c) => [c.id, c]));
 
 const LABELS = {
@@ -24,6 +26,7 @@ const LABELS = {
     buyNow: "Enroll now", minRead: "min read", certificate: "Certificate of completion included. 100% online, self-paced.",
     guidesIntro: "Plain-language articles for the people who take and assign this training.",
     coursesIntro: "Every course here is online, self-paced and issued with a certificate on completion.",
+    featured: "Featured on this site", allTrainings: "All trainings", allTrainingsIntro: "Every training available from HAZWOPER OSHA Training, all enrollable here.",
   },
   es: {
     home: "Inicio", courses: "Cursos", guides: "Guías", enroll: "Inscribirse", course: "Curso", hours: "Duración",
@@ -33,6 +36,7 @@ const LABELS = {
     buyNow: "Inscríbase ahora", minRead: "min de lectura", certificate: "Incluye certificado al terminar. 100% en línea, a su ritmo.",
     guidesIntro: "Artículos claros para los trabajadores y empleadores que toman esta capacitación.",
     coursesIntro: "Todos los cursos son en línea, a su propio ritmo y con certificado al terminar.",
+    featured: "Cursos destacados", allTrainings: "Todas las capacitaciones", allTrainingsIntro: "Todas las capacitaciones de HAZWOPER OSHA Training. Los cursos se imparten en inglés salvo que se indique lo contrario.",
   },
 };
 
@@ -62,14 +66,15 @@ async function buildSite(name) {
   const courses = site.courses.map((c) => {
     const cat = byId[c.id];
     if (!cat) throw new Error(`${name}: no course ${c.id} in content/catalog.json`);
-    return { ...cat, ...c, url: `/courses/${cat.slug}` };
+    const dc = cat.dc ? { summary: cat.dc.hook, body: cat.dc.description, topics: cat.dc.modules, who: cat.audience } : {};
+    return { ...cat, ...dc, ...c, url: `/courses/${cat.slug}` };
   });
   const guides = site.guides.map((g) => ({ ...g, url: `/guides/${g.slug}`, minutes: Math.max(2, Math.round(g.body.split(/\s+/).length / 220)) }));
   const course = (id) => courses.find((c) => c.id === id) || { ...byId[id], url: null };
 
   // Helpers handed to the site's own templates.
   const h = {
-    L, esc, money, courses, guides, course,
+    L, esc, money, courses, guides, course, total: catalog.length, catalog,
     md: (text) => md(text, h),
     buy: (id, label, cls = "btn") => `<a class="${cls}" href="?buy=${id}" data-buy="${id}">${esc(label || `${L.enroll} · ${money(course(id).price)}`)}</a>`,
     courseRow: (c) => courseRow(c, h),
@@ -125,7 +130,11 @@ ${shell({ path, body, h })}
   page("/courses/", "courses/index.html", {
     title: `${L.courses} | ${site.brand}`, description: `${site.coursesTagline || L.coursesIntro}`,
     body: `<section class="page page-list"><header class="page-head"><p class="eyebrow">${esc(site.brand)}</p><h1>${L.courses}</h1><p class="lede">${esc(site.coursesTagline || L.coursesIntro)}</p></header>
-<div class="course-list">${courses.map((c) => courseRow(c, h)).join("\n")}</div></section>`,
+<h2 class="list-title">${L.featured}</h2>
+<div class="course-list">${courses.map((c) => courseRow(c, h)).join("\n")}</div>
+<h2 class="list-title" id="all">${L.allTrainings} (${catalog.length})</h2>
+<p class="lede">${L.allTrainingsIntro}</p>
+${allTrainings(h)}</section>`,
   });
 
   for (const c of courses) {
@@ -190,6 +199,20 @@ ${recommended.length ? `<aside class="guide-courses"><h2>${L.courses}</h2><div c
   write(join(out, "robots.txt"), `User-agent: *\nAllow: /\n\nSitemap: ${base}/sitemap.xml\n`);
   write(join(out, "sitemap.xml"), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${pages.map((u) => `  <url><loc>${u}</loc></url>`).join("\n")}\n</urlset>\n`);
   copyFileSync(join(root, "content", name, "style.css"), join(out, "style.css"));
+}
+
+// Every course in the catalog, grouped by category. Courses this site features link to their page.
+function allTrainings(h) {
+  const groups = new Map();
+  for (const c of catalog) {
+    if (!groups.has(c.category)) groups.set(c.category, []);
+    groups.get(c.category).push(c);
+  }
+  return [...groups].map(([cat, list]) => `<h3 class="cat-title">${esc(cat)}</h3><div class="course-list all-list">${list.map((c) => {
+    const own = h.courses.find((o) => o.id === c.id);
+    const name = own ? `<a class="course-row-name" href="${own.url}">${esc(c.name)}</a>` : `<span class="course-row-name">${esc(c.name)}</span>`;
+    return `<div class="course-row"><div class="course-row-info">${name}<span class="course-row-meta">${esc(c.duration)} · ${h.L.course} #${c.id}${c.citation ? ` · ${esc(c.citation)}` : ""}</span></div><span class="course-row-price">${money(c.price)}</span>${h.buy(c.id, h.L.enroll, "btn btn-sm")}</div>`;
+  }).join("")}</div>`).join("\n");
 }
 
 function write(file, text) {
