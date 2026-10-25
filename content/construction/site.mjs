@@ -173,7 +173,7 @@ Your company still owns its own workers' safety under OSHA's multi-employer cita
     const { courses, guides, money, esc } = h;
     return `<section class="hero"><div class="wrap hero-in">
 <div>
-<p class="tag">SHEET A-1 · 29 CFR 1926.65</p>
+<p class="hero-call">Questions? Call <a href="tel:+18664296742">(866) 429-6742</a></p>
 <h1>Build on contaminated ground.</h1>
 <p class="hero-lede">HAZWOPER for construction crews on brownfields, landfills and impacted excavations. Online, self-paced, with certificates the environmental contractor will accept.</p>
 <div class="hero-cta">${h.buy(588, "Enroll · 40 HR Construction")}<a class="btn btn-alt" href="/guides/does-my-construction-crew-need-hazwoper">Does my crew need it?</a></div>

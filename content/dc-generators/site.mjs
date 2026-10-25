@@ -8,7 +8,6 @@ export default {
   fonts: "family=Big+Shoulders+Display:wght@700;900&family=Inter:wght@400;500;600",
   icon: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect width="32" height="32" rx="4" fill="#3d4349"/><rect x="4" y="9" width="24" height="15" rx="2" fill="#f77f00"/><path d="M8 13h4M8 17h4M8 21h4" stroke="#3d4349" stroke-width="2"/><circle cx="21" cy="16.5" r="4" fill="#3d4349"/></svg>`,
   hero: {
-    kicker: "NFPA 110 · Level 1 · Type 10",
     title: "When the grid <span>goes dark.</span>",
     lede: "Diesel generators are the last line between a utility outage and a data center outage. Training on generator operation, maintenance, standby power systems and fuel, with a runtime estimator.",
     cta: [835, "Generator O&M · $99.99"],

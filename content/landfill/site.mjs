@@ -8,7 +8,6 @@ export default {
   fonts: "family=Chivo:wght@400;600;700;900&family=Chivo+Mono:wght@400;500",
   icon: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect width="32" height="32" fill="#efe6d2"/><g fill="none" stroke="#5c4a2e" stroke-width="1.6"><ellipse cx="16" cy="17" rx="12" ry="9"/><ellipse cx="16" cy="17" rx="8" ry="6"/><ellipse cx="16" cy="17" rx="4" ry="3"/></g></svg>`,
   hero: {
-    kicker: "Landfills · Transfer stations · Closed sites",
     title: "Know what's in <span>the load.</span>",
     lede: "Landfill staff are the last line of defense against hazardous waste in the trash. Training for spotters, equipment operators and gas techs.",
     cta: [1099, "Awareness training · $61.99"],

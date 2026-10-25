@@ -180,15 +180,12 @@ Align medical exams with fit tests and refreshers, and keep a single due-date li
     const modules = [["Train", "Qualify in-house trainers", 1016], ["Lead", "Supervisors and site leads", 597], ["Respond", "Incident command", 593], ["Comply", "RCRA and contingency", 601]];
     return `<section class="hero"><div class="mesh" aria-hidden="true"></div><div class="wrap hero-in">
 <div>
-<span class="pill">For EHS managers</span>
+<p class="hero-call">Questions? Call <a href="tel:+18664296742">(866) 429-6742</a></p>
 <h1>Run your whole HAZWOPER program.</h1>
 <p class="hero-lede">Trainers, supervisors, generator training and contingency plans. Everything an EHS lead needs to keep the company compliant, in one place.</p>
 <div class="hero-cta">${h.buy(1016, "Start with Train-the-Trainer")}<a class="btn btn-alt" href="/guides/hazwoper-program-checklist">Program checklist →</a></div>
 </div>
-<div class="panel">
-<div class="panel-head"><span>Program coverage</span><span class="ok">● Compliant</span></div>
-${modules.map(([t, d, id]) => { const c = h.course(id); return `<a class="mod" href="${c.url}"><span class="mod-t">${t}</span><span class="mod-d">${d}</span><em>${money(c.price)}</em></a>`; }).join("")}
-</div></div></section>
+</div></section>
 
 <section class="sec"><div class="wrap">
 <h2 class="title">Courses</h2>

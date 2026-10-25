@@ -8,7 +8,6 @@ export default {
   fonts: "family=Familjen+Grotesk:wght@400;600;700",
   icon: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect x="13" y="3" width="6" height="20" rx="3" fill="#fff" stroke="#e8590c" stroke-width="2"/><circle cx="16" cy="25" r="5" fill="#e8590c"/><rect x="15" y="10" width="2" height="14" fill="#e8590c"/></svg>`,
   hero: {
-    kicker: "Heat index · work/rest · hydration",
     title: "It's hotter <span>inside the suit.</span>",
     lede: "Chemical protective clothing traps heat and sweat, so crews in PPE can overheat at temperatures that feel comfortable in a T-shirt. Check today's heat index and plan for it.",
     cta: [585, "PPE Levels · $12.99"],

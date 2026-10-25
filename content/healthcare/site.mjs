@@ -171,12 +171,11 @@ Inspectors from EPA or your state agency will ask who was trained, when and on w
     const depts = ["Pharmacy", "Pathology", "Clinical lab", "Radiology", "Facilities", "Biomed", "Environmental services", "Security"];
     return `<section class="hero"><div class="wrap hero-in">
 <div>
-<p class="pill">Hospitals · Clinics · Pharmacies · Surgery centers</p>
+<p class="hero-call">Questions? Call <a href="tel:+18664296742">(866) 429-6742</a></p>
 <h1>Hazardous waste training for <span>healthcare.</span></h1>
 <p class="hero-lede">Pharmacy waste, lab chemicals, lamps and batteries. Short online courses for every team that touches hazardous waste.</p>
 <div class="hero-cta">${h.buy(601, "Start generator training · $89.99")}<a class="btn btn-alt" href="/guides/who-needs-hazardous-waste-training-in-healthcare">Who needs training?</a></div>
 </div>
-<div class="stack">${courses.slice(0, 3).map((c) => `<a class="scard" href="${c.url}"><span class="ic">+</span><span><b>${esc(c.short)}</b><small>Course #${c.id} · ${esc(c.duration)}</small></span><em>${money(c.price)}</em></a>`).join("")}</div>
 </div></section>
 
 <section class="sec"><div class="wrap">

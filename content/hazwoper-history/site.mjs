@@ -22,7 +22,6 @@ export default {
   fonts: "family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Source+Sans+3:wght@400;600;700",
   icon: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect width="32" height="32" fill="#1b1530"/><path d="M6 26V12l10-6 10 6v14z" fill="none" stroke="#e9d8a6" stroke-width="2"/><path d="M10 26V14M16 26V14M22 26V14" stroke="#e9d8a6" stroke-width="2"/></svg>`,
   hero: {
-    kicker: "An exhibit in eleven moments",
     title: "Why HAZWOPER <em>exists.</em>",
     lede: "Every rule in your 40-hour course traces back to real events. Walk the timeline from the first hazardous waste law to today.",
     cta: [587, "Take the 40-hour"],

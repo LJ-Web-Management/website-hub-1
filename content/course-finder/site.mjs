@@ -8,7 +8,6 @@ export default {
   fonts: "family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600",
   icon: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect width="32" height="32" rx="10" fill="#3b5bdb"/><text x="16" y="23" font-size="20" font-family="Arial" font-weight="700" text-anchor="middle" fill="#fff">?</text></svg>`,
   hero: {
-    kicker: "30-second course finder",
     title: "Which course <span>do I need?</span>",
     lede: "HAZWOPER training depends on what you do, not your job title. Answer a few questions and we'll point you to the right course.",
     cta: [587, "Skip it: 40-hour · $249.99"],

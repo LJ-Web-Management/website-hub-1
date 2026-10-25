@@ -18,7 +18,6 @@ export default {
   fonts: "family=Instrument+Sans:wght@400;600;700",
   icon: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M8 10c0-4 16-4 16 0v8c0 6-16 6-16 0z" fill="#dee2e6" stroke="#343a40" stroke-width="2"/><circle cx="8" cy="20" r="5" fill="#be4bdb"/><circle cx="24" cy="20" r="5" fill="#be4bdb"/></svg>`,
   hero: {
-    kicker: "29 CFR 1910.134 · Table 1",
     title: "How high can <span>you go?</span>",
     lede: "Every respirator has a ceiling. The maximum use concentration is the highest airborne level a respirator can be used in, based on its assigned protection factor. Work it out below.",
     cta: [585, "PPE Levels · $12.99"],

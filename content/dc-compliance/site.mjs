@@ -8,7 +8,6 @@ export default {
   fonts: "family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Inter:wght@400;500;600",
   icon: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><circle cx="16" cy="16" r="15" fill="#52796f"/><path d="M10 22c0-8 5-12 13-12 0 8-5 12-13 12zM10 22l7-7" stroke="#e9f5db" stroke-width="2" fill="none"/></svg>`,
   hero: {
-    kicker: "Air · fuel · refrigerants · waste",
     title: "Big buildings, <span>big footprints.</span>",
     lede: "Generators, fuel tanks, refrigerants and thousands of batteries bring environmental permits and rules into every data center. Compliance training for facility teams.",
     cta: [833, "Environmental Compliance · $99.99"],

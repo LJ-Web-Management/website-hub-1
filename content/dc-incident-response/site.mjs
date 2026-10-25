@@ -8,7 +8,6 @@ export default {
   fonts: "family=Saira+Condensed:wght@600;800&family=Saira:wght@400;500;600",
   icon: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect width="32" height="32" rx="6" fill="#d00000"/><path d="M16 6l11 20H5z" fill="#fff"/><path d="M16 13v6M16 22v1.5" stroke="#d00000" stroke-width="2.6" stroke-linecap="round"/></svg>`,
   hero: {
-    kicker: "Detect · contain · restore · learn",
     title: "When it breaks <span>at 3 a.m.</span>",
     lede: "Alarms, smoke, an EPO button pressed by mistake. Training for the people on shift when something goes badly wrong, so they act fast without making it worse.",
     cta: [837, "Incident Response · $99.99"],

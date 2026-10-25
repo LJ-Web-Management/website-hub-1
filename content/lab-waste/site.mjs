@@ -185,12 +185,11 @@ Update the inventory, re-label surviving stock and set a schedule to review shel
     const tile = (c) => { const [sym, bg] = SYMBOLS[c.id]; return `<a class="tile" href="${c.url}" style="--t:${bg}"><span class="num">${c.id}</span><b>${sym}</b><span class="nm">${esc(c.short)}</span><span class="pr">${money(c.price)}</span></a>`; };
     return `<section class="hero"><div class="wrap hero-in">
 <div>
-<p class="kicker">Universities · Research · Hospital labs</p>
+<p class="hero-call">Questions? Call <a href="tel:+18664296742">(866) 429-6742</a></p>
 <h1>Hazardous waste training for labs.</h1>
 <p class="hero-lede">Satellite areas, generator rules, manifests and clean-outs. Short courses for everyone who fills a waste container.</p>
 <div class="hero-cta">${h.buy(415, "Start with satellite areas · $59.99")}<a class="btn btn-alt" href="/guides/subpart-k-academic-labs">Subpart K explained</a></div>
 </div>
-<div class="table">${courses.map(tile).join("")}</div>
 </div></section>
 
 <section class="sec"><div class="wrap">

@@ -174,7 +174,7 @@ Public employees need the same training as private workers in the same roles: re
     const { courses, guides, money, esc } = h;
     return `<section class="hero"><div class="wrap hero-in">
 <div>
-<p class="kicker">For workers in state-plan states</p>
+<p class="hero-call">Questions? Call <a href="tel:+18664296742">(866) 429-6742</a></p>
 <h1>Every state. Every rule.</h1>
 <p class="hero-lede">About half the country runs its own OSHA program. Train to the rule your state enforces.</p>
 <div class="hero-cta">${h.buy(900, "State-plan refresher · $84.99")}<a class="btn btn-alt" href="/guides/which-states-have-osha-state-plans">Is my state one?</a></div>

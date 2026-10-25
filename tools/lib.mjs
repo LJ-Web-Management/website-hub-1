@@ -70,16 +70,13 @@ export function defaultShell(site, { body, h }) {
 export function defaultHome(site, h) {
   const { hero } = site;
   const [ctaId, ctaLabel] = hero.cta;
-  const side = h.courses.slice(0, hero.sideCount || 4).map((c) =>
-    `<a class="hc" href="${c.url}"><span><b>${esc(c.short || c.name)}</b><small>${h.L.course} #${c.id} · ${esc(c.duration)}</small></span><em>${money(c.price)}</em></a>`).join("");
   return `<section class="hero">${site.heroArt || ""}<div class="wrap hero-in">
 <div class="hero-copy">
-${hero.kicker ? `<p class="kicker">${esc(hero.kicker)}</p>` : ""}
+<p class="hero-call">Questions? Call <a href="tel:+18664296742">(866) 429-6742</a></p>
 <h1>${hero.title}</h1>
 <p class="hero-lede">${esc(hero.lede)}</p>
 <div class="hero-cta">${h.buy(ctaId, ctaLabel)}${hero.alt ? `<a class="btn btn-alt" href="${hero.alt[0]}">${esc(hero.alt[1])}</a>` : ""}</div>
 </div>
-<div class="hero-side">${side}</div>
 </div></section>
 ${site.feature ? site.feature(h) : ""}
 <section class="sec sec-courses"><div class="wrap">

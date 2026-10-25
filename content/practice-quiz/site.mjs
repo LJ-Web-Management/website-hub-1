@@ -21,7 +21,6 @@ export default {
   fonts: "family=Rubik:wght@400;500;700;800&family=Inter:wght@400;500",
   icon: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect width="32" height="32" rx="16" fill="#7048e8"/><text x="16" y="22" font-size="16" font-family="Arial" font-weight="900" text-anchor="middle" fill="#ffe066">Q</text></svg>`,
   hero: {
-    kicker: `${QUIZ.length} questions · instant answers`,
     title: "Think you know <span>HAZWOPER?</span>",
     lede: "Ten quick questions on training hours, PPE, decon and response levels, with an explanation for every answer. No sign-up.",
     cta: [587, "Study with the 40-hour"],

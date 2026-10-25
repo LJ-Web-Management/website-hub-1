@@ -20,7 +20,6 @@ export default {
   fonts: "family=Barlow:wght@400;600;700;800&family=Barlow+Condensed:wght@700;800",
   icon: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect width="32" height="32" fill="#f08c00"/><path d="M16 5c4 6 6 9 6 12a6 6 0 01-12 0c0-3 2-6 6-12z" fill="#fff"/></svg>`,
   hero: {
-    kicker: "Hot zone → warm zone → cold zone",
     title: "Can you run <span>the decon line?</span>",
     lede: "Decon only works if the steps happen in the right order. Try putting a typical Level B line in sequence, then learn why each step sits where it does.",
     cta: [584, "Decon module · $14.99"],

@@ -8,7 +8,6 @@ export default {
   fonts: "family=Sora:wght@400;600;800",
   icon: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#48cae4"/><stop offset="1" stop-color="#ef476f"/></linearGradient></defs><rect width="32" height="32" rx="8" fill="url(#g)"/><path d="M16 6v20M7 11l18 10M25 11L7 21" stroke="#fff" stroke-width="2.5"/></svg>`,
   hero: {
-    kicker: "Supply 18–27 °C · ASHRAE recommended",
     title: "Keep the <span>cold air</span> where it counts.",
     lede: "Cooling is the biggest energy load after IT itself. Training on cooling design, airflow, HVAC troubleshooting, refrigerant safety and efficiency for facility teams.",
     cta: [841, "Cooling Systems · $298.99"],

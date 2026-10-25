@@ -17,7 +17,6 @@ export default {
   fonts: "family=Red+Hat+Display:wght@500;700;900&family=Red+Hat+Mono:wght@500",
   icon: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><circle cx="16" cy="16" r="15" fill="#d3f9d8"/><circle cx="16" cy="16" r="10" fill="#ffe8cc"/><circle cx="16" cy="16" r="5" fill="#d9480f"/></svg>`,
   hero: {
-    kicker: "Site control · 29 CFR 1910.120(d)",
     title: "Hot, warm, <span>cold.</span>",
     lede: "Every hazardous waste site is laid out in zones that keep contamination where it belongs. Click around the site plan to see how it works.",
     cta: [584, "Decon module · $14.99"],

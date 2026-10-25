@@ -8,7 +8,6 @@ export default {
   fonts: "family=Red+Hat+Display:wght@500;700;900",
   icon: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect x="10" y="7" width="12" height="22" rx="6" fill="#c1121f"/><rect x="13" y="3" width="6" height="5" rx="1" fill="#333"/><rect x="10" y="15" width="12" height="3" fill="#fff"/></svg>`,
   hero: {
-    kicker: "NFPA 2001 · HFC-227ea · FK-5-1-12 · IG-541",
     title: "Know the system <span>before it discharges.</span>",
     lede: "Clean agent systems protect data halls without water, but they come with pressurized cylinders, loud discharges and, with inert gases, low-oxygen atmospheres. Safety training for everyone who works in protected rooms.",
     cta: [854, "Clean Agent Safety · $99.99"],

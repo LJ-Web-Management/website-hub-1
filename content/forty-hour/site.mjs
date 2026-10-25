@@ -200,14 +200,12 @@ Yes. The certificate states the 40 hours under 1910.120(e). The industry name te
     const { courses, guides, money, esc } = h;
     return `<section class="hero"><div class="wrap hero-in">
 <div class="hero-copy">
-<p class="kicker">29 CFR 1910.120(e) · 1926.65(e)</p>
+<p class="hero-call">Questions? Call <a href="tel:+18664296742">(866) 429-6742</a></p>
 <h1>Built for<br>the <span>hot zone.</span></h1>
 <p class="hero-lede">The full OSHA 40-Hour HAZWOPER, plus tracks for construction, remediation, oil &amp; gas, pipeline and fire/hazmat crews. 100% online. Certificate the day you finish.</p>
 <div class="hero-cta">${h.buy(587, "Enroll · $249.99")}<a class="btn btn-alt" href="/courses/">Compare tracks</a></div>
 </div>
-<div class="hero-board">
-${courses.slice(0, 4).map((c) => `<a class="plate" href="${c.url}"><span><b>${esc(c.short)}</b><small>Course #${c.id} · ${esc(c.duration)}</small></span><em>${money(c.price)}</em></a>`).join("")}
-</div></div></section>
+</div></section>
 
 <section class="stats"><div class="wrap stats-in">
 <div><b>40</b><span>hours of instruction, self-paced</span></div>

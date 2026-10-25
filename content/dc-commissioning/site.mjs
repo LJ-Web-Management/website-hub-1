@@ -16,7 +16,6 @@ export default {
   fonts: "family=Chivo:wght@400;700;900&family=Chivo+Mono:wght@500",
   icon: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect x="3" y="3" width="26" height="26" rx="5" fill="#2b9348"/><path d="M9 16l5 5 9-11" stroke="#fff" stroke-width="3.5" fill="none" stroke-linecap="round"/></svg>`,
   hero: {
-    kicker: "L1 → L5",
     title: "Test it all <span>before day one.</span>",
     lede: "Commissioning proves a data center works before the first server goes live. Walk through the five levels, then train the team that runs them.",
     cta: [845, "Commissioning & Startup · $267.99"],

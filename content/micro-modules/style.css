@@ -87,3 +87,6 @@ h1, h2, h3 { font-weight: 700; letter-spacing: -.03em; }
   .logo { font-size: 18px; }
   .how, .mgrid { grid-template-columns: 1fr; }
 }
+
+/* Hero without the course stack: copy only. */
+.hero .hero-in { grid-template-columns: minmax(0, 820px); }

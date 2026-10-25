@@ -8,7 +8,6 @@ export default {
   fonts: "family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Mono:wght@400;500;600",
   icon: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect width="32" height="32" fill="#f4ecd8"/><path d="M4 24h24M7 28l3-4M25 28l-3-4" stroke="#1a1a1a" stroke-width="2"/><rect x="7" y="8" width="18" height="12" rx="6" fill="#9b1c1c"/></svg>`,
   hero: {
-    kicker: "Timetable No. 1 · In effect 2026",
     title: "When a tank car <em>leaks.</em>",
     lede: "Training for railroad employees, shippers and local responders who may be first to a rail hazmat incident.",
     cta: [1099, "Awareness · $61.99"],

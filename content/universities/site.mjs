@@ -8,7 +8,6 @@ export default {
   fonts: "family=Graduate&family=Libre+Franklin:wght@400;500;600;700",
   icon: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect width="32" height="32" fill="#7a1f2b"/><path d="M4 8l24 8-24 8z" fill="#f2c14e"/></svg>`,
   hero: {
-    kicker: "Labs · Facilities · Art · Athletics",
     title: "The whole campus <span>makes waste.</span>",
     lede: "Hazardous waste on campus isn't only in the chemistry building. Training for labs, facilities, art studios, motor pools and everyone who might find a spill.",
     cta: [415, "Satellite areas · $59.99"],

@@ -8,7 +8,6 @@ export default {
   fonts: "family=IBM+Plex+Sans:wght@400;500;700&family=IBM+Plex+Mono:wght@500",
   icon: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect width="32" height="32" fill="#0b3d91"/><path d="M0 8h32M0 16h32M0 24h32M8 0v32M16 0v32M24 0v32" stroke="#4f7cc9" stroke-width=".7"/><rect x="7" y="7" width="18" height="18" fill="none" stroke="#fff" stroke-width="2"/></svg>`,
   hero: {
-    kicker: "Sheet A-101 · Design & planning",
     title: "Get it right <span>before the concrete.</span>",
     lede: "Design decisions are the most expensive ones to undo. Training on standards, site selection, redundancy, commissioning and capacity for the people planning new builds and expansions.",
     cta: [842, "Design Fundamentals · $312.99"],

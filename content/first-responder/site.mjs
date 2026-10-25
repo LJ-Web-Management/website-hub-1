@@ -196,12 +196,11 @@ A release is likely **incidental** if:
     ];
     return `<section class="hero"><div class="wrap hero-in">
 <div>
-<span class="status">Release detected</span>
+<p class="hero-call">Questions? Call <a href="tel:+18664296742">(866) 429-6742</a></p>
 <h1>Recognize.<br>Isolate.<br><span>Notify.</span></h1>
 <p class="hero-lede">HAZWOPER (q) training for first responders, fire and hazmat teams, plant ERTs and incident commanders.</p>
 <div class="hero-cta">${h.buy(1099, "Deploy training")}<a class="btn btn-alt" href="#levels">Find your level</a></div>
 </div>
-<div class="hud">${courses.slice(0, 4).map((c) => `<a class="hud-row" href="${c.url}"><span><b>${esc(c.short)}</b><small>Course #${c.id} · ${esc(c.duration)} · ${esc(c.citation)}</small></span><em>${money(c.price)}</em></a>`).join("")}</div>
 </div></section>
 
 <section class="sec" id="levels"><div class="wrap">

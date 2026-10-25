@@ -172,7 +172,6 @@ Join the critique. Utilities and fire departments that train together respond be
 <p class="hero-lede">HAZWOPER for gas, pipeline and electric utility crews who respond to releases on the line.</p>
 <div class="hero-cta">${h.buy(592, "Enroll the crew · $249.99")}<a class="btn btn-alt" href="/guides/responding-to-a-gas-line-strike">Line strike guide</a></div>
 </div>
-<div class="list">${courses.slice(0, 4).map((c) => `<a class="row" href="${c.url}"><span><b>${esc(c.short)}</b><small>Course #${c.id} · ${esc(c.duration)}</small></span><em>${money(c.price)}</em></a>`).join("")}</div>
 </div></section>
 
 <section class="band"><div class="wrap band-in">

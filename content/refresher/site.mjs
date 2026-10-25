@@ -163,7 +163,7 @@ Federal OSHA doesn't cover state and local government workers, but state plans d
     return `<section class="hero"><div class="wrap hero-in">
 <div class="hero-num" aria-hidden="true">8</div>
 <div class="hero-copy">
-<p class="label">01 — Annual refresher · 29 CFR 1910.120(e)(8)</p>
+<p class="hero-call">Questions? Call <a href="tel:+18664296742">(866) 429-6742</a></p>
 <h1>Hours. Once a year.<br>Stay certified.</h1>
 <p class="hero-lede">OSHA requires an 8-hour HAZWOPER refresher every 12 months. Pick your version, finish at your own pace and download your certificate.</p>
 ${h.buy(595, "Renew now · $89.99")}

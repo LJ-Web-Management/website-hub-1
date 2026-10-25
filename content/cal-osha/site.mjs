@@ -185,12 +185,11 @@ Bring your initial certificate, every refresher, any supervisor certificate, you
     const { courses, guides, money, esc } = h;
     return `<section class="hero"><div class="sun" aria-hidden="true"></div><div class="wrap hero-in">
 <div>
-<p class="pill">8 CCR 5192 · Title 8</p>
+<p class="hero-call">Questions? Call <a href="tel:+18664296742">(866) 429-6742</a></p>
 <h1>Golden State certified.</h1>
 <p class="hero-lede">Cal/OSHA HAZWOPER courses written for California's rules, not just the federal ones. Work from LA to the Bay.</p>
 <div class="hero-cta">${h.buy(577, "Start the Cal/OSHA 40-Hour")}<a class="btn btn-alt" href="/courses/">All California courses</a></div>
 </div>
-<div class="hero-cards">${courses.slice(0, 3).map((c) => `<a class="pcard" href="${c.url}"><span><b>${esc(c.short)}</b><small>Course #${c.id} · ${esc(c.duration)}</small></span><em>${money(c.price)}</em></a>`).join("")}</div>
 </div></section>
 
 <div class="ticker" aria-hidden="true"><div>Los Angeles ✺ Bay Area ✺ Central Valley ✺ San Diego ✺ Inland Empire ✺ Sacramento ✺ Kern County ✺ Orange County ✺ Los Angeles ✺ Bay Area ✺ Central Valley ✺ San Diego ✺ Inland Empire ✺ Sacramento ✺</div></div>

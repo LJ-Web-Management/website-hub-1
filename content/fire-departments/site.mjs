@@ -8,7 +8,6 @@ export default {
   fonts: "family=Cinzel:wght@600;700;800&family=Lato:wght@400;700;900",
   icon: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect width="32" height="32" fill="#a4161a"/><path d="M16 3l3 8 8-3-3 8 3 8-8-3-3 8-3-8-8 3 3-8-3-8 8 3z" fill="#e6b85c"/></svg>`,
   hero: {
-    kicker: "Engine · Truck · Hazmat",
     title: "Ready for the <em>call.</em>",
     lede: "Hazmat and HAZWOPER training for career and volunteer departments: awareness for every member, command for officers, and the 40-hour for hazmat teams.",
     cta: [589, "40 Hr Fire / Hazmat · $249.99"],

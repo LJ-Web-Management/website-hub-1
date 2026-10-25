@@ -182,12 +182,11 @@ Only trained, properly equipped responders make entry. For large releases that t
     const { courses, guides, money, esc } = h;
     return `<section class="hero"><div class="flake" aria-hidden="true">❄</div><div class="wrap hero-in">
 <div>
-<p class="pill">Cold storage · Food &amp; beverage · Industrial refrigeration</p>
+<p class="hero-call">Questions? Call <a href="tel:+18664296742">(866) 429-6742</a></p>
 <h1>Ammonia releases <b>don't wait.</b></h1>
 <p class="hero-lede">HAZWOPER training for ammonia refrigeration technicians and the teams around them. Online, self-paced, ammonia-focused.</p>
 <div class="hero-cta">${h.buy(598, "Enroll · $109.99")}<a class="btn btn-alt" href="/guides/first-ten-minutes-of-an-ammonia-release">The first ten minutes</a></div>
 </div>
-<div class="glass">${courses.slice(0, 3).map((c) => `<a class="gc" href="${c.url}"><span><b>${esc(c.short)}</b><small>Course #${c.id} · ${esc(c.duration)}</small></span><em>${money(c.price)}</em></a>`).join("")}</div>
 </div></section>
 
 <section class="sec"><div class="wrap">

@@ -198,22 +198,12 @@ Collect saturated absorbent booms into lined drums or bags and treat them as was
     const { courses, guides, money, esc } = h;
     return `<section class="hero"><div class="wrap hero-in">
 <div>
-<p class="chip">SPCC · 40 CFR 112 · 29 CFR 1910.120</p>
+<p class="hero-call">Questions? Call <a href="tel:+18664296742">(866) 429-6742</a></p>
 <h1>Contain it <b>before it spreads.</b></h1>
 <p class="hero-lede">Spill prevention, response and equipment training for fuel, oil and chemical handlers. Short courses for your whole facility, and the full 40-hour for response crews.</p>
 <div class="hero-cta">${h.buy(416, "Get spill-ready · $49.99")}<a class="btn btn-alt" href="/courses/">See all courses</a></div>
 </div>
-<div class="glass-stack">${courses.slice(0, 4).map((c) => `<a class="glass" href="${c.url}"><span><b>${esc(c.short)}</b><small>Course #${c.id} · ${esc(c.duration)}</small></span><em>${money(c.price)}</em></a>`).join("")}</div>
-</div><svg class="waves" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true"><path d="M0 60c120 40 240 40 360 0s240-40 360 0 240 40 360 0 240-40 360 0v60H0z" fill="rgba(94,234,212,.12)"/><path d="M0 80c120 30 240 30 360 0s240-30 360 0 240 30 360 0 240-30 360 0v40H0z" fill="#032b3a"/></svg></section>
-
-<section class="sec"><div class="wrap">
-<h2 class="title">Four moves, <b>every spill.</b></h2>
-<ol class="moves">
-<li><span>01</span><b>Stop</b>Shut the valve, upright the drum, kill the pump. Only if it's safe.</li>
-<li><span>02</span><b>Contain</b>Cover the drain first, then ring the spill with socks or boom.</li>
-<li><span>03</span><b>Clean up</b>Absorb from the edges in, bag it, label it as waste.</li>
-<li><span>04</span><b>Report</b>Tell your supervisor. Large releases may need agency reporting.</li>
-</ol></div></section>
+</div></section>
 
 <section class="sec" id="courses"><div class="wrap">
 <h2 class="title">Training for the <b>first five minutes.</b></h2>

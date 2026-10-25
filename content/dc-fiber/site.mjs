@@ -8,7 +8,6 @@ export default {
   fonts: "family=Outfit:wght@300;500;700&family=DM+Mono:wght@500",
   icon: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect width="32" height="32" rx="6" fill="#090909"/><path d="M2 10c10 0 14 12 28 12" stroke="#00f5d4" stroke-width="2.5" fill="none"/><path d="M2 16c10 0 14 6 28 6" stroke="#f15bb5" stroke-width="2.5" fill="none"/><path d="M2 22c10 0 14-6 28-6" stroke="#fee440" stroke-width="2.5" fill="none"/></svg>`,
   hero: {
-    kicker: "OS2 · OM4 · MPO · LC",
     title: "Clean ends. <span>Clean links.</span>",
     lede: "Most fiber faults are a dirty connector away. Training on fiber termination, testing and troubleshooting, and structured cabling to ANSI/TIA-942.",
     cta: [834, "Fiber & Cabling · $99.99"],

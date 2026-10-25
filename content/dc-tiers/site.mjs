@@ -15,7 +15,6 @@ export default {
   fonts: "family=Archivo:wght@400;600;800;900",
   icon: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect width="32" height="32" fill="#111"/><rect x="6" y="22" width="20" height="4" fill="#d4ff3f"/><rect x="8" y="16" width="16" height="4" fill="#fff"/><rect x="10" y="10" width="12" height="4" fill="#fff"/><rect x="12" y="4" width="8" height="4" fill="#fff"/></svg>`,
   hero: {
-    kicker: "Tier I · II · III · IV",
     title: "Know your <span>tier.</span>",
     lede: "Tiers describe how a data center's power and cooling infrastructure handles maintenance and failure. Explore the four levels, then train your team on what it takes to run each one.",
     cta: [849, "Tier Infrastructure · $280.99"],

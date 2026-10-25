@@ -57,7 +57,6 @@ export default {
   fonts: "family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600",
   icon: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect width="32" height="32" rx="4" fill="#f6efe4"/><text x="16" y="23" font-size="17" font-family="Georgia" font-style="italic" text-anchor="middle" fill="#3d2c1e">Aa</text></svg>`,
   hero: {
-    kicker: `${TERMS.length} terms, plain language`,
     title: "Speak <em>HAZWOPER.</em>",
     lede: "PEL, IDLH, LEL, Level B, CRZ. A plain-language glossary of the terms you'll hear on every hazardous waste site.",
     cta: [587, "Learn them all: 40-hour"],

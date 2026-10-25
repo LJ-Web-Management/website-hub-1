@@ -8,7 +8,6 @@ export default {
   fonts: "family=Figtree:wght@400;500;600;700;800;900",
   icon: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect width="16" height="32" fill="#0f8b8d"/><rect x="16" width="16" height="32" fill="#ec6b56"/><text x="8" y="20" font-size="9" font-family="Arial" font-weight="700" text-anchor="middle" fill="#fff">EN</text><text x="24" y="20" font-size="9" font-family="Arial" font-weight="700" text-anchor="middle" fill="#fff">ES</text></svg>`,
   hero: {
-    kicker: "English + Español",
     title: "One crew. <span>Two languages.</span>",
     lede: "Train every worker in the language they understand best: the full 40-hour HAZWOPER in English or in Spanish, plus supervisor and refresher courses.",
     cta: [1100, "40-hour in Spanish · $249.99"],

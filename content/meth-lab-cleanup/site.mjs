@@ -8,7 +8,6 @@ export default {
   fonts: "family=Oswald:wght@500;700&family=Inter:wght@400;500",
   icon: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect width="32" height="32" fill="#495057"/><path d="M-4 22L36 6v8L-4 30z" fill="#ffd43b"/><path d="M2 21l4-1.6M10 18l4-1.6M18 15l4-1.6M26 12l4-1.6" stroke="#000" stroke-width="3"/></svg>`,
   hero: {
-    kicker: "Former meth labs · fentanyl · residue",
     title: "The chemicals <span>stay behind.</span>",
     lede: "Clandestine drug labs leave toxic residues in walls, carpets, HVAC systems and plumbing. Cleanup crews need hazardous materials training, the right PPE and careful decon.",
     cta: [587, "40-Hour HAZWOPER · $249.99"],

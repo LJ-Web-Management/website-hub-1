@@ -15,7 +15,6 @@ export default {
   fonts: "family=Roboto+Condensed:wght@500;700;900&family=Roboto:wght@400;500",
   icon: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M16 3l14 25H2z" fill="#ff6b00" stroke="#000" stroke-width="2"/><path d="M17 10l-5 9h4l-1 6 5-9h-4z" fill="#000"/></svg>`,
   hero: {
-    kicker: "NFPA 70E · Electrically safe work condition",
     title: "Kill it, <span>test it,</span> then touch it.",
     lede: "An arc flash can reach temperatures hotter than the surface of the sun. Arc flash and electrical safety training for data center electricians, technicians and anyone near energized equipment.",
     cta: [850, "Arc Flash Safety · $99.99"],

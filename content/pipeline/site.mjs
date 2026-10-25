@@ -8,7 +8,6 @@ export default {
   fonts: "family=Saira+Extra+Condensed:wght@700;800&family=Roboto:wght@400;500",
   icon: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect width="32" height="32" fill="#1a1a1a"/><rect x="11" y="3" width="10" height="26" fill="#fab005"/><path d="M11 9h10M11 13h10" stroke="#1a1a1a" stroke-width="2"/></svg>`,
   hero: {
-    kicker: "Gas · liquids · electric · water",
     title: "First on scene <span>at the line.</span>",
     lede: "When a pipeline or utility line fails, company responders are often there before anyone else. HAZWOPER training built for the people who make the scene safe and stop the release.",
     cta: [592, "40-Hr Utility/Pipeline · $249.99"],

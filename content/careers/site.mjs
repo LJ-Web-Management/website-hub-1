@@ -8,7 +8,6 @@ export default {
   fonts: "family=Lexend:wght@400;500;600;700;800",
   icon: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect width="32" height="32" rx="9" fill="#6d28d9"/><path d="M16 5l2.5 8.5L27 16l-8.5 2.5L16 27l-2.5-8.5L5 16l8.5-2.5z" fill="#fde047"/></svg>`,
   hero: {
-    kicker: "New career · Real certifications",
     title: "Your first step into <span>environmental work.</span>",
     lede: "Remediation, waste services and emergency response companies hire people with HAZWOPER training. Get certified online and walk into interviews ready.",
     cta: [587, "Get the 40-hour · $249.99"],

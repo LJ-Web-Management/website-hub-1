@@ -188,7 +188,7 @@ Your certificates are your résumé in this industry. Keep copies on your phone 
     const { courses, guides, money, esc } = h;
     return `<section class="hero"><div class="r1" aria-hidden="true"></div><div class="r2" aria-hidden="true"></div><div class="grain" aria-hidden="true"></div><div class="wrap hero-in">
 <div>
-<p class="kicker">For field waste technicians</p>
+<p class="hero-call">Questions? Call <a href="tel:+18664296742">(866) 429-6742</a></p>
 <h1>Lab packs, drums &amp; <span>load-outs.</span></h1>
 <p class="hero-lede">The training stack for technicians at environmental services companies: HAZWOPER, RCRA, DOT and TSDF.</p>
 <div class="hero-cta">${h.buy(599, "Waste Technician · $199.99")}<a class="btn btn-alt" href="/guides/waste-technician-training-path">Training path</a></div>

@@ -66,3 +66,6 @@ h1, h2, h3 { text-transform: uppercase; font-weight: 800; }
 
 @media (max-width: 900px) { .hero-in, .foot-in { grid-template-columns: 1fr; } .cgrid { grid-template-columns: 1fr; } }
 @media (max-width: 600px) { .top nav a:not(.btn) { display: none; } .band-in { font-size: 20px; } }
+
+/* Hero without the course stack: copy only. */
+.hero .hero-in { grid-template-columns: minmax(0, 820px); }

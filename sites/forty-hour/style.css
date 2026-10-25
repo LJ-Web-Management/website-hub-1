@@ -94,3 +94,6 @@
   .stats-in, .how ol { grid-template-columns: 1fr; }
   .stats-in div { border-right: 0; border-bottom: 2px solid #111; }
 }
+
+/* Hero without the course stack: copy only. */
+.hero .hero-in { grid-template-columns: minmax(0, 820px); }

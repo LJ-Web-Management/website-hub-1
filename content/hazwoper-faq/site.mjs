@@ -35,7 +35,6 @@ export default {
   fonts: "family=Nunito+Sans:wght@400;600;700;800;900",
   icon: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect width="32" height="32" rx="16" fill="#c2255c"/><text x="16" y="23" font-size="18" font-family="Arial" font-weight="900" text-anchor="middle" fill="#fff">?</text></svg>`,
   hero: {
-    kicker: `${FAQ.length} answers`,
     title: "Got a HAZWOPER <span>question?</span>",
     lede: "Training hours, refreshers, certificates, PPE and enrollment. Search the answers people ask for most.",
     cta: [587, "40-hour HAZWOPER · $249.99"],

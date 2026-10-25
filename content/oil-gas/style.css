@@ -80,3 +80,6 @@ h1, h2, h3 { font-weight: 700; }
   .hz-in { grid-template-columns: 1fr; }
   .hz-in div { border-right: 0; border-bottom: 2px solid #151311; }
 }
+
+/* Hero without the course stack: copy only. */
+.hero .hero-in { grid-template-columns: minmax(0, 820px); }

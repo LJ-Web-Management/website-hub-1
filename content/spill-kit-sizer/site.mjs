@@ -8,7 +8,6 @@ export default {
   fonts: "family=Manrope:wght@500;700;800&family=Inter:wght@400;500;600",
   icon: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect width="32" height="32" rx="6" fill="#5c940d"/><path d="M9 9h14l-2 18H11z" fill="#ffe066"/><rect x="8" y="6" width="16" height="4" rx="1" fill="#fff"/></svg>`,
   hero: {
-    kicker: "4 questions · instant recommendation",
     title: "What size spill kit <span>do you need?</span>",
     lede: "Match the kit to your biggest container, the liquid and where it could flow. Get a recommendation in seconds, then train your staff to use it.",
     cta: [479, "Spill kit course · $24.99"],

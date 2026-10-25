@@ -184,18 +184,14 @@ The simplest approach is to give the OSHA 24-hour at hire, which also covers muc
     const { courses, guides, money, esc } = h;
     return `<section class="hero"><div class="wrap hero-in">
 <div>
-<p class="prompt">operator@facility:~$ cat requirements.txt</p>
+<p class="hero-call">Questions? Call <a href="tel:+18664296742">(866) 429-6742</a></p>
 <h1>TSD operations training<span class="cur" aria-hidden="true"></span></h1>
 <pre class="req">&gt; 29 CFR 1910.120(p) + RCRA 40 CFR 264.16
 &gt; for treatment, storage &amp; disposal facility crews
 &gt; initial: 24 hours · refresher: 8 hours / year</pre>
 <div class="hero-cta">${h.buy(582, "$ enroll --course 582")}<a class="btn btn-alt" href="/guides/tsdf-training-1910-120-p">$ man tsdf</a></div>
 </div>
-<div class="term"><div class="term-bar"><i></i><i></i><i></i><span>~/courses</span></div>
-<p class="prompt">$ ls -l ./courses</p>
-${courses.map((c) => `<a class="ls" href="${c.url}"><span>id=${c.id}</span><b>${esc(c.short)}</b><span>${esc(c.duration)}</span><em>${money(c.price)}</em></a>`).join("")}
-<p class="prompt">$ <span class="cur sm"></span></p>
-</div></div></section>
+</div></section>
 
 <section class="sec"><div class="wrap">
 <p class="prompt">$ diff cleanup_site.txt tsdf.txt</p>

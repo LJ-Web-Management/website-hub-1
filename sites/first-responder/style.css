@@ -85,3 +85,6 @@ h1, h2, h3 { text-transform: uppercase; font-weight: 700; letter-spacing: .01em;
   .top nav a:not(.btn) { display: none; }
   .levels { grid-template-columns: 1fr; }
 }
+
+/* Hero without the course stack: copy only. */
+.hero .hero-in { grid-template-columns: minmax(0, 820px); }

@@ -178,12 +178,11 @@ Booms help with any oil sheen on top, but they won't contain the brine itself. F
     const { courses, guides, money, esc } = h;
     return `<section class="hero"><div class="glow" aria-hidden="true"></div><div class="wrap hero-in">
 <div>
-<p class="kicker">Upstream · Midstream · Spill response</p>
+<p class="hero-call">Questions? Call <a href="tel:+18664296742">(866) 429-6742</a></p>
 <h1>From the pad to the <span>pipeline.</span></h1>
 <p class="hero-lede">HAZWOPER, gas detection and spill response training for oil and gas crews. Online, on your schedule, between hitches.</p>
 <div class="hero-cta">${h.buy(591, "Get certified · $249.99")}<a class="btn btn-alt" href="/courses/">All courses</a></div>
 </div>
-<div class="plates">${courses.slice(0, 4).map((c) => `<a class="plate" href="${c.url}"><span><b>${esc(c.short)}</b><small>Course #${c.id} · ${esc(c.duration)}</small></span><em>${money(c.price)}</em></a>`).join("")}</div>
 </div></section>
 
 <section class="hazards"><div class="wrap hz-in">

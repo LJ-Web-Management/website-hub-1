@@ -8,7 +8,6 @@ export default {
   fonts: "family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600",
   icon: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect width="32" height="32" rx="6" fill="#0b7285"/><rect x="6" y="8" width="8" height="16" rx="2" fill="#fff"/><rect x="18" y="8" width="8" height="16" rx="2" fill="#99e9f2"/></svg>`,
   hero: {
-    kicker: "Side-by-side",
     title: "40 or 24? <span>Compare them.</span>",
     lede: "Not sure between two courses? Put up to three side by side and see the length, price, regulation and who each one is for.",
     cta: [587, "40-hour HAZWOPER · $249.99"],

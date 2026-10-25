@@ -10,7 +10,6 @@ export default {
   fonts: "family=VT323&family=Inter:wght@400;600;800",
   icon: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect x="5" y="3" width="22" height="26" rx="5" fill="#212529"/><rect x="8" y="7" width="16" height="9" rx="1" fill="#94d82d"/><circle cx="12" cy="22" r="2" fill="#fcc419"/><circle cx="20" cy="22" r="2" fill="#fa5252"/></svg>`,
   hero: {
-    kicker: "Flammability · %LEL · ppm · %vol",
     title: "What does <span>10% LEL</span> really mean?",
     lede: "Combustible gas meters read in percent of the lower explosive limit. Convert a reading to ppm and percent by volume for the gas you're dealing with.",
     cta: [1056, "Gas Detection · $49.99"],

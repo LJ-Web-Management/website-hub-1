@@ -8,7 +8,6 @@ export default {
   fonts: "family=Anton&family=Inter:wght@400;500;600;700",
   icon: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect width="32" height="32" fill="#f4f5f7"/><rect x="4" y="3" width="4" height="26" fill="#f26a1b"/><rect x="24" y="3" width="4" height="26" fill="#f26a1b"/><rect x="4" y="10" width="24" height="3" fill="#1e4fa8"/><rect x="4" y="20" width="24" height="3" fill="#1e4fa8"/><rect x="10" y="14" width="6" height="6" fill="#c69c6d"/><rect x="17" y="15" width="5" height="5" fill="#c69c6d"/></svg>`,
   hero: {
-    kicker: "Aisle 1 · Bay 01 · Level A",
     title: "Every aisle, <span>spill-ready.</span>",
     lede: "Warehouses store, move and ship chemicals every day. Train the people on the floor to spot leaks, use the spill kit and know when to back off.",
     cta: [1099, "Awareness · $61.99"],

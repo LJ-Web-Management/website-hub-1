@@ -51,3 +51,6 @@ h1, h2, h3 { font-weight: 900; letter-spacing: -.02em; }
 
 @media (max-width: 900px) { .hero-in, .foot-in { grid-template-columns: 1fr; } }
 @media (max-width: 600px) { .top nav a:not(.btn) { display: none; } .table { grid-template-columns: repeat(2, 1fr); } }
+
+/* Hero without the course stack: copy only. */
+.hero .hero-in { grid-template-columns: minmax(0, 820px); }

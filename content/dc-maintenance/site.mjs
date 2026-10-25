@@ -8,7 +8,6 @@ export default {
   fonts: "family=Bitter:wght@500;700;800&family=Karla:wght@400;500;700",
   icon: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M4 8h18l6 8-6 8H4z" fill="#c98f12"/><circle cx="21" cy="16" r="2.5" fill="#fff"/></svg>`,
   hero: {
-    kicker: "PM · CM · PdM",
     title: "Fix it <span>before it fails.</span>",
     lede: "Good maintenance programs are boring, and boring is exactly what you want in a data center. Training on preventive maintenance, mechanical systems and the building around them.",
     cta: [839, "PM Planning · $99.99"],

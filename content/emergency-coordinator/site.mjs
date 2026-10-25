@@ -8,7 +8,6 @@ export default {
   fonts: "family=Schibsted+Grotesk:wght@400;600;800",
   icon: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect x="4" y="3" width="22" height="26" rx="3" fill="#fff" stroke="#c92a2a" stroke-width="2"/><rect x="24" y="8" width="5" height="8" rx="1" fill="#c92a2a"/><path d="M15 10v10M10 15h10" stroke="#c92a2a" stroke-width="3"/></svg>`,
   hero: {
-    kicker: "40 CFR 262 Subpart M · LQGs",
     title: "When it goes wrong, <span>one page</span> they can use.",
     lede: "Large quantity generators must give local responders a quick reference guide to their contingency plan. Fill in the blanks below and print it, then train your emergency coordinators.",
     cta: [412, "Emergency Coordinator · $99.99"],

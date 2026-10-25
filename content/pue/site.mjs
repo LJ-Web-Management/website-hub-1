@@ -8,7 +8,6 @@ export default {
   fonts: "family=Lexend:wght@300;400;600;800",
   icon: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect width="32" height="32" rx="6" fill="#2d6a4f"/><text x="16" y="21" font-size="12" font-family="Arial" font-weight="700" text-anchor="middle" fill="#d8f3dc">PUE</text></svg>`,
   hero: {
-    kicker: "Total facility power ÷ IT power",
     title: "What's your <span>PUE?</span>",
     lede: "Power usage effectiveness shows how much energy goes to overhead instead of computing. Work out yours below, see what the overhead costs, then learn how to bring it down.",
     cta: [832, "Energy Efficiency & PUE · $99.99"],

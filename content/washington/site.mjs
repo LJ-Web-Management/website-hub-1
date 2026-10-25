@@ -8,7 +8,6 @@ export default {
   fonts: "family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600",
   icon: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect width="32" height="32" rx="7" fill="#e6ece6"/><path d="M16 3l-7 10h4l-6 8h5l-5 7h18l-5-7h5l-6-8h4z" fill="#1f3b2d"/></svg>`,
   hero: {
-    kicker: "Washington State · WAC 296-843",
     title: "HAZWOPER for the <em>Evergreen State.</em>",
     lede: "Washington writes its own HAZWOPER rule and its own dangerous waste rules. Training for crews from Puget Sound to the Tri-Cities.",
     cta: [587, "40-hour HAZWOPER · $249.99"],

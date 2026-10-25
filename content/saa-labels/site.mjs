@@ -8,7 +8,6 @@ export default {
   fonts: "family=Archivo+Narrow:wght@500;700&family=Archivo:wght@400;600;800",
   icon: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect x="3" y="5" width="26" height="22" rx="2" fill="#fcc419" stroke="#111" stroke-width="2"/><rect x="3" y="5" width="26" height="7" fill="#111"/><path d="M8 17h16M8 21h11" stroke="#111" stroke-width="2"/></svg>`,
   hero: {
-    kicker: "40 CFR 262.15",
     title: "Label it <span>right</span> at the point of generation.",
     lede: "Satellite accumulation areas are where most hazardous waste violations start: unlabeled, open containers. Make a compliant label below, then train the people who fill the containers.",
     cta: [415, "SAA Training · $59.99"],

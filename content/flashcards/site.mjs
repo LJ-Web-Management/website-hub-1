@@ -31,7 +31,6 @@ export default {
   fonts: "family=Kalam:wght@400;700&family=Inter:wght@400;500;600",
   icon: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect x="4" y="8" width="22" height="16" rx="2" fill="#fff" stroke="#1098ad" stroke-width="2" transform="rotate(-8 15 16)"/><rect x="7" y="9" width="22" height="16" rx="2" fill="#fff9db" stroke="#1098ad" stroke-width="2"/><path d="M10 15h16M10 19h11" stroke="#f03e3e" stroke-width="1.5"/></svg>`,
   hero: {
-    kicker: `${CARDS.length} cards · free`,
     title: "Study it, <span>flip it.</span>",
     lede: "A free flashcard deck covering the facts that show up on every HAZWOPER exam. Tap to flip, shuffle to mix them up.",
     cta: [587, "Take the 40-hour"],

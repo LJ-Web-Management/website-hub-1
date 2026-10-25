@@ -8,7 +8,6 @@ export default {
   fonts: "family=Barlow+Semi+Condensed:wght@500;600;700;800&family=Inter:wght@400;500",
   icon: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect width="32" height="32" fill="#0b1530"/><path d="M4 28V16h4v-6h3v18M14 28V8h4v20M21 28V14h3l3 4v10" fill="#ffa53a"/><circle cx="16" cy="5" r="2" fill="#ffd27a"/></svg>`,
   hero: {
-    kicker: "Refineries · Chemical plants · Terminals",
     title: "Built for the <span>plant.</span>",
     lede: "HAZWOPER training for refinery, petrochemical and terminal workers from Corpus Christi to Lake Charles and beyond. Get your crew cleared before turnaround.",
     cta: [587, "40-hour HAZWOPER · $249.99"],

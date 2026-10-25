@@ -8,7 +8,6 @@ export default {
   fonts: "family=Archivo+Black&family=Inter:wght@400;500;600",
   icon: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect width="32" height="32" rx="6" fill="#1864ab"/><circle cx="16" cy="11" r="5" fill="#ffd43b"/><path d="M8 28c0-6 4-10 8-10s8 4 8 10z" fill="#ffd43b"/></svg>`,
   hero: {
-    kicker: "Interactive · Levels A to D",
     title: "Which level <span>of protection?</span>",
     lede: "Work through the same questions a site safety officer asks, and see which level of protection usually fits. For learning, not for picking PPE on a real site.",
     cta: [585, "PPE module · $12.99"],

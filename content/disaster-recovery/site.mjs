@@ -8,7 +8,6 @@ export default {
   fonts: "family=Big+Shoulders+Display:wght@700;800;900&family=Inter:wght@400;500;600",
   icon: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect width="32" height="32" fill="#1d5fbf"/><path d="M4 22l6-6 4 4 8-9 6 6v11H4z" fill="#ff8a00"/></svg>`,
   hero: {
-    kicker: "Floods · Hurricanes · Wildfires",
     title: "After the storm, <span>clean up safe.</span>",
     lede: "Disaster cleanup mixes floodwater, fuel, chemicals and debris. Get recovery crews trained before they deploy.",
     cta: [587, "40-hour HAZWOPER · $249.99"],

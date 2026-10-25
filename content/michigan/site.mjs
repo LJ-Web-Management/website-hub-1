@@ -8,7 +8,6 @@ export default {
   fonts: "family=Righteous&family=Work+Sans:wght@400;500;600;700",
   icon: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect width="32" height="32" rx="16" fill="#c8102e"/><circle cx="16" cy="16" r="12" fill="none" stroke="#f5efe0" stroke-width="2"/><text x="16" y="21" font-size="12" font-family="Arial" font-weight="700" text-anchor="middle" fill="#f5efe0">MI</text></svg>`,
   hero: {
-    kicker: "MIOSHA Part 432 · Detroit to the U.P.",
     title: "Made in <span>Michigan.</span>",
     lede: "HAZWOPER training for Michigan's plants, cleanup crews and public responders, under MIOSHA's own HAZWOPER standard.",
     cta: [587, "40-hour HAZWOPER · $249.99"],

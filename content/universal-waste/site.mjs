@@ -29,7 +29,6 @@ export default {
   fonts: "family=Nunito:wght@600;800;900",
   icon: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M5 10h8l-1 18H6z" fill="#2f9e44"/><path d="M12 10h8l-1 18h-6z" fill="#1c7ed6"/><path d="M19 10h8l-1 18h-6z" fill="#f08c00"/><path d="M4 7h24v3H4z" fill="#333"/></svg>`,
   hero: {
-    kicker: "40 CFR 273",
     title: "Which bin <span>does it go in?</span>",
     lede: "Universal waste rules make batteries, lamps, mercury equipment, aerosol cans and pesticides easier to manage. But only if they go in the right place. Test yourself below.",
     cta: [602, "Universal Waste · $34.99"],

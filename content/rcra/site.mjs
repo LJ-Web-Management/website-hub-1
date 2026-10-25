@@ -205,7 +205,7 @@ Since 2018, manifests are tracked in EPA's e-Manifest system. Receiving faciliti
     const planRows = (ids) => ids.map((id) => { const c = course(id); return `<li><span><a href="${c.url}">${esc(c.name)}</a><small>${esc(c.duration)} · Course #${c.id}</small></span><b>${money(c.price)}</b>${h.buy(c.id, "Enroll", "btn btn-sm")}</li>`; }).join("");
     return `<section class="hero"><div class="wrap hero-in">
 <div>
-<p class="eyebrow">EPA · 40 CFR Parts 262 &amp; 273</p>
+<p class="hero-call">Questions? Call <a href="tel:+18664296742">(866) 429-6742</a></p>
 <h1>Pass your next RCRA inspection.</h1>
 <p class="hero-lede">Train every person who touches a drum, a label or a manifest. Online courses with certificates for your training file.</p>
 <ul class="checks"><li>Generator, manifest and satellite area training</li><li>Completion records ready for your inspector</li><li>Seats for your whole facility in one checkout</li></ul>

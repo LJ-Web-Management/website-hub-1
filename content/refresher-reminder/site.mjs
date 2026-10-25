@@ -8,7 +8,6 @@ export default {
   fonts: "family=Bricolage+Grotesque:wght@500;700;800&family=Inter:wght@400;500;600",
   icon: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect x="3" y="5" width="26" height="24" rx="4" fill="#fff" stroke="#e8590c" stroke-width="2"/><rect x="3" y="5" width="26" height="7" rx="3" fill="#e8590c"/><text x="16" y="25" font-size="11" font-family="Arial" font-weight="700" text-anchor="middle" fill="#222">12</text></svg>`,
   hero: {
-    kicker: "Never miss a renewal",
     title: "Put your refresher <span>on the calendar.</span>",
     lede: "HAZWOPER certificates need renewing every 12 months. Work out your due date and drop a reminder into your calendar in one click.",
     cta: [595, "Renew now · $89.99"],

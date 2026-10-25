@@ -8,7 +8,6 @@ export default {
   fonts: "family=DM+Sans:wght@400;500;700",
   icon: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M11 2l5 8 5-8" stroke="#ff6b6b" stroke-width="3" fill="none"/><rect x="7" y="10" width="18" height="20" rx="3" fill="#0ca678"/><circle cx="16" cy="18" r="3.5" fill="#fff"/><path d="M11 26c1-3 9-3 10 0" stroke="#fff" stroke-width="2" fill="none"/></svg>`,
   hero: {
-    kicker: "Bulk seats · fast enrollment · certificates by email",
     title: "Certified before <span>day one.</span>",
     lede: "Host employers ask for HAZWOPER-trained temps, and both of you share responsibility for their safety. Get your workers certified online before placement.",
     cta: [587, "40-Hour HAZWOPER · $249.99"],

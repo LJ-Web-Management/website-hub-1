@@ -8,7 +8,6 @@ export default {
   fonts: "family=Stardos+Stencil:wght@700&family=Source+Sans+3:wght@400;600;700",
   icon: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect width="32" height="32" rx="4" fill="#5c6b3a"/><path d="M16 5l3.2 7 7.6.7-5.8 5 1.8 7.5L16 21.3 9.2 25.2l1.8-7.5-5.8-5 7.6-.7z" fill="#e6dcc0"/></svg>`,
   hero: {
-    kicker: "CBRN · EOD · engineers · firefighters · medics",
     title: "You've done the hard part. <span>Here's the next mission.</span>",
     lede: "Many military jobs build exactly the skills hazardous waste and emergency response employers want. HAZWOPER certification is often the missing credential.",
     cta: [587, "40-Hour HAZWOPER · $249.99"],

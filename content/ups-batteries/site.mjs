@@ -8,7 +8,6 @@ export default {
   fonts: "family=Rubik:wght@400;500;700;800",
   icon: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect x="3" y="9" width="23" height="14" rx="3" fill="none" stroke="#264653" stroke-width="2.5"/><rect x="26" y="13" width="3" height="6" rx="1" fill="#264653"/><rect x="6" y="12" width="5" height="8" fill="#2a9d8f"/><rect x="12" y="12" width="5" height="8" fill="#2a9d8f"/><rect x="18" y="12" width="5" height="8" fill="#e9c46a"/></svg>`,
   hero: {
-    kicker: "VRLA · Lithium-ion · Flywheel",
     title: "The minutes <span>that matter most.</span>",
     lede: "When the utility drops, the UPS carries everything until the generators take over. Training on UPS systems, battery safety and load testing, plus a quick runtime estimator.",
     cta: [857, "UPS & Battery Safety · $99.99"],

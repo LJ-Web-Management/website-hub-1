@@ -8,7 +8,6 @@ export default {
   fonts: "family=Saira+Stencil+One&family=IBM+Plex+Sans+Condensed:wght@400;500;600;700",
   icon: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect width="32" height="32" fill="#4b5320"/><path d="M16 5l3 7h7l-5.5 4.5 2 7.5L16 19.5 9.5 24l2-7.5L6 12h7z" fill="#e3dcc2"/></svg>`,
   hero: {
-    kicker: "Contractors on DoD & DOE cleanup sites",
     title: "Cleared for <span>federal sites.</span>",
     lede: "Former bases, ranges and weapons-complex sites are some of the largest cleanups in the country. HAZWOPER training for the contractors who work them.",
     cta: [590, "40 Hr Remediation · $249.99"],

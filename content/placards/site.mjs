@@ -22,7 +22,6 @@ export default {
   fonts: "family=Barlow+Semi+Condensed:wght@500;700;800&family=Barlow:wght@400;500",
   icon: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect x="6" y="6" width="20" height="20" transform="rotate(45 16 16)" fill="#e03131" stroke="#000" stroke-width="1.5"/><text x="16" y="24" font-size="9" font-family="Arial" font-weight="700" text-anchor="middle" fill="#fff">3</text></svg>`,
   hero: {
-    kicker: "49 CFR 172 · Classes 1–9",
     title: "Read the <span>diamond.</span>",
     lede: "Placards tell drivers, workers and responders what's inside at a glance. Tap a class to learn what it means, then train on shipping and handling hazmat.",
     cta: [403, "RCRA/DOT Compliance · $149.99"],

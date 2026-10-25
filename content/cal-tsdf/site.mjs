@@ -8,7 +8,6 @@ export default {
   fonts: "family=Libre+Franklin:wght@400;600;800;900",
   icon: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect width="32" height="32" rx="6" fill="#1864ab"/><g fill="#ff922b"><ellipse cx="16" cy="10" rx="5" ry="6"/><ellipse cx="10" cy="17" rx="6" ry="5"/><ellipse cx="22" cy="17" rx="6" ry="5"/></g><circle cx="16" cy="15" r="3" fill="#fcc419"/></svg>`,
   hero: {
-    kicker: "Title 8 §5192(p) · Title 22",
     title: "California TSDF? <span>Train to Cal/OSHA.</span>",
     lede: "California runs its own HAZWOPER rule (Title 8, §5192) and its own hazardous waste program. Courses written for Cal/OSHA, for workers at treatment, storage and disposal facilities.",
     cta: [575, "Cal/OSHA 24-Hr TSDF · $249.99"],

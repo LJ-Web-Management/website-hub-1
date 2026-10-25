@@ -8,7 +8,6 @@ export default {
   fonts: "family=Michroma&family=Inter:wght@400;500;600",
   icon: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect x="5" y="2" width="22" height="28" rx="4" fill="#0b0f0c"/><rect x="9" y="6" width="14" height="5" rx="1" fill="#00c853"/><g fill="#3a4a3f"><circle cx="11" cy="16" r="1.6"/><circle cx="16" cy="16" r="1.6"/><circle cx="21" cy="16" r="1.6"/><circle cx="11" cy="21" r="1.6"/><circle cx="16" cy="21" r="1.6"/><circle cx="21" cy="21" r="1.6"/><circle cx="16" cy="26" r="1.6"/></g></svg>`,
   hero: {
-    kicker: "Badge · biometric · escort",
     title: "One badge, <span>one person.</span>",
     lede: "The strongest firewall doesn't help if someone walks into the data hall behind a contractor. Physical security and access control training for staff, guards and facility teams.",
     cta: [828, "Access Control & Physical Security · $99.99"],

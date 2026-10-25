@@ -8,7 +8,6 @@ export default {
   fonts: "family=Barlow+Condensed:wght@600;800&family=Barlow:wght@400;500;600",
   icon: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect width="32" height="32" fill="#0a0a0a"/><path d="M18 3L7 18h8l-2 11 12-16h-8z" fill="#ffd60a"/></svg>`,
   hero: {
-    kicker: "Utility → ATS → UPS → PDU → rack",
     title: "Follow the power <span>to the rack.</span>",
     lede: "Every outage story has a one-line diagram behind it. Training on how data center power is built, switched, protected and maintained, from the utility service to the rack PDU.",
     cta: [847, "Power Systems · $303.99"],

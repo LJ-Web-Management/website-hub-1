@@ -8,7 +8,6 @@ export default {
   fonts: "family=Libre+Baskerville:wght@400;700&family=Source+Sans+3:wght@400;600;700",
   icon: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><circle cx="16" cy="16" r="15" fill="#14213d"/><circle cx="16" cy="16" r="11" fill="none" stroke="#c9a227" stroke-width="2"/><path d="M11 16l4 4 7-8" stroke="#c9a227" stroke-width="3" fill="none"/></svg>`,
   hero: {
-    kicker: "SOC 2 · ISO 27001 · Physical security",
     title: "Pass the audit <span>every day,</span> not just audit day.",
     lede: "Auditors look for controls that actually operate. Training for the facility, security and operations staff whose daily work is the evidence.",
     cta: [848, "Security & Compliance · $291.99"],

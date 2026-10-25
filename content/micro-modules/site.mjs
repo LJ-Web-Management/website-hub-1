@@ -191,12 +191,11 @@ If someone is injured or exposed, life comes first. Remove gross contamination f
     const minutes = (c) => c.duration.replace(" Min", " min").replace(" Hour", " hr");
     return `<section class="hero"><div class="wrap hero-in">
 <div>
-<p class="sticker">⚡ 15–20 min each</p>
+<p class="hero-call">Questions? Call <a href="tel:+18664296742">(866) 429-6742</a></p>
 <h1>Tiny lessons.<br>Big safety.</h1>
 <p class="hero-lede">Bite-size HAZWOPER modules for toolbox talks, onboarding or a quick skills check. Starting at $12.99.</p>
 <div class="hero-cta">${h.buy(585, "Start a module →")}<a class="btn btn-alt" href="/guides/micro-modules-for-toolbox-talks">Use them for tailgates</a></div>
 </div>
-<div class="tiles">${courses.slice(0, 4).map((c) => `<a class="tile" href="${c.url}"><b>${esc(c.short)}</b><small>#${c.id} · ${esc(minutes(c))}</small><em>${money(c.price)}</em></a>`).join("")}</div>
 </div></section>
 
 <div class="marquee" aria-hidden="true"><div>PPE ★ DECON ★ AIR MONITORING ★ SITE CHARACTERIZATION ★ BOOMS ★ SPILL KITS ★ PPE ★ DECON ★ AIR MONITORING ★ SITE CHARACTERIZATION ★ BOOMS ★ SPILL KITS ★</div></div>

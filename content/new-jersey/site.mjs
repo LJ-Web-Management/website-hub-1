@@ -8,7 +8,6 @@ export default {
   fonts: "family=Overpass:wght@400;600;700;800;900",
   icon: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect width="32" height="32" rx="5" fill="#00613a"/><rect x="3" y="3" width="26" height="26" rx="3" fill="none" stroke="#fff" stroke-width="1.5"/><text x="16" y="21" font-size="12" font-family="Arial" font-weight="700" text-anchor="middle" fill="#fff">NJ</text></svg>`,
   hero: {
-    kicker: "Exit here for New Jersey HAZWOPER",
     title: "Cleanups at<br><span>every exit.</span>",
     lede: "From historic fill in Newark to tank farms in Linden, New Jersey has more cleanup sites than almost anywhere. Get your crew trained for them.",
     cta: [590, "40 Hr Remediation · $249.99"],

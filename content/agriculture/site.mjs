@@ -8,7 +8,6 @@ export default {
   fonts: "family=Bitter:wght@500;700;800&family=Open+Sans:wght@400;600;700",
   icon: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect width="32" height="32" fill="#f3e3b5"/><path d="M5 28V14l11-8 11 8v14z" fill="#9c2b23"/><path d="M12 28v-8h8v8M12 20l8 8M20 20l-8 8" stroke="#f3e3b5" stroke-width="1.5" fill="none"/></svg>`,
   hero: {
-    kicker: "Farms · Co-ops · Ag retailers",
     title: "Safe from <span>field to bin.</span>",
     lede: "Anhydrous ammonia, pesticides and fuel are everyday risks in agriculture. Spill and response training for farm crews and ag retail staff.",
     cta: [1099, "Awareness · $61.99"],

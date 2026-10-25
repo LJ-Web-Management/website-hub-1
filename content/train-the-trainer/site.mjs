@@ -8,7 +8,6 @@ export default {
   fonts: "family=Caveat:wght@600;700&family=Source+Sans+3:wght@400;600;700",
   icon: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect x="2" y="5" width="28" height="19" rx="2" fill="#2b5d3a" stroke="#8d6e52" stroke-width="2"/><path d="M7 11h12M7 16h8" stroke="#fff" stroke-width="2" stroke-linecap="round"/><path d="M11 24l-3 5M21 24l3 5" stroke="#8d6e52" stroke-width="2"/></svg>`,
   hero: {
-    kicker: "24 hours · train-the-trainer",
     title: "Stop sending crews out. <span>Teach them yourself.</span>",
     lede: "Companies with steady HAZWOPER training needs often bring it in-house. The train-the-trainer course prepares experienced safety staff to teach HAZWOPER courses well.",
     cta: [1016, "Train-the-Trainer · $399.99"],

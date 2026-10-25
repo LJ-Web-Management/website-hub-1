@@ -180,7 +180,7 @@ Descargue su certificado y guarde una copia en su teléfono y otra impresa. Recu
     const [main, ...others] = courses;
     return `<section class="hero"><div class="wrap hero-in">
 <div>
-<p class="badge">100% en español · 29 CFR 1910.120</p>
+<p class="hero-call">¿Preguntas? Llame al <a href="tel:+18664296742">(866) 429-6742</a></p>
 <h1>Capacitación en <mark>tu idioma.</mark></h1>
 <p class="hero-lede">El curso OSHA HAZWOPER de 40 horas completo, en español. Aprende a tu ritmo, desde tu celular, y recibe tu certificado al terminar.</p>
 <div class="hero-cta">${h.buy(1100, "Inscríbete · $249.99")}<a class="btn btn-alt" href="/guides/que-es-hazwoper">¿Qué es HAZWOPER?</a></div>

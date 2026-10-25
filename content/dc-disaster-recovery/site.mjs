@@ -8,7 +8,6 @@ export default {
   fonts: "family=Space+Grotesk:wght@400;500;700",
   icon: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect width="32" height="32" rx="16" fill="#1b263b"/><circle cx="16" cy="16" r="11" fill="none" stroke="#4cc9f0" stroke-opacity=".5"/><circle cx="16" cy="16" r="6" fill="none" stroke="#4cc9f0"/><path d="M16 16L26 9" stroke="#f72585" stroke-width="2.5"/></svg>`,
   hero: {
-    kicker: "RTO · RPO · ICS-NIMS",
     title: "Plan for the day <span>everything goes wrong.</span>",
     lede: "Floods, fires, outages and cyberattacks don't wait for budget season. Disaster recovery and business continuity training for the teams who keep critical services running.",
     cta: [844, "DR & Continuity · $307.99"],
