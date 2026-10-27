@@ -20,6 +20,7 @@ hostname and serves the matching folder.
 - `about.html` is served at `/about`, and `docs/index.html` at `/docs/`.
 - An optional `404.html` in a site's folder is shown for that site's missing pages.
 - `www` is just another folder: `sites/www/` would serve `www.hazwoperosha.us`.
+- `sites/hub/sitemap.xml` (written by `tools/hub.mjs`) is a sitemap index of every site's `sitemap.xml`, except `www` and the hub. Submit `https://hub.hazwoperosha.us/sitemap.xml` in Google Search Console under a Domain property for `hazwoperosha.us`, so it may list sitemaps on every subdomain.
 - The bare domain (`hazwoperosha.us`) is not served by this repo.
 
 ## Analytics
